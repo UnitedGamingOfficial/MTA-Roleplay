@@ -1,0 +1,8 @@
+<meta>
+	<info author="vovo4ka" name="Emergency Lights" version="1.0.1" type="misc" description="Emergency lights for Stage resource" />
+	<script src="server.lua" />
+	<script src="client.lua" type="client" />
+
+	<export function="isStroboLightsOn" type="client"/>
+	<export function="setStroboLightsOn" type="client"/>
+</meta>

@@ -1,0 +1,18 @@
+<meta>
+	<file src="mods/driv.dff"/>
+	<file src="mods/driv.col"/>
+	
+	<file src="mods/track.txd"/>
+	
+	<file src="mods/straight.dff"/>
+	<file src="mods/straight.col"/>
+	
+	<file src="mods/90.dff"/>
+	<file src="mods/90.col"/>
+	
+	<file src="mods/180.dff"/>
+	<file src="mods/180.col"/>
+	<script src="c_mods.lua" type="client"/>
+	<script src="s_objects.lua" type="server"/>
+	<map src="driftmap.map" dimension="0"></map>
+</meta>

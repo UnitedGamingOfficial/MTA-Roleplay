@@ -1,0 +1,33 @@
+<meta>
+    <info type="script" version="0.1.0" />
+	
+	<!-- Paintball -->
+	<script src="c_paintball.lua" type="client" />
+    <script src="c_paintball_count.lua" type="client" />
+	
+	<file src="images/countdown/0.png" />
+	<file src="images/countdown/1.png" />
+	<file src="images/countdown/2.png" />
+	<file src="images/countdown/3.png" />
+	<file src="images/countdown/4.png" />
+	<file src="images/countdown/5.png" />
+	<file src="images/countdown/6.png" />
+	<file src="images/countdown/7.png" />
+	<file src="images/countdown/8.png" />
+	<file src="images/countdown/9.png" />
+	<file src="images/countdown/10.png" />
+    <script src="s_paintball.lua" type="server" />
+	
+    <!--<script src="s_recreationidlewood.lua" type="server" />-->
+	
+	<!-- Dynamic Lighting system -->
+    <script src="s_lights.lua" type="server" />
+	
+	<!-- Basketball -->
+	<script src="c_basketball.lua" type="client" />
+    <script src="s_basketball.lua" type="server" />
+    
+	<file src="bball-sounds/drible.ogg" />
+    <file src="bball-sounds/board.ogg" />
+    <file src="bball-sounds/boardhit.ogg" />
+</meta>

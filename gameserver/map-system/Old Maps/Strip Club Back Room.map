@@ -1,0 +1,50 @@
+<map edf:definitions="editor_main">
+	-- Vice backroom
+    <object id="object (crackhoose) (1)" dimension="1" interior="1" model="14735" posX="2498.7585449219" posY="2086.7438964844" posZ="-80.159423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Gen_doorEXT03) (1)" dimension="1" interior="1" model="1498" posX="2486.7585449219" posY="2090.6215820313" posZ="-81.756980895996" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Gen_doorEXT12) (1)" dimension="1" interior="1" model="1533" posX="2475.6647949219" posY="2086.8674316406" posZ="-81.764923095703" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (ADAM_V_DOOR) (1)" dimension="1" interior="1" model="1569" posX="2481.5397949219" posY="2079.3249511719" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (mrk_seating2) (1)" dimension="1" interior="1" model="1726" posX="2480.2097167969" posY="2090.0346679688" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (mrk_seating2b) (1)" dimension="1" interior="1" model="1727" posX="2479.19140625" posY="2088.4423828125" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="93" />
+    <object id="object (MED_OFFICE_DESK_1) (1)" dimension="1" interior="1" model="2165" posX="2486.4291992188" posY="2083.326171875" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (castable1) (1)" dimension="1" interior="1" model="2802" posX="2485.5053710938" posY="2086.6474609375" posZ="-81.454162597656" rotX="0" rotY="0" rotZ="70.599945068359" />
+    <object id="object (lee_Plane08) (1)" dimension="1" interior="1" model="3963" posX="2481.7429199219" posY="2090.5727539063" posZ="-79.567680358887" rotX="0" rotY="0" rotZ="178.65002441406" />
+    <object id="object (Frame_WOOD_5) (1)" dimension="1" interior="1" model="2266" posX="2484.4067382813" posY="2090.4689941406" posZ="-78.534423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Frame_Clip_2) (1)" dimension="1" interior="1" model="2255" posX="2481.3803710938" posY="2090.6032714844" posZ="-78.349319458008" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (filing_cab_nu01) (1)" dimension="1" interior="1" model="2007" posX="2484.9897460938" posY="2082.0686035156" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (CJ_M_FILEING2) (1)" dimension="1" interior="1" model="2066" posX="2485.7756347656" posY="2082.0805664063" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (CJ_KITCH2_M) (1)" dimension="1" interior="1" model="2134" posX="2485.0170898438" posY="2090.1091308594" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_KITCH2_M) (2)" dimension="1" interior="1" model="2134" posX="2484.0290527344" posY="2090.1010742188" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_KITCH2_R) (1)" dimension="1" interior="1" model="2133" posX="2486.0075683594" posY="2090.1120605469" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_POLICE_COUNTER2) (1)" dimension="1" interior="1" model="2606" posX="2491.0119628906" posY="2084.3256835938" posZ="-78.912284851074" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (k_pooltablesm) (1)" dimension="1" interior="1" model="2964" posX="2481.3776855469" posY="2084.802734375" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="93.354949951172" />
+    <object id="object (SWANK_TV_4) (1)" dimension="1" interior="1" model="1786" posX="2491.5581054688" posY="2084.7016601563" posZ="-80.134323120117" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (ZIP_SHELF1) (1)" dimension="1" interior="1" model="2708" posX="2489.3354492188" posY="2090.3525390625" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_Radiator_old) (1)" dimension="1" interior="1" model="1738" posX="2491.0588378906" posY="2085.0710449219" posZ="-81.129791259766" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (kb_flykiller) (1)" dimension="1" interior="1" model="1971" posX="2484.5441894531" posY="2090.509765625" posZ="-79.41251373291" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_KITCH1_FRIDGE) (1)" dimension="1" interior="1" model="2147" posX="2482.9780273438" posY="2090.1066894531" posZ="-81.784439086914" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (castable1) (2)" dimension="1" interior="1" model="2802" posX="2485.5051269531" posY="2086.6411132813" posZ="-81.454162597656" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (COFFEE_SWANK_4) (1)" dimension="1" interior="1" model="1819" posX="2480.6196289063" posY="2087.9658203125" posZ="-81.809623718262" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (gb_bedmags02) (1)" dimension="1" interior="1" model="2852" posX="2481.1538085938" posY="2088.4541015625" posZ="-81.293960571289" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FF_MICROW) (1)" dimension="1" interior="1" model="2421" posX="2486.1613769531" posY="2090.6032714844" posZ="-80.163528442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Frame_Clip_2) (2)" dimension="1" interior="1" model="2255" posX="2479.7841796875" posY="2083.4755859375" posZ="-79.992225646973" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (POLCE_SHELF) (1)" dimension="1" interior="1" model="2608" posX="2485.279296875" posY="2081.7822265625" posZ="-79.668563842773" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (MODEL_BOX6) (1)" dimension="1" interior="1" model="2478" posX="2490.521484375" posY="2081.7556152344" posZ="-81.507110595703" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (MODEL_BOX6) (2)" dimension="1" interior="1" model="2478" posX="2490.5668945313" posY="2081.7583007813" posZ="-80.946380615234" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (Gen_doorEXT15) (1)" dimension="1" interior="1" model="1536" posX="2491.2946777344" posY="2088.2922363281" posZ="-81.784423828125" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (swivelchair_A) (1)" dimension="1" interior="1" model="1671" posX="2486.9848632813" posY="2082.12890625" posZ="-81.324211120605" rotX="0" rotY="0" rotZ="180" />
+	
+	-- Vice WC door
+	<object id="object (Gen_doorEXT15) (2)" dimension="413" interior="10" model="1536" posX="364.1397" posY="-63.7950" posZ="1000.5078125" rotX="0" rotY="0" rotZ="180" />
+	
+	-- Vice Office
+	<object id="object (ADAM_V_DOOR) (1)" dimension="421" interior="5" model="1569" posX="1225.7962646484" posY="-814.03784179688" posZ="1083.0078125" rotX="0" rotY="0" rotZ="0.63421630859375" />
+    <object id="object (wilshire7dr1_law) (1)" dimension="421" interior="5" model="16775" posX="1227.7248535156" posY="-814.08435058594" posZ="1086.3458251953" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (wilshire7dr1_law) (2)" dimension="421" interior="5" model="16775" posX="1240.4530029297" posY="-813.33312988281" posZ="1087.0034179688" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (mrk_seating1) (1)" dimension="421" interior="5" model="1723" posX="1236.4475097656" posY="-813.42932128906" posZ="1083.0078125" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (PC_1) (1)" dimension="421" interior="5" model="2190" posX="1232.7316894531" posY="-810.05871582031" posZ="1083.8111572266" rotX="0" rotY="0" rotZ="201.8349609375" />
+    <object id="object (propashtray1) (1)" dimension="421" interior="5" model="1665" posX="1231.4195556641" posY="-809.71337890625" posZ="1083.8216552734" rotX="0" rotY="0" rotZ="125.05502319336" />
+	
+	--Dragon Lady WC Door
+	<object id="object (Gen_doorEXT15) (2)" dimension="686" interior="10" model="1536" posX="364.1397" posY="-63.7950" posZ="1000.5078125" rotX="0" rotY="0" rotZ="180" />
+</map>

@@ -1,0 +1,71 @@
+--- --- --- --- ---
+
+-- Created: 02/05/2016 18:07
+GUIEditor_Window = {}
+GUIEditor_Button = {}
+GUIEditor_Label = {}
+GUIEditor_Grid = {}
+
+GUIEditor_Window[1] = guiCreateWindow(859,293,413,474,"Handling Editor - [VEH NAME] - VIN: [VIN]",false)
+GUIEditor_Grid[1] = guiCreateGridList(10,27,394,404,false,GUIEditor_Window[1])
+guiGridListSetSelectionMode(GUIEditor_Grid[1],2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Attribute",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Value",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Default Value",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Acceptable Range",0.2)
+GUIEditor_Label[1] = guiCreateLabel(211,141,5,5,"",false,GUIEditor_Window[1])
+GUIEditor_Button[1] = guiCreateButton(279,437,124,28,"Save and Exit",false,GUIEditor_Window[1])
+
+
+
+
+--- --- --- --- ---
+
+-- Created: 02/05/2016 18:09
+GUIEditor_Window = {}
+GUIEditor_Button = {}
+GUIEditor_Label = {}
+GUIEditor_Grid = {}
+
+GUIEditor_Window[1] = guiCreateWindow(0.6711,0.3663,0.3227,0.5925,"Handling Editor - [VEH NAME] - VIN: [VIN]",true)
+GUIEditor_Grid[1] = guiCreateGridList(0.0242,0.057,0.954,0.8523,true,GUIEditor_Window[1])
+guiGridListSetSelectionMode(GUIEditor_Grid[1],2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Attribute",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Value",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Default Value",0.2)
+
+guiGridListAddColumn(GUIEditor_Grid[1],"Acceptable Range",0.2)
+GUIEditor_Label[1] = guiCreateLabel(0.5109,0.2975,0.0121,0.0105,"",true,GUIEditor_Window[1])
+GUIEditor_Button[1] = guiCreateButton(0.6755,0.9219,0.3002,0.0591,"Save and Exit",true,GUIEditor_Window[1])
+
+
+
+
+--- --- --- --- ---
+
+-- Created: 14/05/2016 22:50
+GUIEditor_Window = {}
+GUIEditor_Button = {}
+GUIEditor_Label = {}
+GUIEditor_Edit = {}
+
+GUIEditor_Window[1] = guiCreateWindow(0.3289,0.2763,0.2914,0.1187,"Set [ATTRIBUTE] Value",true)
+guiWindowSetMovable(GUIEditor_Window[1],false)
+guiWindowSetSizable(GUIEditor_Window[1],false)
+GUIEditor_Label[1] = guiCreateLabel(0.0268,0.2632,0.9357,0.2632,"Default: [DEFAULT] \t Acceptable: [ACCEPTABLE]",true,GUIEditor_Window[1])
+guiLabelSetHorizontalAlign(GUIEditor_Label[1],"center",false)
+GUIEditor_Edit[1] = guiCreateEdit(0.0268,0.5263,0.5496,0.3263,"",true,GUIEditor_Window[1])
+GUIEditor_Button[1] = guiCreateButton(0.5952,0.5474,0.1823,0.3053,"Save",true,GUIEditor_Window[1])
+GUIEditor_Button[2] = guiCreateButton(0.7909,0.5474,0.1716,0.3053,"Cancel",true,GUIEditor_Window[1])
+
+
+
+
+--- --- --- --- ---

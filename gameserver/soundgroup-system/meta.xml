@@ -1,0 +1,39 @@
+<meta>
+	<!--
+		*
+		* SoundGroup Corporation - System
+		* File: meta.xml
+		* Author: Socialz
+		* Created for Socialz's Gaming Community and United Gaming
+		* Please do not redistribute this script in any way, if you want to use this script somewhere else, contact Socialz
+		*
+	-->
+	
+	<info author="Socialz" name="SoundGroup Corporation - System" type="script" version="1.3.1" />
+	
+	<!--<script src="c_lasers.lua" type="client" cache="false" /> <!-- Rendering of laser beams and such.. -->
+	<!--<script src="s_lasers.lua" type="server" /> <!-- Updating the laser beam configuration and such.. -->
+	<script src="c_objects.lua" type="client" cache="false" /> <!-- Streaming the music and such.. -->
+	<script src="s_objects.lua" type="server" /> <!-- Creating the music and such.. -->
+	<script src="c_bots.lua" type="client" cache="false" /> <!-- Rendering the moving pedestrians and such.. -->
+	<script src="s_bots.lua" type="server" /> <!-- Creating the guards and NPCs to the events and such.. -->
+	<script src="s_admin.lua" type="server" /> <!-- Managing all the administration stuff for the system and such.. -->
+	<!--<script src="s_lights.lua" type="server" /> <!-- Some new lights for the system and such.. -->
+	<!--<script src="c_props.lua" type="client" cache="false" /> <!-- Some new client-side props for the events and such.. -->
+	<!--<script src="s_props.lua" type="server" /> <!-- And some of the server-side props for the events and such.. -->
+	<!--<script src="c_fireworks.lua" type="client" cache="false" /> <!-- Fireworks client-side and such.. -->
+	<!--<script src="s_fireworks.lua" type="server" /> <!-- Fireworks server-side and such.. -->
+	
+	<!-- Includes all the global stuff for the system and such.. -->
+	<script src="g_globals.lua" type="server" />
+	<script src="g_globals.lua" type="client" cache="false" />
+	
+	<!-- All the cinema screen stuff and such.. -->
+	<!--<script src="c_screen.lua" type="client" cache="false" />-->
+	<!--<script src="s_screen.lua" type="server" />-->
+	<!--<file src="images/bg.png" />-->
+	<!--<file src="shaders/screen.fx" />-->
+	
+	<!-- And just to make sure the client and server are running on a good version.. -->
+	<min_mta_version client="1.3.0-9.04162" server="1.3.1-9.04935" />
+</meta>

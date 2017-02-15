@@ -1,0 +1,4 @@
+<meta>
+	<script src="s_rangeban_system.lua" />
+	<export function="getSecurityConnections" type="server"/>
+</meta>

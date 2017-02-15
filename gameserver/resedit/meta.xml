@@ -1,0 +1,25 @@
+<meta>
+	<info author="The_GTA" name="Resource Manager" description="An MTA Resource Editor to edit your resources efficiently." type="misc" version="0.8.5" />
+	
+	<script src="shared.lua" type="server" />
+	<script src="shared.lua" type="client" />
+	
+	<script src="luaex.lua" type="client" />
+	
+	<script src="resedit_server.lua" type="server" />
+	
+	<script src="dxelements_client.lua" type="client" />
+	<script src="guidropdown_client.lua" type="client" />
+	<script src="guimenu_client.lua" type="client" />
+	<script src="guitabpanel_client.lua" type="client" />
+	<script src="guieditor_client.lua" type="client" />
+	<script src="utilities_client.lua" type="client" />
+	<script src="objectmanagement_client.lua" type="client" />
+	<script src="downloadmanager_client.lua" type="client" />
+	<script src="inputhandler_client.lua" type="client" />
+	<script src="resedit_client.lua" type="client" />
+    
+	<file src="default/config.xml" type="client" />
+	<file src="pixel.png" type="client" />
+	<file src="arrow.png" type="client" />
+</meta>

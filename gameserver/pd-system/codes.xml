@@ -1,0 +1,62 @@
+<content>
+----- TEN CODES -----
+10-1 - Roll call.
+10-3 - Radio silence (for emergency transmissions).
+10-4 - Affirmative/understood.
+10-5 - Repeat last transmission.
+10-6 - Disregard.
+10-7 - Standby for further.
+10-8 - Currently busy/unavailable.
+10-9 - Currently busy/unavailable (detective covert operation).
+10-14 - Requesting transportation (including location and target location).
+10-15 - Suspects arrested (including number of suspects and target location i.e. SFPD HQ, SACF).
+10-18 - Further assistance required (?).
+10-20 - Geographical location.
+10-21 - Report in your current status and location.
+10-22 - Report in person (including target location).
+10-27 - Switching radio channel.
+10-40 - Large group/gathering of persons in area (four or above).
+10-41 - Illegal activity.
+10-43 - Wanted vehicle.
+10-46 - Conduct a frisk or search.
+10-50 - Out of vehicle for investigations.
+10-55 - Traffic stop.
+10-56 - Computer check (using the MDC).
+10-57-VICTOR - Vehicle pursuit.
+10-57-FOXTROT - Foot pursuit.
+10-60 - Vehicle description(s) (including vehicle name, colours, number of occupants and obvious features such as number of doors or any vehicular damage).
+10-61 - Person description(s) (including identity/race, attire, distinguishing features).
+10-66 - Felony stop.
+10-70 Code 1 - Officer in distress backup call request (lights or siren) - Respond in own time - if something comes up, Officer in distress should take priority.
+10-70 Code 2 - Regular backup call request (no lights or siren, if something comes up, reroute to more important call)
+10-70 Code 2-HIGH - Priority backup call request (no lights or siren, may be used at intersections/heavy traffic) - if something comes up, unless emergency, disregard it.
+10-70 Code 3 - Emergency backup call request (lights and sirens) - Respond with lights and sirens - if something comes up, unless no other units responding to other call, should disregard.
+10-71 - Medical assistance required.
+10-75 - Officer in distress (unable to respond, in imminent danger).
+10-78 - Special Weapons and Tactics required (state either non emergency or emergecy).
+10-98 - No further assistance required.
+10-99 - Situation concluded.
+
+----- RESPONSE/JOB CODES -----
+Code 0 - Urgent assistance required. All duty units must immediately drop what they are doing, be that booking a suspect or being engaged in an active pursuit, and attend the code 0 as soon as is practically possible.
+Code 1 - Officer in distress. A heightened Code 3, but does not warrant the use of Code 0. 
+Code 2 - Routine call (no lights or siren, obey road laws) - Respond in own time - may cancel response in reference to priority call comes up, handle it first.
+Code 2 - HIGH Priority call (no lights or siren, may be used at intersections/heavy traffic) - may cancel response in reference to emergency call but should be avoided.
+Code 3 - Emergency call (lights and sirens) - Respond with lights and sirens - if something comes up, unless no other units responding to other call, should disregard.
+Code 4 - Available for calls/currently on patrol.
+Code 5 - All available SWAT personnel report in on the radio.
+Code 6 - Arrived on scene (include target location).
+Code 7 - Meal break (for refreshments).
+
+----- STATUS CODES -----
+Status 1 - Reporting off duty.
+Status 2 - Reporting on duty.
+
+----- IDENTITY CODES -----
+IC1 – White.
+IC2 – Black.
+IC3 – Hispanic.
+IC4 – Middle Eastern.
+IC5 – Asian.
+IC6 – Unknown ethnicity.
+</content>

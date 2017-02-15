@@ -1,0 +1,11 @@
+<map mod="deathmatch">
+    
+    <meta>
+        <author>Buttram</author>
+    </meta>
+    
+    <object name="delux object" posX="1072.886108" posY="-1221.304810" posZ="17.952188" rotX="0.0000" rotY="0.0000" rotZ="270.6185" model="2714" />
+    <object name="delux object (1)" posX="1074.785522" posY="-1221.950806" posZ="23.593124" rotX="0.0000" rotY="0.0000" rotZ="146.0002" model="8292" />
+    <object name="delux object (2)" posX="1071.862061" posY="-1221.282471" posZ="20.192760" rotX="0.0000" rotY="0.0000" rotZ="269.7592" model="10281" />
+    <object name="delux object (3)" posX="1093.622681" posY="-1260.746582" posZ="14.895355" rotX="0.0000" rotY="0.0000" rotZ="269.7591" model="4697" />
+</map>

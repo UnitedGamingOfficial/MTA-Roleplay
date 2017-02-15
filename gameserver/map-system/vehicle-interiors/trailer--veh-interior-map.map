@@ -1,0 +1,19 @@
+<map edf:definitions="editor_main">
+    <object id="object (freight_interiorsfw) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="9590" scale="1" dimension="2141" posX="1398" posY="1465.2998" posZ="17.7" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (freight_interiorsfw) (2)" interior="0" collisions="true" alpha="255" doublesided="false" model="9590" scale="1" dimension="2141" posX="1400" posY="1465.2998" posZ="6.1" rotX="0" rotY="179.995" rotZ="0"></object>
+    <object id="object (burgalrydoor_SFS) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="18553" scale="1" dimension="2141" posX="1415.09998" posY="1463.59998" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (1)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1417" posY="1463.69995" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (2)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1421.09998" posY="1463.69922" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (3)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1425" posY="1463.69922" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (4)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1429" posY="1463.69922" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (5)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1417" posY="1459.40002" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (6)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1421.09961" posY="1459.40002" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (7)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1425" posY="1459.40002" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (8)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1429" posY="1459.40002" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (9)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1435" posY="1461.5" posZ="11.9" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (burgalrydoor_SFS) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="18553" scale="1" dimension="2141" posX="1415.09961" posY="1463.59998" posZ="10.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (burgalrydoor_SFS) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="18553" scale="1" dimension="2141" posX="1415.09961" posY="1459.69995" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (burgalrydoor_SFS) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="18553" scale="1" dimension="2141" posX="1415.09961" posY="1459.69995" posZ="10.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (10)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1433" posY="1459.39941" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (a51_blastdoorR) (11)" interior="0" alpha="255" doublesided="false" model="2927" scale="1" dimension="2141" posX="1433" posY="1463.69922" posZ="11.9" rotX="0" rotY="0" rotZ="0"></object>
+</map>

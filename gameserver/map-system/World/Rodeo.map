@@ -1,0 +1,37 @@
+<map edf:definitions="editor_main">
+    <object id="object (miragehedge14) (1)" interior="0" alpha="255" doublesided="false" model="7662" scale="1" dimension="0" posX="535.40002" posY="-1559" posZ="15.1" rotX="358.5" rotY="0" rotZ="0.5"></object>
+    <object id="object (miragehedge14) (2)" interior="0" alpha="255" doublesided="false" model="7662" scale="1" dimension="0" posX="535.40002" posY="-1542.5" posZ="14.7" rotX="358.995" rotY="0" rotZ="0.5"></object>
+    <object id="object (miragehedge14) (3)" interior="0" alpha="255" doublesided="false" model="7662" scale="1" dimension="0" posX="535.09998" posY="-1492.5" posZ="14" rotX="0.995" rotY="0" rotZ="1.25"></object>
+    <object id="object (miragehedge14) (4)" interior="0" alpha="255" doublesided="false" model="7662" scale="1" dimension="0" posX="535" posY="-1475.30005" posZ="14.3" rotX="0.994" rotY="0" rotZ="1.997"></object>
+    <object id="object (sjmpalmbigpv) (1)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="535.40002" posY="-1551" posZ="14.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (2)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="535.29999" posY="-1534.30005" posZ="13.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (3)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="535.09998" posY="-1517.09998" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (4)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="535.29999" posY="-1500.90002" posZ="13.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (5)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="535.09998" posY="-1484" posZ="13.2" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sjmpalmbigpv) (6)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="534.79999" posY="-1467.19995" posZ="13.5" rotX="0" rotY="0" rotZ="4"></object>
+    <object id="object (sjmpalmbigpv) (7)" interior="0" alpha="255" doublesided="false" model="716" scale="1" dimension="0" posX="534.20001" posY="-1450.09998" posZ="14" rotX="0" rotY="0" rotZ="3.999"></object>
+    <object id="object (lxorneon) (1)" interior="0" alpha="255" doublesided="true" model="9125" scale="1" dimension="0" posX="327.20001" posY="-1498.80005" posZ="75.8" rotX="359.75" rotY="359.75" rotZ="53.999"></object>
+    <object id="object (helipad01) (1)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="319.20001" posY="-1510.80005" posZ="75.7" rotX="0" rotY="0" rotZ="324.25"></object>
+    <object id="object (helipad01) (2)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="312.89999" posY="-1519.80005" posZ="75.7" rotX="0" rotY="0" rotZ="324.245"></object>
+    <object id="object (helipad01) (3)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="307.79999" posY="-1527.09998" posZ="75.7" rotX="0" rotY="0" rotZ="324.245"></object>
+    <object id="object (helipad01) (4)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="301.5" posY="-1536" posZ="75.7" rotX="0" rotY="0" rotZ="324.245"></object>
+    <object id="object (helipad01) (5)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="324.5" posY="-1503.5" posZ="75.7" rotX="0" rotY="0" rotZ="324.245"></object>
+    <object id="object (helipad01) (6)" interior="0" alpha="255" doublesided="false" model="3934" scale="1" dimension="0" posX="331.10001" posY="-1494.59998" posZ="75.7" rotX="0" rotY="0" rotZ="324.245"></object>
+    <object id="object (Gen_doorEXT19) (2)" interior="0" alpha="255" doublesided="false" model="1557" scale="1" dimension="0" posX="328.39999" posY="-1510.59998" posZ="35" rotX="0" rotY="0.498" rotZ="232.246"></object>
+    <object id="object (Gen_doorEXT19) (3)" interior="0" alpha="255" doublesided="false" model="1557" scale="1" dimension="0" posX="326.60001" posY="-1512.90002" posZ="35" rotX="359.75" rotY="0.244" rotZ="51.747"></object>
+    <object id="object (Gen_doorEXT15) (1)" interior="0" alpha="255" doublesided="false" model="1536" scale="1" dimension="0" posX="305" posY="-1533.90002" posZ="23.9" rotX="0" rotY="0" rotZ="235"></object>
+    <object id="object (airsecbooth_SFSe) (1)" interior="0" alpha="255" doublesided="false" model="3881" scale="1" dimension="0" posX="346.70001" posY="-1474.40002" posZ="77.4" rotX="0" rotY="0" rotZ="30.5"></object>
+	<object id="object (bar_gatebar01) (1)" interior="0" alpha="255" doublesided="false" model="966" scale="1" dimension="0" posX="315.5" posY="-1555.09998" posZ="31.2" rotX="0" rotY="0" rotZ="326"></object>
+    <object id="object (bar_gatebar01) (2)" interior="0" alpha="255" doublesided="false" model="966" scale="1" dimension="0" posX="370.60001" posY="-1471.09998" posZ="31.2" rotX="0" rotY="0" rotZ="33.997"></object>
+    <object id="object (cmtneon01) (1)" interior="0" alpha="255" doublesided="false" model="9126" scale="1" dimension="0" posX="324.79999" posY="-1509.5" posZ="31.7" rotX="0" rotY="0" rotZ="50.5"></object>
+    <object id="object (vgsn_RBStiff) (1)" interior="0" alpha="255" doublesided="false" model="3521" scale="1" dimension="0" posX="410.79999" posY="-1560" posZ="28.1" rotX="0" rotY="0" rotZ="74"></object>
+    <object id="object (sfx_lite05) (1)" interior="0" alpha="255" doublesided="false" model="3809" scale="1" dimension="0" posX="328.79999" posY="-1510.09998" posZ="37.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (sfx_lite05) (2)" interior="0" alpha="255" doublesided="false" model="3809" scale="1" dimension="0" posX="326.20001" posY="-1513.30005" posZ="37.3" rotX="0" rotY="0" rotZ="341"></object>
+    <object id="object (Streetlamp1) (1)" interior="0" alpha="255" doublesided="false" model="1232" scale="1" dimension="0" posX="352.10001" posY="-1501.59998" posZ="34.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (Streetlamp1) (2)" interior="0" alpha="255" doublesided="false" model="1232" scale="1" dimension="0" posX="358.20001" posY="-1497.40002" posZ="34.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (Streetlamp1) (3)" interior="0" alpha="255" doublesided="false" model="1232" scale="1" dimension="0" posX="337.20001" posY="-1519.5" posZ="34.3" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (Streetlamp1) (4)" interior="0" alpha="255" doublesided="false" model="1232" scale="1" dimension="0" posX="334.10001" posY="-1523.09998" posZ="34.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (noparkingsign1) (1)" interior="0" alpha="255" doublesided="false" model="1233" scale="1" dimension="0" posX="341.10001" posY="-1524.80005" posZ="33.9" rotX="0" rotY="0" rotZ="138"></object>
+    <object id="object (CJ_AIRPRT_BAR) (1)" interior="0" alpha="255" doublesided="false" model="2773" scale="1" dimension="0" posX="327" posY="-1514.59998" posZ="35.6" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (CJ_AIRPRT_BAR) (2)" interior="0" alpha="255" doublesided="false" model="2773" scale="1" dimension="0" posX="330.29999" posY="-1510.69995" posZ="35.6" rotX="0" rotY="0" rotZ="96"></object>
+</map>

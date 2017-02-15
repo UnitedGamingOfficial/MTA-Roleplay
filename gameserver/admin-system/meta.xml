@@ -1,0 +1,111 @@
+<meta>
+	<info author="UnitedGaming MTA Scripting Team" type="script" description="Admin System"/>
+
+	<file src="Player/nudge.wav" />
+	<script src="Player/c_player_commands.lua" type="client"/>
+	<script src="Player/s_player_commands.lua" type="server"/>
+	
+	<script src="Player/c_weapon_creator.lua" type="client"/>
+	
+	<script src="Player/s_ck.lua" type="server"/>
+	<script src="Player/s_ban.lua" type="server"/>
+	<script src="Player/s_teleport.lua" type="server"/>
+	<script src="Player/s_language.lua" type="server"/>
+	<script src="Player/s_relations.lua" type="server"/>
+	<script src="Player/s_search.lua" type="server"/>
+	<script src="Player/s_adminjail.lua" type="server"/>
+	<script src="Player/s_vpoints.lua" type="server"/>
+	<script src="Player/s_licenses.lua" type="server"/>
+	<export function="timerUnjailPlayer" type="server"/>
+	
+	
+	<script src="Interior/s_interior_commands.lua" type="server"/>
+	<script src="Interior/c_interior_commands.lua" type="client"/>
+	
+	<script src="Resources/s_resource_commands.lua" type="server"/>
+	<script src="Resources/c_resource_commands.lua" type="client"/>
+	
+	<script src="Player/s_recon.lua" type="server"/>
+	<script src="Player/c_recon.lua" type="client"/>
+	
+	<script src="monitor/s_monitor.lua" type="server"/>
+	<script src="monitor/c_monitor.lua" type="client"/>
+	
+	<script src="Player/c_ped_voices.lua" type="client"/>
+	<script src="Player/c_mark.lua" type="client"/>
+	
+	
+	<config src="help/whatisroleplaying.xml" type="client" />
+	<config src="help/overview.xml" type="client" />
+	
+	<script src="help/c_rphelp.lua" type="client"/>
+	
+	<script src="help/c_commands_help.lua" type="client"/>
+	
+	<script src="s_check.lua" type="server" />
+	<script src="c_check.lua" type="client" />
+	<file src="search.png" />
+	
+	<script src="teleport.lua" type="server" />
+	<script src="lounge.lua" type="client" />
+	
+	<script src="help/c_admin_help.lua" type="client" />
+	<script src="help/c_gm_help.lua" type="client" />
+	
+	<script src="c_overlay.lua" type="client" />
+
+	<script src="s_other_commands.lua" type="server"/> 
+	
+	 <settings>
+		<setting name="*fist" value="disabled" />  
+		<setting name="*brassknuckle" value="2" />  
+		<setting name="*golfclub" value="0" />  
+		<setting name="*nightstick" value="0" />  
+		<setting name="*knife" value="0" />  
+		<setting name="*bat" value="0" />  
+		<setting name="*shovel" value="0" />  
+		<setting name="*poolstick" value="0" />  
+		<setting name="*katana" value="2" />  
+		<setting name="*chainsaw" value="0" />  
+		<setting name="*dildo" value="2" />  
+		<setting name="*dildo2" value="2" />  
+		<setting name="*vibrator" value="2" />  
+		<setting name="*vibrator2" value="2" />  
+		<setting name="*flower" value="2" />  
+		<setting name="*cane" value="0" />  
+		<setting name="*grenade" value="2" />  
+		<setting name="*teargas" value="2" />  
+		<setting name="*molotov" value="2" />  
+		<setting name="*colt45" value="17" />  
+		<setting name="*silenced" value="17" />  
+		<setting name="*deagle" value="7" />  
+		<setting name="*shotgun" value="10" />  
+		<setting name="*sawed-off" value="20" />  
+		<setting name="*combatshotgun" value="30" />  
+		<setting name="*uzi" value="50" />  
+		<setting name="*mp5" value="30" />  
+		<setting name="*ak-47" value="30" />  
+		<setting name="*m4" value="50" />  
+		<setting name="*tec-9" value="50" />  		
+		<setting name="*rifle" value="10" />  
+		<setting name="*sniper" value="5" />  
+		<setting name="*rocketlauncher" value="5" />  
+		<setting name="*spraycan" value="0" />  
+		<setting name="*fireextinguisher" value="0" />  
+		<setting name="*camera" value="0" />  
+		<setting name="*nightvision" value="2" />  
+		<setting name="*infrared" value="2" />  
+		
+		<setting name="*maxAmountOfAmmopacks" value="200" />  
+		<setting name="*maxAmountOfWeapons" value="100" />  
+     </settings>
+	 
+	 <file src="weapIcons/ammo.png" />
+	 <file src="weapIcons/gun.png" />
+	 <file src="images/whitedot.jpg" />
+	
+	<export function="getAmmoPerClip" type="server"/>
+	
+
+	
+</meta>

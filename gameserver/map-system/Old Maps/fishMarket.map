@@ -1,0 +1,24 @@
+<map edf:definitions="editor_main">
+    <object id="object (MelBlok12_LAwN) (1)" dimension="0" interior="0" model="5782" posX="2232.3701171875" posY="574.47705078125" posZ="8.7833766937256" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (1)" dimension="0" interior="0" model="11495" posX="2285.4379882813" posY="531.98071289063" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (canaljetty_LAw) (1)" dimension="0" interior="0" model="6230" posX="2327.3142089844" posY="518.3466796875" posZ="-7.9217829704285" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (3)" dimension="0" interior="0" model="11495" posX="2281.9907226563" posY="520.11358642578" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (des_ranchjetty) (4)" dimension="0" interior="0" model="11495" posX="2275.3515625" posY="542.04272460938" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (5)" dimension="0" interior="0" model="11495" posX="2253.4096679688" posY="542.06433105469" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (6)" dimension="0" interior="0" model="11495" posX="2231.4619140625" posY="542.05615234375" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (7)" dimension="0" interior="0" model="11495" posX="2241.517578125" posY="530.19165039063" posZ="0.37500005960464" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (des_ranchjetty) (8)" dimension="0" interior="0" model="11495" posX="2209.5092773438" posY="542.05261230469" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (9)" dimension="0" interior="0" model="11495" posX="2187.5620117188" posY="542.07318115234" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (10)" dimension="0" interior="0" model="11495" posX="2165.6091308594" posY="542.06976318359" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (11)" dimension="0" interior="0" model="11495" posX="2307.5891113281" posY="520.15179443359" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (des_ranchjetty) (12)" dimension="0" interior="0" model="11495" posX="2302.4338378906" posY="531.99188232422" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (des_ranchjetty) (13)" dimension="0" interior="0" model="11495" posX="2312.4802246094" posY="542.11419677734" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (14)" dimension="0" interior="0" model="11495" posX="2334.4440917969" posY="542.13201904297" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (des_ranchjetty) (15)" dimension="0" interior="0" model="11495" posX="2344.5842285156" posY="532.08349609375" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (des_ranchjetty) (16)" dimension="0" interior="0" model="11495" posX="2348.373046875" posY="520.21002197266" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (des_ranchjetty) (17)" dimension="0" interior="0" model="11495" posX="2373.3725585938" posY="519.98510742188" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (des_ranchjetty) (18)" dimension="0" interior="0" model="11495" posX="2373.9194335938" posY="531.81182861328" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (laenwblkB1) (2)" dimension="0" interior="0" model="5628" posX="2223.8793945313" posY="616.19622802734" posZ="13.759239196777" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (des_ranchjetty) (21)" dimension="0" interior="0" model="11495" posX="2143.6579589844" posY="542.08605957031" posZ="0.35000005364418" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (laeroad13) (1)" dimension="0" interior="0" model="5442" posX="2267.5849609375" posY="613.20526123047" posZ="9.7593097686768" rotX="0" rotY="0.06500244140625" rotZ="0" />
+</map>

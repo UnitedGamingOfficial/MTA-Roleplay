@@ -1,0 +1,5 @@
+<meta>
+    <info author="UG MTA Scripting Team" type="script" description="Vehicle Description System"/>
+	<script src="c_vehicle_descriptions.lua" type="client"/>
+	<script src="s_vehicle_descriptions.lua" type="server"/>
+</meta>

@@ -1,0 +1,58 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Serverwide Mods System"/>
+
+	<script src="c_mods_system.lua" type="client"/>
+	<script src="c_show_fps.lua" type="client"/>
+	
+	<file src="ls/bustopm.txd"/>
+	<file src="sf/hub_sfse.txd"/>
+	<file src="sf/hubhole_sfse.txd"/>
+	<file src="sf/shops_sfse.txd"/>
+	<file src="sf/oldgarage_sfse.txd"/>
+	<file src="sf/skyscrapper_sfs.txd"/>
+	<file src="sf/navybasefence.txd"/>
+	<!--<file src="sf/mission2_sfse.txd"/>-->
+	<file src="lasxrefdockbox.txd"/>
+	
+	<file src="tags/tags_larifa.txd"/>
+	<file src="tags/tags_laazteca.txd"/>
+	<file src="tags/tags_larollin.txd"/>
+	<file src="tags/tags_laseville.txd"/>
+	
+	<file src="leviathn.txd"/>
+	<file src="leviathn.dff"/>
+	<file src="landstal.txd"/>
+	<file src="nrg500.txd"/>
+	
+	<file src="hotdog.txd"/>
+	<file src="hotdog.dff"/>
+	<file src="mrwhoop.txd"/>
+	<file src="mrwhoop.dff"/>
+	<file src="dft30.dff"/>
+	<!--<file src="tram.txd"/>
+	<file src="tram.dff"/>-->
+	
+	<file src="wheels/wheel_gn1.dff" />
+    <file src="wheels/wheel_gn2.dff" />
+    <file src="wheels/wheel_gn3.dff" />
+    <file src="wheels/wheel_gn4.dff" />
+    <file src="wheels/wheel_gn5.dff" />
+    <file src="wheels/wheel_lr1.dff" />
+	<file src="wheels/wheel_lr2.dff" />
+    <file src="wheels/wheel_lr3.dff" />
+    <file src="wheels/wheel_lr4.dff" />
+    <file src="wheels/wheel_lr5.dff" />
+    <file src="wheels/wheel_or1.dff" />
+    <file src="wheels/wheel_sr1.dff" />
+    <file src="wheels/wheel_sr2.dff" />
+    <file src="wheels/wheel_sr3.dff" />
+    <file src="wheels/wheel_sr4.dff" />
+    <file src="wheels/wheel_sr5.dff" />
+    <file src="wheels/wheel_sr6.dff" />
+	
+	<file src="intruder.txd"/>
+	<file src="intruder.dff"/>
+	
+	<file src="patriot.txd"/>
+	<file src="patriot.dff"/>
+</meta>

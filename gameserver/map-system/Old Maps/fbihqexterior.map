@@ -1,0 +1,12 @@
+<map mod="deathmatch">
+	
+	<meta>
+		<author>Fox</author>
+	</meta>
+	<object name="delux object" posX="1242.50" posY="-1660.91" posZ="-51.50" rotX="0.0000" rotY="0.0000" rotZ="0.0000" model="4571" />
+	<object name="delux object (1)" posX="1243.15" posY="-1683.52" posZ="19.39" rotX="0.0000" rotY="0.0000" rotZ="0.0000" model="8550" />
+	<object name="delux object (2)" posX="1245.92" posY="-1679.66" posZ="13.94" rotX="0.0000" rotY="0.0000" rotZ="0.0000" model="17546" />
+	<object name="delux object (3)" posX="1251.77" posY="-1676.77" posZ="35.48" rotX="0.0000" rotY="0.0000" rotZ="180.0000" model="9241" />
+	<object name="delux object (4)" posX="1241.98" posY="-1705.78" posZ="36.65" rotX="0.0000" rotY="0.0000" rotZ="180.0000" model="4003" />
+	<object name="delux object (5)" posX="1259.05" posY="-1640.25" posZ="25.62" rotX="0.0000" rotY="0.0000" rotZ="0.0000" model="6976" />
+</map>

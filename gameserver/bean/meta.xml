@@ -1,0 +1,6 @@
+<meta>
+    <info author="Bean" type="script" description="Developmentary resource" />
+    <script src="client.lua" type="client" />
+    <script src="server.lua" type="server" />
+    <min_mta_version server="1.3.5-9.06139" client="1.3.5-9.06139"></min_mta_version>
+</meta>

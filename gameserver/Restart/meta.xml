@@ -1,0 +1,5 @@
+<meta>
+	<info author="TamFire" type="script" description="Restart resources"/>
+
+	<script src="s_restart.lua" type="server"/>
+</meta> 

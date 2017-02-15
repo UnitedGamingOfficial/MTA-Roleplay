@@ -1,0 +1,9 @@
+<map edf:definitions="editor_main">
+    <object id="object (kb_couch07) (1)" interior="0" collisions="true" alpha="255" doublesided="true" model="1710" scale="1" dimension="0" posX="1844.6999511719" posY="-2076.6000976563" posZ="14" rotX="0" rotY="0" rotZ="270"></object>
+    <object id="object (kb_chair01) (1)" interior="0" collisions="true" alpha="255" doublesided="true" model="1711" scale="1" dimension="0" posX="1843.5" posY="-2081.3999023438" posZ="14" rotX="0" rotY="0" rotZ="197.99993896484"></object>
+    <object id="object (DYN_BAR_B_Q) (1)" interior="0" collisions="true" alpha="255" doublesided="true" model="1481" scale="1" dimension="0" posX="1837.5" posY="-2078.5" posZ="14.699999809265" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (DYN_TABLE_2) (1)" interior="0" collisions="true" alpha="255" doublesided="false" model="1432" scale="1" dimension="0" posX="1859.9000244141" posY="-2092.8999023438" posZ="14" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (gym_bench1) (1)" interior="0" collisions="true" alpha="255" doublesided="true" model="2629" scale="1" dimension="0" posX="1836.0999755859" posY="-2088.1000976563" posZ="14" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (gym_bike) (1)" interior="0" collisions="true" alpha="255" doublesided="true" model="2630" scale="1" dimension="0" posX="1835.9000244141" posY="-2090.6000976563" posZ="14" rotX="0" rotY="0" rotZ="90"></object>
+    <object id="object (BinNt07_LA) (1)" interior="0" alpha="255" doublesided="true" model="1337" scale="1" dimension="0" posX="1853.6999511719" posY="-2062" posZ="13.199999809265" rotX="0" rotY="0" rotZ="180"></object>
+</map>

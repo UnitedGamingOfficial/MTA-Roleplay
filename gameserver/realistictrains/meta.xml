@@ -1,0 +1,11 @@
+<meta>
+	<info author="vG MTA Scripting Team" type="script" description="Rail system"/>
+
+	<script src="c_rail_signals.lua" type="client" />
+	<script src="s_rail_signals.lua" type="server" />
+	
+	<script src="c_rail_stations.lua" type="client" />
+	
+	<file src="awsclear.wav"/>
+	<file src="awswarn.wav"/>
+</meta>

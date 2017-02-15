@@ -1,0 +1,165 @@
+# To Add a Comment Use a Hashtag - "#".
+
+# Pretty much everything is this .htaccess file is required (in main-directory of the UCP) to run the UCP accordingly.
+
+IndexIgnore *
+
+ErrorDocument 404 /main/404/
+
+# Activate Engine
+RewriteEngine on
+
+#UCP files under /pages/
+RewriteRule ^main/([^/\.]+)/?$ index.php?page=$1 [L]
+
+#UCP files under /pages/ucp/
+RewriteRule ^ucp/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?ucp=$1&param2=$2&param3=$3 [L]
+RewriteRule ^ucp/([^/\.]+)/([^/\.]+)/?$ index.php?ucp=$1&param2=$2 [L]
+RewriteRule ^ucp/([^/\.]+)/?$ index.php?ucp=$1 [L]
+RewriteRule ^ucp(.*)$ $1/ucp/main/$2 [R,L]
+RewriteRule ^control-panel/(.*)$ $1/ucp/main/$2 [R,L] 
+RewriteRule ^control-panel(.*)$ $1/ucp/main/$2 [R,L] 
+
+RewriteRule ^user/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?user=$1&view=$2&extpage=$3 [L]
+
+RewriteRule ^account/([^/\.]+)/?$ index.php?account=$1&isallowed=$2 [L]
+
+RewriteRule ^system/([^/\.]+)/?$ index.php?system=$1 [L]
+RewriteRule ^system/([^/\.]+)/([^/\.]+)/?$ index.php?system=$1 [L]
+RewriteRule ^system/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?system=$1 [L]
+RewriteRule ^system/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ index.php?system=$1&param2=$2&$param3=$3&param4=$4 [L]
+
+RewriteRule ^fairplay/([^/\.]+)/?$ index.php?fairplay=$1 [L]
+
+RewriteRule ^ticketcenter/([^/\.]+)/?$ index.php?tc=$1 [L]
+RewriteRule ^ticketcenter/([^/\.]+)/([^/\.]+)/?$ index.php?tc=$1&view=$2 [L]
+
+RewriteRule ^mdc/([^/\.]+)/([^/\.]+)/?$ main.php [L]
+
+RewriteRule ^admin/([^/\.]+)/?$ index.php?admin=$1 [L]
+RewriteRule ^admin/([^/\.]+)/([^/\.]+)/?$ index.php?admin=$1&action=$2 [L]
+
+RewriteRule ^gz(.*)$ http://unitedgaming.me.uk/$2 [R,L]
+RewriteRule ^gz/(.*)$ http://unitedgaming.me.uk/$2 [R,L]
+
+RewriteRule ^tc/([^/\.]+)/?$ index.php?tc=$1 [L]
+RewriteRule ^tc/([^/\.]+)/([^/\.]+)/?$ index.php?tc=$1&view=$2 [L]
+
+RewriteRule ^support/([^/\.]+)/?$ index.php?tc=$1 [L]
+RewriteRule ^support/([^/\.]+)/([^/\.]+)/?$ index.php?tc=$1&view=$2 [L]
+
+RewriteRule ^logout/(.*)$ /ucp/logout/ [R,L]
+
+
+allow from all
+
+<Files *>
+    Order Deny,Allow 
+    Allow from 192.168.100.123 127.0.0.1
+    Deny from all
+</Files>
+
+
+# Disabled Options or Examples
+#		Hot Linking Prevention - Hot Linking steals bandwidth, however at this time, it is not a problem. Hot linking, if you don't know, is where an image 'direct link' is embed in a document. You can add as many extensions as you wish.
+#.:Hot:Linking:Disabler:.
+#RewriteEngine on
+#RewriteCond %{HTTP_REFERER} !^$
+#RewriteCond %{HTTP_REFERER} !^http://(www.)?your-domain.com/.*$ [NC]
+#RewriteRule \.(gif|jpe?g|png)$ - [F]
+
+# Redirecting "/example", folder like, back ends. ("Redirect Match" example; will redirect all requests to files that end with .html to the index.php file.)
+#.:Redirect:Types:.
+#.:Redirect:Directive:.
+#	Redirect /folder http://www.example.com/newfolder
+#.:Redirect:Permanent:.
+# Redirect permanent /folder http://www.example.com/newfolder
+#.:Redirect:Match:.
+# RedirectMatch "\.html$" http://www.example.com/index.php
+
+
+#
+#
+
+
+# Block bad crawlers, the ones that do bad things.
+SetEnvIfNoCase user-agent  "^BlackWidow" bad_bot=1
+SetEnvIfNoCase user-agent  "^Bot\ mailto:craftbot@yahoo.com" bad_bot=1
+SetEnvIfNoCase user-agent  "^ChinaClaw" bad_bot=1
+SetEnvIfNoCase user-agent  "^Custo" bad_bot=1
+SetEnvIfNoCase user-agent  "^DISCo" bad_bot=1
+SetEnvIfNoCase user-agent  "^Download\ Demon" bad_bot=1
+SetEnvIfNoCase user-agent  "^eCatch" bad_bot=1
+SetEnvIfNoCase user-agent  "^EirGrabber" bad_bot=1
+SetEnvIfNoCase user-agent  "^EmailSiphon" bad_bot=1
+SetEnvIfNoCase user-agent  "^EmailWolf" bad_bot=1
+SetEnvIfNoCase user-agent  "^Express\ WebPictures" bad_bot=1
+SetEnvIfNoCase user-agent  "^ExtractorPro" bad_bot=1
+SetEnvIfNoCase user-agent  "^EyeNetIE" bad_bot=1
+SetEnvIfNoCase user-agent  "^FlashGet" bad_bot=1
+SetEnvIfNoCase user-agent  "^GetRight" bad_bot=1
+SetEnvIfNoCase user-agent  "^GetWeb!" bad_bot=1
+SetEnvIfNoCase user-agent  "^Go!Zilla" bad_bot=1
+SetEnvIfNoCase user-agent  "^Go-Ahead-Got-It" bad_bot=1
+SetEnvIfNoCase user-agent  "^GrabNet" bad_bot=1
+SetEnvIfNoCase user-agent  "^Grafula" bad_bot=1
+SetEnvIfNoCase user-agent  "^HMView" bad_bot=1
+SetEnvIfNoCase user-agent  “HTTrack” bad_bot=1
+SetEnvIfNoCase user-agent  "^Image\ Stripper" bad_bot=1
+SetEnvIfNoCase user-agent  "^Image\ Sucker" bad_bot=1
+SetEnvIfNoCase user-agent  "Indy\ Library" [NC,OR] 
+SetEnvIfNoCase user-agent  "^InterGET" bad_bot=1
+SetEnvIfNoCase user-agent  "^Internet\ Ninja" bad_bot=1
+SetEnvIfNoCase user-agent  "^JetCar" bad_bot=1
+SetEnvIfNoCase user-agent  "^JOC\ Web\ Spider" bad_bot=1
+SetEnvIfNoCase user-agent  "^larbin" bad_bot=1
+SetEnvIfNoCase user-agent  "^LeechFTP" bad_bot=1
+SetEnvIfNoCase user-agent  "^Mass\ Downloader" bad_bot=1
+SetEnvIfNoCase user-agent  "^MIDown\ tool" bad_bot=1
+SetEnvIfNoCase user-agent  "^Mister\ PiX" bad_bot=1
+SetEnvIfNoCase user-agent  "^Navroad" bad_bot=1
+SetEnvIfNoCase user-agent  "^NearSite" bad_bot=1
+SetEnvIfNoCase user-agent  "^NetAnts" bad_bot=1
+SetEnvIfNoCase user-agent  "^NetSpider" bad_bot=1
+SetEnvIfNoCase user-agent  "^Net\ Vampire" bad_bot=1
+SetEnvIfNoCase user-agent  "^NetZIP" bad_bot=1
+SetEnvIfNoCase user-agent  "^Octopus" bad_bot=1
+SetEnvIfNoCase user-agent  "^Offline\ Explorer" bad_bot=1
+SetEnvIfNoCase user-agent  "^Offline\ Navigator" bad_bot=1
+SetEnvIfNoCase user-agent  "^PageGrabber" bad_bot=1
+SetEnvIfNoCase user-agent  "^Papa\ Foto" bad_bot=1
+SetEnvIfNoCase user-agent  "^pavuk" bad_bot=1
+SetEnvIfNoCase user-agent  "^pcBrowser" bad_bot=1
+SetEnvIfNoCase user-agent  "^RealDownload" bad_bot=1
+SetEnvIfNoCase user-agent  "^ReGet" bad_bot=1
+SetEnvIfNoCase user-agent  "^SiteSnagger" bad_bot=1
+SetEnvIfNoCase user-agent  "^SmartDownload" bad_bot=1
+SetEnvIfNoCase user-agent  "^SuperBot" bad_bot=1
+SetEnvIfNoCase user-agent  "^SuperHTTP" bad_bot=1
+SetEnvIfNoCase user-agent  "^Surfbot" bad_bot=1
+SetEnvIfNoCase user-agent  "^tAkeOut" bad_bot=1
+SetEnvIfNoCase user-agent  "^Teleport\ Pro" bad_bot=1
+SetEnvIfNoCase user-agent  "^VoidEYE" bad_bot=1
+SetEnvIfNoCase user-agent  "^Web\ Image\ Collector" bad_bot=1
+SetEnvIfNoCase user-agent  "^Web\ Sucker" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebAuto" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebCopier" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebFetch" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebGo\ IS" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebLeacher" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebReaper" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebSauger" bad_bot=1
+SetEnvIfNoCase user-agent  "^Website\ eXtractor" bad_bot=1
+SetEnvIfNoCase user-agent  "^Website\ Quester" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebStripper" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebWhacker" bad_bot=1
+SetEnvIfNoCase user-agent  "^WebZIP" bad_bot=1
+SetEnvIfNoCase user-agent  "^Widow" bad_bot=1
+SetEnvIfNoCase user-agent  "^WWWOFFLE" bad_bot=1
+SetEnvIfNoCase user-agent  "^Xaldon\ WebSpider" bad_bot=1
+SetEnvIfNoCase user-agent  "^Zeus" bad_bot=1
+<FilesMatch "(.*)">
+Order Allow,Deny
+Allow from all
+Deny from env=bad_botDeny from 97.85.61.183
+</FilesMatch>  

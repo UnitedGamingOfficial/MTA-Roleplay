@@ -1,0 +1,4 @@
+<map edf:definitions="editor_main">
+    <object id="object (Helipad1_las) (1)" dimension="0" interior="0" model="4874" posX="2455.3012695313" posY="2282.150390625" posZ="94.494277954102" rotX="0" rotY="0" rotZ="89.774993896484" />
+    <object id="object (Helipad1_las) (2)" dimension="0" interior="0" model="4874" posX="2467.765625" posY="2284.990234375" posZ="94.494277954102" rotX="0" rotY="0" rotZ="270.07995605469" />
+</map>

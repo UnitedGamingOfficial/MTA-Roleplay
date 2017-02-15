@@ -1,0 +1,8 @@
+<meta>
+	<info author="UnitedGaming MTA Scripting Team" type="script" description="Lottery System"/>
+
+	<script src="s_lottery.lua" type="server"/>
+	<export function="getLotteryJackpot" type="server"/>
+	<export function="getLotteryNumber" type="server"/>
+	<export function="updateLotteryJackpot" type="server"/>
+</meta>

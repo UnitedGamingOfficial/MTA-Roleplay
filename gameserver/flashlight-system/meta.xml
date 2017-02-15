@@ -1,0 +1,16 @@
+<meta>
+	<info author="Ren712, Socialz" name="flashlight-system" type="script" />
+	
+	<script src="c_shader_light.lua" type="client" cache="false" />
+	<script src="s_shader_light.lua" type="server" />
+	
+	<file src="textures/cubebox.dds" type="client" />
+	<file src="shaders/shader_light.fx" type="client" />
+	<file src="shaders/mta-helper.fx" type="client" />
+	<file src="shaders/shader_jaroovka.fx" type="client" />
+	<file src="shaders/shader_null.fx" type="client" />
+	<file src="shaders/flash_light_rays.fx" type="client" />
+	<file src="objects/flashlight.txd" type="client" />
+	<file src="objects/flashlight.dff" type="client" />
+	<file src="sounds/switch.wav" type="client" />
+</meta>

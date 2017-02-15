@@ -1,0 +1,10 @@
+<meta>
+	<info author="Maxime - UG MTA Scripting Team" type="script" description="Trucker Job System"/>
+	
+	<script src="s_trucker_job.lua" type="server"/>
+	<script src="c_trucker_job.lua" type="client"/>
+	<export function="getTruckCapacity" type="server"/>
+	<export function="displayTruckerJob" type="client"/>
+	<export function="resetTruckerJob" type="client"/>
+	
+</meta>

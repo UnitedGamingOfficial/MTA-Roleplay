@@ -1,0 +1,959 @@
+<config>
+    <editor automaticIndentation="true" fontSize="1" useFileManager="false" automaticIdentation="true" notifyOnChange="false" font="sans" showFunctionsFullscreen="false" useResourceSelect="true" showLineNumbers="true"></editor>
+    <transfer createRepository="true" deleteOnQuit="false" mtu="1200"></transfer>
+    <syntax enable="true">
+        <if textColor="1919A0"></if>
+        <else textColor="1919A0"></else>
+        <elseif textColor="1919A0"></elseif>
+        <end textColor="1919A0"></end>
+        <then textColor="1919A0"></then>
+        <and textColor="1919A0"></and>
+        <return textColor="1919A0"></return>
+        <or textColor="1919A0"></or>
+        <not textColor="1919A0"></not>
+        <break textColor="1919A0"></break>
+        <for textColor="1919A0"></for>
+        <in textColor="1919A0"></in>
+        <while textColor="1919A0"></while>
+        <do textColor="1919A0"></do>
+        <source textColor="1919A0"></source>
+        <client textColor="1919A0"></client>
+        <function textColor="009600"></function>
+        <ipairs backColor="F0F0F0" textColor="009600"></ipairs>
+        <pairs backColor="F0F0F0" textColor="009600"></pairs>
+        <local textColor="C87D00"></local>
+        <true textColor="7733BB"></true>
+        <false textColor="7733BB"></false>
+        <nil textColor="404080"></nil>
+        <repeat textColor="1919A0"></repeat>
+        <until textColor="1919A0"></until>
+    </syntax>
+    <specialsyntax>
+        <comment1 textColor="00AF00"></comment1>
+        <comment2 backColor="F0F0F0" textColor="00CF00"></comment2>
+        <string1 textColor="AF0000"></string1>
+        <string2 textColor="AF0000"></string2>
+        <string3 backColor="F0F0F0" textColor="AF0000"></string3>
+    </specialsyntax>
+    <dict colorFunctions="true" functionlistArguments="true" enableHints="true" showHintDescription="true">
+        <client>
+            <functions>
+                <playSoundFrontEnd returnType="bool" arguments="int sound" description="Plays a 2D sound id"></playSoundFrontEnd>
+                <getRadioChannel returnType="int" arguments="" description="Retrives the ID of the currently active radio channel"></getRadioChannel>
+                <getRadioChannelName returnType="string" arguments="int id" description="Returns the id&apos;s radio channel name"></getRadioChannelName>
+                <getSoundEffects returnType="table" arguments="element sound" description="Returns all sound states"></getSoundEffects>
+                <getSoundLength returnType="int" arguments="element theSound" description="Returns the playtime of theSound"></getSoundLength>
+                <getSoundMaxDistance returnType="int" arguments="element sound" description="Returns the maximum audible range of sound"></getSoundMaxDistance>
+                <getSoundMetaTags returnType="table" arguments="element sound" description="Returns the sound&apos;s meta tags"></getSoundMetaTags>
+                <getSoundMinDistance returnType="int" arguments="element sound" description="Returns the minimum falloff distance"></getSoundMinDistance>
+                <getSoundPosition returnType="int" arguments="element sound" description="Returns the sound&apos;s seek position"></getSoundPosition>
+                <getSoundSpeed returnType="float" arguments="element sound"></getSoundSpeed>
+                <getSoundVolume returnType="float" arguments="element sound"></getSoundVolume>
+                <isSoundPaused returnType="bool" arguments="element sound"></isSoundPaused>
+                <playSound returnType="sound" arguments="string path, [ bool looped=false ]" description="Creates and plays an 2D sound element.\nSupported types are MP3, WAV, OGG, RIFF, MOD, XM, IT and S3M"></playSound>
+                <playSound3D returnType="sound" arguments="string path, float x, float y, float z, [ bool looped=false ]" description="Creates and plays an 3D sound element.\nSupported types are MP3, WAV, OGG, RIFF, MOD, XM, IT and S3M"></playSound3D>
+                <setRadioChannel returnType="bool" arguments="int id" description="Tunes the radio channel to id regardless if in vehicle or not."></setRadioChannel>
+                <setSoundEffectEnabled returnType="bool" arguments="element sound, string stateName, bool enable" description="Enables or disables sound&apos;s state"></setSoundEffectEnabled>
+                <setSoundMaxDistance returnType="bool" arguments="element sound, int distance" description="Specifies the maximum falloff distance of sound"></setSoundMaxDistance>
+                <setSoundMinDistance returnType="bool" arguments="element sound, int distance" description="Specifies the minimum falloff distance of sound"></setSoundMinDistance>
+                <setSoundPaused returnType="bool" arguments="element sound, bool paused"></setSoundPaused>
+                <setSoundPosition returnType="bool" arguments="element sound, int pos" description="Moves the sound&apos;s seek position to pos"></setSoundPosition>
+                <setSoundSpeed returnType="bool" arguments="element sound, float speed" description="Multiplies the sound&apos;s playback frequency by speed"></setSoundSpeed>
+                <setSoundVolume returnType="bool" arguments="element sound, float volume"></setSoundVolume>
+                <stopSound returnType="bool" arguments="element sound"></stopSound>
+                <createBlip returnType="blip" arguments="float x, float y, float z, [ int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, int ordering=0, float visibleDistance=99999.0, element visibleTo=root ]" description="Creates an blip element which is displayed as an icon on radar."></createBlip>
+                <createBlipAttachedTo returnType="blip" arguments="element elementToAttachTo, [ int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, int ordering=0, float visibleDistance=99999.0, element visibleTo=root ]" description="Creates an blip element which is an icon displayed on the radar.\nAdditionally, it follows elementToAttachTo on it."></createBlipAttachedTo>
+                <getBlipColor returnType="int int int int" arguments="element blip"></getBlipColor>
+                <getBlipIcon returnType="int" arguments="element blip"></getBlipIcon>
+                <getBlipSize returnType="int" arguments="element blip"></getBlipSize>
+                <setBlipColor returnType="bool" arguments="element blip, int red, int green, int blue, int alpha"></setBlipColor>
+                <setBlipIcon returnType="bool" arguments="element blip, int icon"></setBlipIcon>
+                <setBlipSize returnType="bool" arguments="element blip, int size"></setBlipSize>
+                <getBlipOrdering returnType="int" arguments="element blip" description="Returns the blip&apos;s display priority (Z ordering)"></getBlipOrdering>
+                <setBlipOrdering returnType="bool" arguments="element blip, int ordering" description="Specifies the blip&apos;s display priority (Z ordering)"></setBlipOrdering>
+                <getBlipVisibleDistance returnType="float" arguments="element blip"></getBlipVisibleDistance>
+                <setBlipVisibleDistance returnType="bool" arguments="element blip, float distance"></setBlipVisibleDistance>
+                <fadeCamera returnType="bool" arguments="bool fadeInOrOut, [ float timeToFade=1.0, int r=0, int g=0, int b=0 ]" description="Fades the screen and modulates the volume according to the darkness"></fadeCamera>
+                <getCameraTarget returnType="element" arguments=""></getCameraTarget>
+                <getCameraInterior returnType="int" arguments=""></getCameraInterior>
+                <getCameraMatrix returnType="float float float float float float float float" arguments="" description="Returns x, y, z position and x, y, z target and roll, FOV of camera"></getCameraMatrix>
+                <setCameraTarget returnType="bool" arguments="element target"></setCameraTarget>
+                <setCameraInterior returnType="bool" arguments="int interior"></setCameraInterior>
+                <setCameraMatrix returnType="bool" arguments="float x, float y, float z, float targetX, float targetY, float targetZ, float roll, float FOV"></setCameraMatrix>
+                <setCameraClip returnType="bool" arguments=" bool objects, bool vehicles" description="Defines the camera&apos;s collision type"></setCameraClip>
+                <getCameraView returnType="int" arguments="" description="Returns the camera&apos;s view mode if in vehicle"></getCameraView>
+                <setCameraView returnType="bool" arguments="int mode" description="Sets the camera&apos;s view mode if in vehicle"></setCameraView>
+                <getCameraGoogleEffect returnType="string" arguments="" description="Returns either &apos;normal&apos;, &apos;nightvision&apos; or &apos;thermalvision&apos;"></getCameraGoogleEffect>
+                <setCameraGoogleEffect returnType="bool" arguments="string effectType" description="Switches the camera&apos;s google effect type.\nSupported types are &apos;normal&apos;, &apos;nightvision&apos; or &apos;thermalvision&apos;."></setCameraGoogleEffect>
+                <getCursorPosition returnType="float float float float float" arguments="" description="Returns the mouse position on screen and in world"></getCursorPosition>
+                <isCursorShowing returnType="bool" arguments=""></isCursorShowing>
+                <showCursor returnType="bool" arguments="bool show, [ bool disableControls=true ]" description="Hides or displays the mouse cursor"></showCursor>
+                <dxDrawImage returnType="bool" arguments="int x, int y, int width, int height, var source, [ float rotation=0, int rotationOffsetX=0, int rotationOffsetY=0, int color=white, bool postGUI=false ]" description="Renders an image onto the screen"></dxDrawImage>
+                <dxDrawImageSection returnType="bool" arguments="int x, int y, int width, int height, float u, float v, float usize, float vsize, var source, [ float rotation=0, int rotationOffsetX=0, int rotationOffsetY=0, int color=white, bool postGUI=false ]" description="Renders a section of an image onto the screen"></dxDrawImageSection>
+                <dxDrawLine returnType="bool" arguments="int x, int y, int targetX, int targetY, int color, [ float width=1, bool postGUI=false ]" description="Renders a line onto screen"></dxDrawLine>
+                <dxDrawLine3D returnType="bool" arguments="float x, float y, float z, float targetX, float targetY, float targetZ, int color, [ float width=1, bool postGUI=false, float zBuffer ]" description="Renders a 3D line in world"></dxDrawLine3D>
+                <dxDrawRectangle returnType="bool" arguments="int x, int y, int width, int height" description="Renders a filled rectangle on screen"></dxDrawRectangle>
+                <dxDrawText returnType="bool" arguments='string text, int x, int y, [ int right=x, int bottom=y, int color=white, float scale=1, string font=&quot;default&quot;, string alignX=&quot;left&quot;, string alignY=&quot;top&quot;, bool clip=false, bool wordBreak=false, bool postGUI=false ]' description="Renders a string onto screen"></dxDrawText>
+                <dxGetFontHeight returnType="int" arguments='[ float scale=1, string font=&quot;default&quot; ]' description="Returns the font&apos;s height in relation to scale"></dxGetFontHeight>
+                <dxGetTextWidth returnType="int" arguments='string text, [ float scale=1, string font=&quot;default&quot; ]' description="Returns the string&apos;s width if it were rendered to screen"></dxGetTextWidth>
+                <dxCreateFont returnType="dxfont" arguments="string path, [ int size=9, bool bold=false ]" description="Creates a font element to use with direct3D rendering"></dxCreateFont>
+                <dxCreateTexture returnType="material" arguments="string path" description="Creates a texture element out of a file"></dxCreateTexture>
+                <dxCreateShader returnType="shader string" arguments="string path" description="Creates a .fx shader element out of a file and returns it&apos;s technique"></dxCreateShader>
+                <dxCreateRenderTarget returnType="material" arguments="int width, int height, bool useAlpha" description="Creates a drawing surface to render on.\nNote that creation may fail due to hardware limitations."></dxCreateRenderTarget>
+                <dxCreateScreenSource returnType="material" arguments="int width, int height" description="Creates a additional screen buffer"></dxCreateScreenSource>
+                <dxGetMaterialSize returnType="int int" arguments="element material" description="Returns the material&apos;s dimensions"></dxGetMaterialSize>
+                <dxSetShaderValue returnType="bool" arguments="element shader, string parameter, ..." description="Sets the internal shader parameter to value"></dxSetShaderValue>
+                <dxSetRenderTarget returnType="bool" arguments="[ element renderTarget=screen, bool clear=false ]" description="Defines the render target for the direct3D drawing operations.\nTo reset to screen, give no arguments."></dxSetRenderTarget>
+                <dxUpdateScreenSource returnType="bool" arguments="element screenSource" description="Refreshes a screen buffer"></dxUpdateScreenSource>
+                <dxGetStatus returnType="dictionary" arguments="" description="Retrieves internal rendering information"></dxGetStatus>
+                <dxSetTestMode returnType="bool" arguments="string mode" description="Simulates exceptional situations of the renderer"></dxSetTestMode>
+                <fxAddBlood returnType="bool" arguments="float x, float y, float z, float dirX, flaot dirY, float dirZ, [ int count=1, float brightness=1.0 ]"></fxAddBlood>
+                <fxAddBulletImpact returnType="bool" arguments="float x, float y, float z, float dirX, flaot dirY, float dirZ, [ int smokeSize=1, int count=1, float smokeIntensity=1.0 ]"></fxAddBulletImpact>
+                <fxAddBulletSplash returnType="bool" arguments="float x, float y, float z"></fxAddBulletSplash>
+                <fxAddDebris returnType="bool" arguments="float x, float y, float z, [ int r=255, int g=0, int b=0, int a=255, float scale=1.0, int count=1 ]"></fxAddDebris>
+                <fxAddFootSplash returnType="bool" arguments="float x, float y, float z"></fxAddFootSplash>
+                <fxAddGlass returnType="bool" arguments="float x, float y, float z, [ int r=255, int g=0, int b=0, int a=255, float scale=1.0, int count=1 ]"></fxAddGlass>
+                <fxAddGunshot returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ, [ bool sparks=true ]"></fxAddGunshot>
+                <fxAddPunchImpact returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ"></fxAddPunchImpact>
+                <fxAddSparks returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ, [ float force=1.0, int count=1, float acrossX=0, float acrossY=0, float acrossZ=0, bool blur=false, float spread=1.0, float life=1.0 ]"></fxAddSparks>
+                <fxAddTankFire returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ"></fxAddTankFire>
+                <fxAddTyreBurst returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ"></fxAddTyreBurst>
+                <fxAddWaterHydrant returnType="bool" arguments="float x, float y, float z"></fxAddWaterHydrant>
+                <fxAddWaterSplash returnType="bool" arguments="float x, float y, float z"></fxAddWaterSplash>
+                <fxAddWood returnType="bool" arguments="float x, float y, float z, float dirX, float dirY, float dirZ, [ int count=1, float brightness=1.0 ]"></fxAddWood>
+                <getElementBoundingBox returnType="float float float float float float" arguments="element element" description="Returns the bounding box of an element.\nThis is the minumum and maximum dimensions of it&apos;s model."></getElementBoundingBox>
+                <getElementDistanceFromCentreOfMassToBaseOfModel returnType="float" arguments="element element" description="Returns the model&apos;s positioning offset"></getElementDistanceFromCentreOfMassToBaseOfModel>
+                <getElementRadius returnType="float" arguments="element element"></getElementRadius>
+                <getElementsByType returnType="table" arguments="string type, [ element startAt=root, bool onlyStreamed=false ]" description="Returns all elements which are of type"></getElementsByType>
+                <isElementLocal returnType="bool" arguments="element element" description="Returns whether the element is clientside only"></isElementLocal>
+                <isElementOnScreen returnType="bool" arguments="element element"></isElementOnScreen>
+                <isElementStreamable returnType="bool" arguments="element element" description="Returns true if the element was made streamable"></isElementStreamable>
+                <isElementStreamedIn returnType="bool" arguments="element element"></isElementStreamedIn>
+                <setElementStreamable returnType="bool" arguments="element element, bool enable"></setElementStreamable>
+                <getElementMatrix returnType="table" arguments="element element" description="Returns the element&apos;s 4-dimensional rotation matrix"></getElementMatrix>
+                <isElementSyncer returnType="bool" arguments="element element" description="Returns whether we are the element&apos;s syncer"></isElementSyncer>
+                <isElementCollidableWith returnType="bool" arguments="element element, element collideWith"></isElementCollidableWith>
+                <setElementCollidableWith returnType="bool" arguments="element element, element collideWith, bool enabled"></setElementCollidableWith>
+                <engineImportTXD returnType="bool" arguments="txd texture, int model" description="Imports a RenderWare Texture Dictionary into the engine"></engineImportTXD>
+                <engineLoadCOL returnType="col" arguments="string path" description="Loads a RenderWare Collision file"></engineLoadCOL>
+                <engineLoadDFF returnType="dff" arguments="string path, int model" description="Loads a RenderWare Model"></engineLoadDFF>
+                <engineLoadTXD returnType="txd" arguments="string path, [ bool filtering=true ]" description="Loads a RenderWare Texture Dictionary"></engineLoadTXD>
+                <engineReplaceCOL returnType="bool" arguments="col col, int model" description="Replaces the collision of model by col"></engineReplaceCOL>
+                <engineReplaceModel returnType="bool" arguments="dff dff, int model" description="Replaces the model by a RenderWare Model"></engineReplaceModel>
+                <engineRestoreCOL returnType="bool" arguments="int model" description="Restores the original collision of model"></engineRestoreCOL>
+                <engineRestoreModel returnType="void" arguments="int model" description="Restores the original model"></engineRestoreModel>
+                <engineSetAsynchronousLoading returnType="bool" arguments="bool enable, bool force"></engineSetAsynchronousLoading>
+                <engineSetModelLODDistance returnType="bool" arguments="int model, float distance"></engineSetModelLODDistance>
+                <engineApplyShaderToWorldTexture returnType="bool" arguments="shader shader, string texture"></engineApplyShaderToWorldTexture>
+                <engineRemoveShaderFromWorldTexture returnType="bool" arguments="shader shader, string texture"></engineRemoveShaderFromWorldTexture>
+                <engineGetModelNameFromID returnType="string" arguments="int model" description="Returns the internal model name"></engineGetModelNameFromID>
+                <engineGetModelIDFromName returnType="int" arguments="string name" description="Returns the model from it&apos;s name"></engineGetModelIDFromName>
+                <engineGetModelTextureNames returnType="table" arguments="int id" description="Returns all textures applied to model"></engineGetModelTextureNames>
+                <engineGetModelTextureNames returnType="table" arguments="string name" description="Returns all textures applied to model"></engineGetModelTextureNames>
+                <engineGetVisibleTextureNames returnType="table" arguments='[ string filter=&quot;*&quot;, string modelName ]' description="Returns a table of currently rendered textures filtered by string.\nOptionally you can specify modelName."></engineGetVisibleTextureNames>
+                <engineGetVisibleTextureNames returnType="table" arguments='[ string filter=&quot;*&quot;, int modelID ]' description="Returns a table of currently rendered textures filtered by string.\nOptionally you can specify modelID."></engineGetVisibleTextureNames>
+                <triggerServerEvent returnType="bool" arguments="string eventName, element source, [ ... ]" description="Calls an remove server event"></triggerServerEvent>
+                <createExplosion returnType="bool" arguments="float x, float y, float z, int type, [ bool sound=true, float camShake=-1.0, bool damage=true ]"></createExplosion>
+                <createFire returnType="bool" arguments="float x, float y, float z, [ float size=1.8 ]"></createFire>
+                <getChatboxLayout returnType="dictionary" arguments="" description="Retrives the client&apos;s chatbox layout"></getChatboxLayout>
+                <guiBringToFront returnType="bool" arguments="element gui" description="Pushes GUI element ontop"></guiBringToFront>
+                <guiCreateFont returnType="guifont" arguments="string path, [ float size=9 ]" description="Create a font to use with CEGUI"></guiCreateFont>
+                <guiGetAlpha returnType="bool" arguments="element gui"></guiGetAlpha>
+                <guiGetEnabled returnType="bool" arguments="element gui"></guiGetEnabled>
+                <guiGetFont returnType="var" arguments=" element gui"></guiGetFont>
+                <guiGetInputEnabled returnType="bool" arguments="" description="Returns whether the input focus is set and binds are disallowed"></guiGetInputEnabled>
+                <guiGetInputMode returnType="string" arguments="" description="Returns the current input mode.\nEither &apos;allow_binds&apos;, &apos;no_binds&apos; or &apos;no_binds_when_editing&apos;."></guiGetInputMode>
+                <guiGetPosition returnType="float float" arguments="element gui, bool relative"></guiGetPosition>
+                <guiGetProperties returnType="dictionary" arguments="element gui" description="Returns a dictionary with all CEGUI properties"></guiGetProperties>
+                <guiGetProperty returnType="string" arguments="element gui, string id" description="Returns a CEGUI property by id"></guiGetProperty>
+                <guiGetScreenSize returnType="float float" arguments="" description="Retrives the current screen resolution"></guiGetScreenSize>
+                <guiGetSize returnType="float float" arguments="element gui, bool relative"></guiGetSize>
+                <guiGetText returnType="string" arguments="element gui"></guiGetText>
+                <guiGetVisible returnType="bool" arguments="element gui"></guiGetVisible>
+                <guiMoveToBack returnType="bool" arguments="element gui" description="Drags an GUI element behind all other GUI elements"></guiMoveToBack>
+                <guiSetAlpha returnType="bool" arguments="element gui, int alpha"></guiSetAlpha>
+                <guiSetEnabled returnType="bool" arguments="element gui, bool enabled"></guiSetEnabled>
+                <guiSetFont returnType="bool" arguments="element gui, var font"></guiSetFont>
+                <guiSetInputEnabled returnType="bool" arguments="bool guiInput" description="Switches input focus to either GUI or binds"></guiSetInputEnabled>
+                <guiSetInputMode returnType="bool" arguments="string mode" description="Specifies the current input mode.\nEither &apos;allow_binds&apos;, &apos;no_binds&apos; or &apos;no_binds_when_editing&apos;."></guiSetInputMode>
+                <guiSetPosition returnType="bool" arguments="element gui, float x, float y, bool relative"></guiSetPosition>
+                <guiSetProperty returnType="bool" arguments="element gui, string id, string value" description="Sets a CEGUI property"></guiSetProperty>
+                <guiSetSize returnType="bool" arguments="element gui, float width, float height, bool relative"></guiSetSize>
+                <guiSetText returnType="bool" arguments="element gui, string text"></guiSetText>
+                <guiSetVisible returnType="bool" arguments="element gui, bool visible"></guiSetVisible>
+                <isChatBoxInputActive returnType="bool" arguments=""></isChatBoxInputActive>
+                <isConsoleActive returnType="bool" arguments=""></isConsoleActive>
+                <isDebugViewActive returnType="bool" arguments=""></isDebugViewActive>
+                <isMainMenuActive returnType="bool" arguments=""></isMainMenuActive>
+                <isMTAWindowActive returnType="bool" arguments="" description="Returns true if any MTA system window is active"></isMTAWindowActive>
+                <isTransferBoxActive returnType="bool" arguments=""></isTransferBoxActive>
+                <guiCreateButton returnType="gui-button" arguments="float x, float y, float width, float height, string text, bool relative, [ element parent ]"></guiCreateButton>
+                <guiCheckBoxGetSelected returnType="bool" arguments="element checkbox"></guiCheckBoxGetSelected>
+                <guiCheckBoxSetSelected returnType="bool" arguments="element checkbox, bool selected"></guiCheckBoxSetSelected>
+                <guiCreateCheckBox returnType="gui-checkbox" arguments="float x, float y, float width, float height, string text, bool selected, bool relative, [ element parent ]"></guiCreateCheckBox>
+                <guiCreateComboBox returnType="gui-combobox" arguments="float x, float y, float width, float height, string caption, bool relative, [ element parent ]"></guiCreateComboBox>
+                <guiComboBoxAddItem returnType="int" arguments="element combobox, string value"></guiComboBoxAddItem>
+                <guiComboBoxClear returnType="bool" arguments="element combobox"></guiComboBoxClear>
+                <guiComboBoxGetItemText returnType="string" arguments="element combobox, int index"></guiComboBoxGetItemText>
+                <guiComboBoxSetItemText returnType="bool" arguments="element combobox, int index, string text"></guiComboBoxSetItemText>
+                <guiComboBoxRemoveItem returnType="bool" arguments="element combobox, int index"></guiComboBoxRemoveItem>
+                <guiComboBoxGetSelected returnType="int" arguments="element combobox"></guiComboBoxGetSelected>
+                <guiComboBoxSetSelected returnType="bool" arguments="element combobox, int index"></guiComboBoxSetSelected>
+                <guiCreateEdit returnType="gui-edit" arguments="float x, float y, float width, float height, string text, bool relative, [ element parent ]"></guiCreateEdit>
+                <guiEditSetMasked returnType="bool" arguments="element gui, bool mask" description="Decides whether the edit&apos;s input shall be masked to stars"></guiEditSetMasked>
+                <guiEditSetMaxLength returnType="bool" arguments="element gui, int length"></guiEditSetMaxLength>
+                <guiEditSetReadOnly returnType="bool" arguments="element gui, bool readOnly"></guiEditSetReadOnly>
+                <guiEditSetCaretIndex returnType="bool" arguments="element gui, int offset" description="Sets the cursor position in the edit"></guiEditSetCaretIndex>
+                <guiCreateGridList returnType="gui-gridlist" arguments="float x, float y, float width, float height, bool relative, [ element parent ]"></guiCreateGridList>
+                <guiGridListAddColumn returnType="int" arguments="element gridlist, string title, float width" description="Adds a column to gridlist and returns it&apos;s index (1=first)"></guiGridListAddColumn>
+                <guiGridListAddRow returnType="int" arguments="element gridlist" description="Appends a row to gridlist and returns it&apos;s index (0=first)."></guiGridListAddRow>
+                <guiGridListAutoSizeColumn returnType="bool" arguments="element gridlist, int index" description="Tightly resizes the column so all of it&apos;s text can be viewed"></guiGridListAutoSizeColumn>
+                <guiGridListClear returnType="bool" arguments="element gridlist"></guiGridListClear>
+                <guiGridListGetItemData returnType="string" arguments="element gridlist, int row, int column" description="Returns the data associated with a gridlist field"></guiGridListGetItemData>
+                <guiGridListGetItemText returnType="string" arguments="element gridlist, int row, int column"></guiGridListGetItemText>
+                <guiGridListGetRowCount returnType="int" arguments="element gridlist"></guiGridListGetRowCount>
+                <guiGridListGetSelectedItem returnType="int int" arguments="element gridlist" description="Returns the row and column currently selected"></guiGridListGetSelectedItem>
+                <guiGridListInsertRowAfter returnType="int" arguments="element gridlist, int row" description="Appends a row after a specific row"></guiGridListInsertRowAfter>
+                <guiGridListRemoveColumn returnType="bool" arguments="element gridlist, int index"></guiGridListRemoveColumn>
+                <guiGridListRemoveRow returnType="bool" arguments="element gridlist, int index"></guiGridListRemoveRow>
+                <guiGridListSetItemData returnType="bool" arguments="element gridlist, int row, int column, string value" description="Sets the field&apos;s data storage to value"></guiGridListSetItemData>
+                <guiGridListSetItemText returnType="bool" arguments="element gridlist, int row, int column, string text, bool section, bool number" description="Specifies the text to be shown in a gridlist field.\nBe aware that this function will invalidate your rowIndex if sorting on that column is enabled!"></guiGridListSetItemText>
+                <guiGridListSetScrollBars returnType="bool" arguments="element gridlist, bool horizontal, bool vertical"></guiGridListSetScrollBars>
+                <guiGridListSetSelectedItem returnType="bool" arguments="element gridlist, int row, int column" description="Selects gridlist&apos;s field or row.\nIf you want to clear the selection, pass 0 to row and column."></guiGridListSetSelectedItem>
+                <guiGridListSetSelectionMode returnType="bool" arguments="element gridlist, int mode"></guiGridListSetSelectionMode>
+                <guiGridListSetSortingEnabled returnType="bool" arguments="element gridlist, bool enabled"></guiGridListSetSortingEnabled>
+                <guiGridListGetSelectedCount returnType="int" arguments="element gridlist"></guiGridListGetSelectedCount>
+                <guiGridListGetSelectedItems returnType="table" arguments="element gridlist"></guiGridListGetSelectedItems>
+                <guiGridListSetColumnWidth returnType="bool" arguments="element gridlist, int column, float width, bool relative"></guiGridListSetColumnWidth>
+                <guiGridListGetColumnCount returnType="int" arguments="element gridlist"></guiGridListGetColumnCount>
+                <guiGridListGetItemColor returnType="int int int int" arguments="element gridlist, int row, int column"></guiGridListGetItemColor>
+                <guiGridListSetItemColor returnType="bool" arguments="element gridlist, int row, int column, int r, int g, int b, [ int a=255 ]"></guiGridListSetItemColor>
+                <guiCreateMemo returnType="gui-memo" arguments="float x, float y, float width, float height, string text, bool relative, [ element parent ]" description="Create a multi-line editbox"></guiCreateMemo>
+                <guiMemoSetReadOnly returnType="bool" arguments="element memo, bool readOnly"></guiMemoSetReadOnly>
+                <guiMemoSetCaretIndex returnType="bool" arguments="element memo, int offset"></guiMemoSetCaretIndex>
+                <guiCreateProgressBar returnType="gui-progressbar" arguments="float x, float y, float width, float height, bool relative, [ element parent ]"></guiCreateProgressBar>
+                <guiProgressBarGetProgress returnType="float" arguments="element progressbar"></guiProgressBarGetProgress>
+                <guiProgressBarSetProgress returnType="bool" arguments="element progressbar, float progress"></guiProgressBarSetProgress>
+                <guiCreateRadioButton returnType="gui-radiobutton" arguments="float x, float y, float width, float height, string text, bool relative, [ element parent ]" description="Creates a radio button and joins it to parent&apos;s group."></guiCreateRadioButton>
+                <guiRadioButtonGetSelected returnType="bool" arguments="element radiobutton"></guiRadioButtonGetSelected>
+                <guiRadioButtonSetSelected returnType="bool" arguments="element radiobutton, bool selected"></guiRadioButtonSetSelected>
+                <guiCreateScrollBar returnType="gui-scrollbar" arguments="float x, float y, float width, float height, bool horizontal, bool relative, [ element parent ]"></guiCreateScrollBar>
+                <guiScrollBarGetScrollPosition returnType="float" arguments="element scrollbar"></guiScrollBarGetScrollPosition>
+                <guiScrollBarSetScrollPosition returnType="bool" arguments="element scrollbar, float pos"></guiScrollBarSetScrollPosition>
+                <guiCreateScrollPane returnType="gui-scrollpane" arguments="float x, float y, float width, float height, bool relative, [ element parent ]"></guiCreateScrollPane>
+                <guiScrollPaneGetHorizontalScrollPosition returnType="float" arguments="element scrollpane"></guiScrollPaneGetHorizontalScrollPosition>
+                <guiScrollPaneGetVerticalScrollPosition returnType="float" arguments="element scrollpane"></guiScrollPaneGetVerticalScrollPosition>
+                <guiScrollPaneSetHorizontalScrollPosition returnType="bool" arguments="element scrollpane, float pos"></guiScrollPaneSetHorizontalScrollPosition>
+                <guiScrollPaneSetScrollBars returnType="bool" arguments="element scrollpane, bool horizontal, bool vertical"></guiScrollPaneSetScrollBars>
+                <guiCreateStaticImage returnType="gui-staticimage" arguments="float x, float y, float width, float height, string path, bool relative, [ element parent ]"></guiCreateStaticImage>
+                <guiStaticImageLoadImage returnType="bool" arguments="element image, string path" description="Always returns false."></guiStaticImageLoadImage>
+                <guiCreateTabPanel returnType="gui-tabpanel" arguments="float x, float y, float width, float height, bool relative, [ element parent ]"></guiCreateTabPanel>
+                <guiGetSelectedTab returnType="gui-tab" arguments="element tabpanel"></guiGetSelectedTab>
+                <guiSetSelectedTab returnType="bool" arguments="element tabpanel, element tab"></guiSetSelectedTab>
+                <guiCreateTab returnType="gui-tab" arguments="string caption, element tabpanel"></guiCreateTab>
+                <guiDeleteTab returnType="bool" arguments="element tab, element tabpanel"></guiDeleteTab>
+                <guiCreateLabel returnType="gui-label" arguments="float x, float y, float width, float height, string text, bool relative, [ element parent ]"></guiCreateLabel>
+                <guiLabelGetFontHeight returnType="float" arguments="element label"></guiLabelGetFontHeight>
+                <guiLabelGetTextExtent returnType="int" arguments="element label" description="Returns the width of the label&apos;s text"></guiLabelGetTextExtent>
+                <guiLabelSetColor returnType="bool" arguments="element label, int r, int g, int b"></guiLabelSetColor>
+                <guiLabelSetHorizontalAlign returnType="bool" arguments="element label, string type, [ bool wrapWords=false ]"></guiLabelSetHorizontalAlign>
+                <guiLabelSetVerticalAlign returnType="bool" arguments="element label, string type"></guiLabelSetVerticalAlign>
+                <guiCreateWindow returnType="gui-window" arguments="float x, float y, float width, float height, string title, bool relative"></guiCreateWindow>
+                <guiWindowSetMovable returnType="bool" arguments="element window, bool movable"></guiWindowSetMovable>
+                <guiWindowSetSizable returnType="bool" arguments="element window, bool sizable"></guiWindowSetSizable>
+                <bindKey returnType="void" arguments="string key, string state, function handler, [ ... ]" description="Attaches handler to key"></bindKey>
+                <bindKey returnType="void" arguments="string key, string state, string command, string arguments" description="Specifies the command to execute at key press and allows the client to modify the key in the settings."></bindKey>
+                <unbindKey returnType="bool" arguments="string key, [ string state, function handler ]"></unbindKey>
+                <getKeyState returnType="bool" arguments="string key" description="Returns whether key is being pressed or not"></getKeyState>
+                <getCommandsBoundToKey returnType="table" arguments="string key"></getCommandsBoundToKey>
+                <getFunctionsBoundToKey returnType="table" arguments="string key"></getFunctionsBoundToKey>
+                <getKeyBoundToCommand returnType="string" arguments="string command"></getKeyBoundToCommand>
+                <getKeyBoundToFunction returnType="string" arguments="function handler"></getKeyBoundToFunction>
+                <getControlState returnType="bool" arguments="string name" description="Retrives the engine control state"></getControlState>
+                <isControlEnabled returnType="bool" arguments="string name"></isControlEnabled>
+                <setControlState returnType="bool" arguments="string name, bool active"></setControlState>
+                <toggleControl returnType="bool" arguments="string name, bool enabled"></toggleControl>
+                <toggleAllControls returnType="bool" arguments="bool enabled, [ bool engine=true, bool mta=true ]"></toggleAllControls>
+                <addCommandHandler returnType="void" arguments="string command, function handler( string command, [ ... ] ), [ bool caseSensitive=true ]"></addCommandHandler>
+                <removeCommandHandler returnType="bool" arguments="string command, [ function handler ]"></removeCommandHandler>
+                <executeCommandHandler returnType="bool" arguments="string command, [ string arguments ]"></executeCommandHandler>
+                <getBoundKeys returnType="table" arguments="string key" description="Returns a table with all the keys bound"></getBoundKeys>
+                <getAnalogControlState returnType="float" arguments="string control" description="Returns the senstive control state"></getAnalogControlState>
+                <setCursorPosition returnType="bool" arguments="int x, float y"></setCursorPosition>
+                <createMarker returnType="marker" arguments='float x, float y, float z, [ string type=&quot;checkpoint&quot;, float size=4.0, int r=0, int g=0, int b=255, int a=255 ]'></createMarker>
+                <outputChatBox returnType="bool" arguments="string text, [ int r=255, int g=255, int b=255, bool colorCoded=false ]"></outputChatBox>
+                <outputConsole returnType="bool" arguments="string text"></outputConsole>
+                <showChat returnType="bool" arguments="bool visible"></showChat>
+                <canPedBeKnockedOffBike returnType="bool" arguments="element oed"></canPedBeKnockedOffBike>
+                <getPedAnimationData returnType="dictionary" arguments="element ped" description="Returns a dictionary with ped&apos;s current animation data"></getPedAnimationData>
+                <getPedAnimation returnType="string string" arguments="element ped" description="Returns the animation context and type"></getPedAnimation>
+                <getPedBonePosition returnType="float float float" arguments="element ped, int index" description="Returns the 3D world trasnformed bone position"></getPedBonePosition>
+                <getPedControlState returnType="bool" arguments="element ped, string control" description="Returns the engine control state of ped"></getPedControlState>
+                <getPedMoveState returnType="string" arguments="element ped" description="Returns the ped&apos;s state of movement"></getPedMoveState>
+                <getPedSimplestTask returnType="string" arguments="element ped"></getPedSimplestTask>
+                <getPedTargetCollision returnType="float float float" arguments="element ped"></getPedTargetCollision>
+                <getPedTargetEnd returnType="float float float" arguments="element ped" description="Returns the ped&apos;s aim ranged target position if he were pointing a gun"></getPedTargetEnd>
+                <getPedTargetRange returnType="float" arguments="element ped" description="Returns the weapon range of the ped"></getPedTargetRange>
+                <getPedTargetStart returnType="float float float" arguments="element ped" description="Returns the ped&apos;s weapon muzzle position"></getPedTargetStart>
+                <getPedTask returnType="string string string string" arguments="element ped, string priority, int type" description="Returns strings starting with the most complex task"></getPedTask>
+                <getPedVoice returnType="string string" arguments="element ped"></getPedVoice>
+                <getPlayerWantedLevel returnType="int" arguments=""></getPlayerWantedLevel>
+                <isPedDoingTask returnType="bool" arguments="element ped, string task"></isPedDoingTask>
+                <setPedAimTarget returnType="bool" arguments="element ped, float x, float y, float z"></setPedAimTarget>
+                <setPedCameraRotation returnType="bool" arguments="element ped, float rot"></setPedCameraRotation>
+                <setPedCanBeKnockedOffBike returnType="bool" arguments="element ped, bool enabled"></setPedCanBeKnockedOffBike>
+                <setPedControlState returnType="bool" arguments="element ped, string id, bool active"></setPedControlState>
+                <setPedLookAt returnType="bool" arguments="element ped, float x, float y, float z, [ int time=3000, element target ]" description="Forces ped to turn it&apos;s head to the position or the target"></setPedLookAt>
+                <setPedVoice returnType="bool" arguments="element ped, string type, string name"></setPedVoice>
+                <getLocalPlayer returnType="player" arguments=""></getLocalPlayer>
+                <isPlayerMapForced returnType="bool" arguments="" description="Returns whether the player radar is forced on or not"></isPlayerMapForced>
+                <isPlayerMapVisible returnType="bool" arguments=""></isPlayerMapVisible>
+                <showPlayerHudComponent returnType="bool" arguments="string component, bool visible" description="Shows or hides a GUI component of the engine"></showPlayerHudComponent>
+                <getPlayerMapBoundingBox returnType="int int int int" arguments="" description="Returns the bounding box of the radar texture"></getPlayerMapBoundingBox>
+                <getPlayerMoney returnType="int" arguments=""></getPlayerMoney>
+                <givePlayerMoney returnType="bool" arguments="int amount"></givePlayerMoney>
+                <setPlayerMoney returnType="bool" arguments="int amount"></setPlayerMoney>
+                <takePlayerMoney returnType="bool" arguments="int amount"></takePlayerMoney>
+                <createProjectile returnType="projetile" arguments="element creator, int type, [ float x, float y, float z, float force=1.0, element target=nil, float rotX, float rotY, float rotZ, float velX, float velY, float velZ, int model ]"></createProjectile>
+                <getProjectileCreator returnType="element" arguments="element projectile"></getProjectileCreator>
+                <getProjectileForce returnType="float" arguments="element projectile"></getProjectileForce>
+                <getProjectileTarget returnType="element" arguments="element projectile"></getProjectileTarget>
+                <getProjectileType returnType="int" arguments="element projectile"></getProjectileType>
+                <detonateSatchels returnType="bool" arguments="" description="Fires off all placed satchels"></detonateSatchels>
+                <createRadarArea returnType="radarArea" arguments="float x, float y, float width, float height, int r, int g, int b, int a" description="Creates an radar area which is displayed as a colored rectangle"></createRadarArea>
+                <getPerformanceStats returnType="dictionary" arguments=""></getPerformanceStats>
+                <getNetworkStats returnType="dictionary" arguments=""></getNetworkStats>
+                <setClipboard returnType="bool" arguments="string value" description="Inserts value into the operating system clipboard to paste from"></setClipboard>
+                <getResourceGUIElement returnType="guiroot" arguments="[ resource resource=getThisResource() ]" description="Returns the guiroot of resource"></getResourceGUIElement>
+                <getPlayerSerial returnType="string" arguments=""></getPlayerSerial>
+                <tocolor returnType="int" arguments="int r, int g, int b, [ int a=255 ]"></tocolor>
+                <getVehicleAdjustableProperty returnType="int" arguments="element vehicle" description="Returns the adjustment of vehicle&apos;s dynamic component"></getVehicleAdjustableProperty>
+                <getVehicleCurrentGear returnType="int" arguments="element vehicle"></getVehicleCurrentGear>
+                <setVehicleAdjustableProperty returnType="bool" arguments="element vehicle, int value" description="Adjusts the dynamic component of vehicle"></setVehicleAdjustableProperty>
+                <getHelicopterRotoSpeed returnType="float" arguments="element vehicle"></getHelicopterRotoSpeed>
+                <getVehicleGravity returnType="float float float" arguments="element vehicle" description="Returns the direction vector vehicle is falling"></getVehicleGravity>
+                <setHelicopterRotorSpeed returnType="bool" arguments="element vehicle, float speed"></setHelicopterRotorSpeed>
+                <setVehicleGravity returnType="bool" arguments="element vehicle, float dirX, float dirY, float dirZ" description="Specifies the vehicle&apos;s gravity direction vector"></setVehicleGravity>
+                <getWaterLevel returnType="float" arguments="float x, float y, float z" description="Returns the water level at position or returns false if there is no water"></getWaterLevel>
+                <setWaterLevel returnType="bool" arguments="water water, float level"></setWaterLevel>
+                <setWaterLevel returnType="bool" arguments="float level"></setWaterLevel>
+                <setWaterLevel returnType="bool" arguments="float x, float y, float z, float level"></setWaterLevel>
+                <getAircraftMaxHeight returnType="float" arguments=""></getAircraftMaxHeight>
+                <getGroundPosition returnType="float" arguments="float x, float y, float z" description="Returns the Z position of the ground underneath position"></getGroundPosition>
+                <getJetpackMaxHeight returnType="float" arguments=""></getJetpackMaxHeight>
+                <getScreenFromWorldPosition returnType="float float" arguments="float x, float y, float z" description="Returns the screen position as seen on the world"></getScreenFromWorldPosition>
+                <getWorldFromScreenPosition returnType="float float float" arguments="float x, float y, float depth" description="Retrives the world position as seen on screen"></getWorldFromScreenPosition>
+                <isLineOfSightClear returnType="bool" arguments="float x, float y, float z, float targetX, float targetY, float targetZ, [ bool buldings=true, bool vehicles=true, bool peds=true, bool objects=true, bool dummies=true, bool polygonTrace=false, bool ignoreSpecial=false, element ignore=nil ]" description="Traces along a line and returns true on collision"></isLineOfSightClear>
+                <processLineOfSight returnType="bool float float float element float float float int int int" arguments="float x, float y, float z, float targetX, float targetY, float targetZ, [ bool buldings=true, bool vehicles=true, bool peds=true, bool objects=true, bool dummies=true, bool polygonTrace=false, bool ignoreSpecial=false, element ignore=nil ]" description="Traces along a line and returns collision info.\nReturns collided, position of collision, hitElement, hitNormal, lighting on hit surface, surface material id, body or vehicle part."></processLineOfSight>
+                <setAircraftMaxHeight returnType="bool" arguments="float height" description="Sets the height aircraft may actually ascend to"></setAircraftMaxHeight>
+                <testLineAgainstWater returnType="bool float float float" arguments="float x, float y, float z, float targetX, float targetY, float targetZ" description="Traces a line and reports water vertex collision"></testLineAgainstWater>
+                <getGarageBoundingBox returnType="float float float float float float" arguments="int id" description="Returns the bounding box of a garage"></getGarageBoundingBox>
+                <getGaragePosition returnType="float float float" arguments="int id"></getGaragePosition>
+                <getGarageSize returnType="float float float" arguments="int id" description="Returns the garage&apos;s dimensions"></getGarageSize>
+                <getBlurLevel returnType="int" arguments="" description="Returns the current blur level"></getBlurLevel>
+                <isWorldSpecialPropertyEnabled returnType="bool" arguments="string name" description="Checks whether a cheat code is active"></isWorldSpecialPropertyEnabled>
+                <setWorldSpecialPropertyEnabled returnType="bool" arguments="string name, bool active" description="Enables or disables a cheat code"></setWorldSpecialPropertyEnabled>
+            </functions>
+        </client>
+        <server>
+            <functions>
+                <addAccount returnType="account" arguments="string user, string password"></addAccount>
+                <copyAccountData returnType="bool" arguments="account to, account from" description="Copies all account data to another account"></copyAccountData>
+                <getAccount returnType="account" arguments="string user, [ string password ]" description="Returns the account matching username and optionally password"></getAccount>
+                <getAccountData returnType="string" arguments="account account, string key"></getAccountData>
+                <getAccountName returnType="string" arguments="account account"></getAccountName>
+                <getAccountPlayer returnType="player" arguments="account account" description="Returns the player currently logged into account"></getAccountPlayer>
+                <getAccounts returnType="table" arguments=""></getAccounts>
+                <isGuestAccount returnType="bool" arguments="account account" description="Checks whether account is of guest or not.\nGuest accounts are created on join and therefor flag logged out players."></isGuestAccount>
+                <logIn returnType="bool" arguments="player player, account account, string password"></logIn>
+                <logOut returnType="bool" arguments="player player"></logOut>
+                <removeAccount returnType="bool" arguments="account account" description="Deletes account"></removeAccount>
+                <setAccountData returnType="bool" arguments="account account, string key, string value" description="Stores string value under data in account.\nAccount data is preserved across sessions."></setAccountData>
+                <setAccountPassword returnType="bool" arguments="account account, string password"></setAccountPassword>
+                <aclCreate returnType="acl" arguments="string name"></aclCreate>
+                <aclCreateGroup returnType="aclgroup" arguments="string name"></aclCreateGroup>
+                <aclDestroy returnType="bool" arguments="acl acl"></aclDestroy>
+                <aclDestroyGroup returnType="bool" arguments="aclgroup group"></aclDestroyGroup>
+                <aclGet returnType="acl" arguments="string name"></aclGet>
+                <aclGetGroup returnType="aclgroup" arguments="string name"></aclGetGroup>
+                <aclGetName returnType="string" arguments="acl acl"></aclGetName>
+                <aclGetRight returnType="bool" arguments="acl acl, string right" description="Returns whether right is granted to acl"></aclGetRight>
+                <aclGroupList returnType="table" arguments="" description="Returns all acl groups in a table"></aclGroupList>
+                <aclGroupAddACL returnType="bool" arguments="aclgroup group, acl acl"></aclGroupAddACL>
+                <aclGroupAddObject returnType="bool" arguments="aclgroup group, string object" description="Adds a ownership or relation to group"></aclGroupAddObject>
+                <aclGroupGetName returnType="string" arguments="aclgroup group"></aclGroupGetName>
+                <aclGroupListACL returnType="table" arguments="aclgroup group"></aclGroupListACL>
+                <aclGroupListObjects returnType="table" arguments="aclgroup group" description="Returns all ownerships and relations"></aclGroupListObjects>
+                <aclGroupRemoveACL returnType="bool" arguments="aclgroup group, acl acl"></aclGroupRemoveACL>
+                <aclGroupRemoveObject returnType="bool" arguments="aclgrouo group, string object"></aclGroupRemoveObject>
+                <aclList returnType="table" arguments=""></aclList>
+                <aclListRights returnType="table" arguments="acl acl"></aclListRights>
+                <aclReload returnType="bool" arguments="" description="Refreshes the engine&apos;s ACL configuration and invalidates all ACL instances."></aclReload>
+                <aclRemoveRights returnType="bool" arguments="acl acl, string right"></aclRemoveRights>
+                <aclSave returnType="bool" arguments="" description="Saves the ACL configuration to disk"></aclSave>
+                <aclSetRight returnType="bool" arguments="acl acl, string right, bool access" description="Defines a new rule to acl"></aclSetRight>
+                <hasObjectPermissionTo returnType="bool" arguments="string object, string right, [ bool default=true ]"></hasObjectPermissionTo>
+                <hasObjectPermissionTo returnType="bool" arguments="element element, string right, [ bool default=true ]"></hasObjectPermissionTo>
+                <isObjectInACLGroup returnType="bool" arguments="string object, aclgroup group"></isObjectInACLGroup>
+                <banPlayer returnType="ban" arguments="player player, [ bool ip=true, bool username=true, bool serial=false, player responsible=nil, string reason=nil, int duration=0 ]"></banPlayer>
+                <kickPlayer returnType="bool" arguments="player player, [ player responsible, string reason ]"></kickPlayer>
+                <kickPlayer returnType="bool" arguments="player player, [ string reason ]"></kickPlayer>
+                <addBan returnType="ban" arguments="string ip, string username, string serial, player responsible, string reason, int duration=0 ]"></addBan>
+                <getBanAdmin returnType="string" arguments="ban ban" description="Returns the responsible admin for ban"></getBanAdmin>
+                <getBanIP returnType="string" arguments="ban ban"></getBanIP>
+                <getBanNick returnType="string" arguments="ban ban"></getBanNick>
+                <getBanReason returnType="string" arguments="ban ban"></getBanReason>
+                <getBans returnType="table" arguments=""></getBans>
+                <getBanSerial returnType="string" arguments="ban ban"></getBanSerial>
+                <getBanTime returnType="int" arguments="ban ban" description="Returns the time in seconds the ban was created"></getBanTime>
+                <getBanUsername returnType="string" arguments="ban ban"></getBanUsername>
+                <getUnbanTime returnType="int" arguments="ban ban" description="Returns the time in seconds needed to unban"></getUnbanTime>
+                <removeBan returnType="bool" arguments="ban ban"></removeBan>
+                <playSoundFrontEnd returnType="bool" arguments="player player int index" description="Plays a 2D sound"></playSoundFrontEnd>
+                <getGameType returnType="string" arguments=""></getGameType>
+                <getMapName returnType="string" arguments=""></getMapName>
+                <getRuleValue returnType="string" arguments="string key"></getRuleValue>
+                <removeRuleValue returnType="bool" arguments="string key"></removeRuleValue>
+                <setGameType returnType="bool" arguments="string type"></setGameType>
+                <setMapName returnType="bool" arguments="string name"></setMapName>
+                <setRuleValue returnType="bool" arguments="string key, string value"></setRuleValue>
+                <createBlip returnType="blip" arguments="float x, float y, float z, [ int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, int ordering=0, float visibleDistance=99999.0, element visibleTo=root ]" description="Creates a blip which is displayed as an icon on radar"></createBlip>
+                <createBlipAttachedTo returnType="blip" arguments="element attachedTo, [ int icon=0, int size=2, int r=255, int g=0, int b=0, int a=255, int ordering=0, float visibleDistance=99999.0, element visibleTo=root ]" description="Creates a blip which is displayed as an icon on radar"></createBlipAttachedTo>
+                <fadeCamera returnType="bool" arguments="player player, bool fadeIn, [ float duration=1.0, int r=0, int g=0, int b=0 ]"></fadeCamera>
+                <getCameraInterior returnType="int" arguments="player player"></getCameraInterior>
+                <getCameraMatrix returnType="float float float float float float" arguments="player player" description="Returns the camera position and the pointing to location"></getCameraMatrix>
+                <getCameraTarget returnType="element" arguments="player player"></getCameraTarget>
+                <setCameraInterior returnType="bool" arguments="player player int interior"></setCameraInterior>
+                <setCameraMatrix returnType="bool" arguments="player player, float x, float y, float z, [ float targetX, float targetY, float targetZ, float roll=0, float fov=70 ]"></setCameraMatrix>
+                <setCameraTarget returnType="bool" arguments="player player, [ element target=player ]"></setCameraTarget>
+                <isCursorShowing returnType="bool" arguments="player player"></isCursorShowing>
+                <showCursor returnType="bool" arguments="player player, bool visible, [ bool disableControls=true ]"></showCursor>
+                <clearElementVisibleTo returnType="bool" arguments="element element" description="Restores the element&apos;s visibility to default"></clearElementVisibleTo>
+                <cloneElement returnType="bool" arguments="element element, [ float x, float y, float z, bool closeChildren=false ]" description="Copies element"></cloneElement>
+                <getElementsByType returnType="table" arguments="string type, [ element parentFrom=root ]" description="Returns all elements of type in a table"></getElementsByType>
+                <getElementZoneName returnType="string" arguments="element element, [ bool onlyCities=false ]"></getElementZoneName>
+                <isElementVisibleTo returnType="bool" arguments="element element, player visibleTo"></isElementVisibleTo>
+                <removeElementData returnType="bool" arguments="element element, string key"></removeElementData>
+                <setElementSyncer returnType="bool" arguments="element element, player syncer" description="Selects syncer to process element and send it&apos;s information to the server"></setElementSyncer>
+                <setElementVisibleTo returnType="bool" arguments="element element, player visibleTo, bool visible"></setElementVisibleTo>
+                <getElementSyncer returnType="player" arguments="element element"></getElementSyncer>
+                <getCancelReason returnType="string" arguments=""></getCancelReason>
+                <triggerClientEvent returnType="bool" arguments="string name, element source, [ ... ]" description="Calls an remove client event"></triggerClientEvent>
+                <triggerClientEvent returnType="bool" arguments="player client, string name, element source, [ ... ]" description="Calls an remove client event for client only"></triggerClientEvent>
+                <createExplosion returnType="bool" arguments="float x, float y, float z, int type, [ player creator ]"></createExplosion>
+                <bindKey returnType="void" arguments="player player, string key, string state, function handler, [ ... ]"></bindKey>
+                <bindKey returnType="void" arguments="player player, string key, string state, string command, [ string arguments ]" description="Binds command to key and state.\nAllows the user to chage the key in settings."></bindKey>
+                <getControlState returnType="bool" arguments="player player, string control" description="Returns the engine control state"></getControlState>
+                <getFunctionsBoundToKey returnType="table" arguments="player player, string key"></getFunctionsBoundToKey>
+                <getCommandsBoundToKey returnType="table" arguments="player player, string key"></getCommandsBoundToKey>
+                <getKeyBoundToFunction returnType="string" arguments="player player, function handler"></getKeyBoundToFunction>
+                <getKeyBoundToCommand returnType="string" arguments="player player, string command"></getKeyBoundToCommand>
+                <isControlEnabled returnType="bool" arguments="player player, string control"></isControlEnabled>
+                <isKeyBound returnType="bool" arguments="player player, string key, [ string state, function handler ]"></isKeyBound>
+                <setControlState returnType="bool" arguments="player player, string control, bool active"></setControlState>
+                <toggleAllControls returnType="bool" arguments="player player, bool enabled, [ bool engine=true, bool mta=true ]"></toggleAllControls>
+                <toggleControl returnType="bool" arguments="player player, string control, bool enabled"></toggleControl>
+                <unbindKey returnType="bool" arguments="player player, string key, [ string state, function handler ]"></unbindKey>
+                <loadMapData returnType="maproot" arguments="xmlnode node, element parent"></loadMapData>
+                <resetMapInfo returnType="bool" arguments="[ player player=root ]" description="Resets the world"></resetMapInfo>
+                <saveMapData returnType="bool" arguments="xmlnode node, element start, [ bool childrenOnly=false ]"></saveMapData>
+                <createMarker returnType="marker" arguments='float x, float y, float z, [ string type=&quot;checkpoint&quot;, int size=4, int r=0, int g=0, int b=255, int a=255, element visibleTo=root ]'></createMarker>
+                <getLoadedModules returnType="table" arguments="" description="Returns a table of all loaded arbitrary modules"></getLoadedModules>
+                <getModuleInfo returnType="dictionary" arguments="string name"></getModuleInfo>
+                <getPedOccupiedVehicleSeat returnType="int" arguments="ped ped" description="Returns the seat ped is sitting in a vehicle"></getPedOccupiedVehicleSeat>
+                <givePedJetPack returnType="bool" arguments="ped ped"></givePedJetPack>
+                <isPedDead returnType="bool" arguments="ped ped"></isPedDead>
+                <killPed returnType="bool" arguments="ped ped, [ ped killer, int weapon=255, int bodyPart=255, bool stealth ]"></killPed>
+                <reloadPedWeapon returnType="bool" arguments="ped ped"></reloadPedWeapon>
+                <removePedFromVehicle returnType="bool" arguments="ped ped"></removePedFromVehicle>
+                <removePedJetPack returnType="bool" arguments="ped ped"></removePedJetPack>
+                <warpPedIntoVehicle returnType="bool" arguments="ped ped, vehicle vehicle, [ int seat=0 ]"></warpPedIntoVehicle>
+                <getPickupRespawnInterval returnType="int" arguments="pickup pickup"></getPickupRespawnInterval>
+                <isPickupSpawned returnType="bool" arguments="pickup pickup"></isPickupSpawned>
+                <setPickupRespawnInterval returnType="bool" arguments="pickup pickup, int ms"></setPickupRespawnInterval>
+                <usePickup returnType="bool" arguments="pickup pickup, player player"></usePickup>
+                <detonateSatchels returnType="bool" arguments="player player"></detonateSatchels>
+                <forcePlayerMap returnType="bool" arguments="player player, bool active" description="Forcefully display the player&apos;s radar map"></forcePlayerMap>
+                <getAlivePlayers returnType="table" arguments=""></getAlivePlayers>
+                <getDeadPlayers returnType="table" arguments=""></getDeadPlayers>
+                <getPlayerAnnounceValue returnType="string" arguments="player player, string key"></getPlayerAnnounceValue>
+                <getPlayerBlurLevel returnType="int" arguments="player player"></getPlayerBlurLevel>
+                <getPlayerCount returnType="int" arguments=""></getPlayerCount>
+                <getPlayerMoney returnType="int" arguments="player player"></getPlayerMoney>
+                <getPlayerVersion returnType="string" arguments="player player"></getPlayerVersion>
+                <getPlayerWantedLevel returnType="int" arguments="player player"></getPlayerWantedLevel>
+                <getRandomPlayer returnType="player" arguments=""></getRandomPlayer>
+                <givePlayerMoney returnType="bool" arguments="player player, int amount"></givePlayerMoney>
+                <isPlayerMapForced returnType="bool" arguments="player player"></isPlayerMapForced>
+                <isPlayerMuted returnType="bool" arguments="player player"></isPlayerMuted>
+                <setPlayerAnnounceValue returnType="bool" arguments="player player, string key, string value"></setPlayerAnnounceValue>
+                <setPlayerBlurLevel returnType="bool" arguments="player player, int level"></setPlayerBlurLevel>
+                <setPlayerMoney returnType="bool" arguments="player player, int amount"></setPlayerMoney>
+                <setPlayerMuted returnType="bool" arguments="player player, bool muted"></setPlayerMuted>
+                <setPlayerTeam returnType="bool" arguments="player player, team team"></setPlayerTeam>
+                <setPlayerWantedLevel returnType="bool" arguments="player player, int level"></setPlayerWantedLevel>
+                <showPlayerHudComponent returnType="bool" arguments="player player, string component, bool visible" description="Shows or hides a engine GUI component"></showPlayerHudComponent>
+                <spawnPlayer returnType="bool" arguments="player player, float x, float y, float z, [ float rotation=0, int model=0, int interior=0, int dimension=0, team team ]" description="Spawns the player into world"></spawnPlayer>
+                <takePlayerMoney returnType="bool" arguments="player player, int amount"></takePlayerMoney>
+                <getPlayerAccount returnType="account" arguments="player player" description="Returns the account the player is currently logged into"></getPlayerAccount>
+                <getPlayerIP returnType="string" arguments="player player"></getPlayerIP>
+                <redirectPlayer returnType="bool" arguments="player player, string ip, int port, [ string password ]" description="Sends the player to another MTA server"></redirectPlayer>
+                <setPlayerName returnType="bool" arguments="player player, string name"></setPlayerName>
+                <isVoiceEnabled returnType="bool" arguments="" description="Checks whether voice support has been enabled in mtaserver.conf"></isVoiceEnabled>
+                <setPlayerVoiceBroadcastTo returnType="bool" arguments="player player, player target" description="Redirects player&apos;s voice broadcast to target"></setPlayerVoiceBroadcastTo>
+                <setPlayerVoiceBroadcastTo returnType="bool" arguments="player player, table players" description="Broadcasts player&apos;s voice to a set of players"></setPlayerVoiceBroadcastTo>
+                <setPlayerVoiceIgnoreFrom returnType="bool" arguments="player player, player ignore" description="Blocks voice streams from ignore to not reach player"></setPlayerVoiceIgnoreFrom>
+                <setPlayerVoiceIgnoreFrom returnType="bool" arguments="player player, table ignorePlayers" description="Blocks a set of players voice stream to not reach player"></setPlayerVoiceIgnoreFrom>
+                <createRadarArea returnType="radararea" arguments="float x, float y, float width, float height, [ int r=255, int g=0, int b=0, int a=255, player visibleTo=root ]" description="Creates an radar area which is a colored rectangle"></createRadarArea>
+                <addResourceConfig returnType="xmlnode" arguments='string path, [ string type=&quot;server&quot; ]' description="Adds a empty configuration file"></addResourceConfig>
+                <addResourceMap returnType="xmlnode" arguments="string path, [ int dimension=0 ]" description="Adds a empty map file"></addResourceMap>
+                <callRemote returnType="bool" arguments="string host, string resource, string function, string url, function handler, [ ... ]" description="Calls a exported remote function at another MTA server"></callRemote>
+                <copyResource returnType="bool" arguments="resource resource, string new"></copyResource>
+                <createResource returnType="resource" arguments="string name"></createResource>
+                <getResourceInfo returnType="string" arguments="resource resource, string key"></getResourceInfo>
+                <getResourceLastStartTime returnType="int" arguments="resource resource"></getResourceLastStartTime>
+                <getResourceLoadFailureReason returnType="string" arguments="resource resource"></getResourceLoadFailureReason>
+                <getResourceLoadTime returnType="int" arguments="resource resource"></getResourceLoadTime>
+                <getResourceMapRootElement returnType="maproot" arguments="resource resource, string map"></getResourceMapRootElement>
+                <getResources returnType="table" arguments=""></getResources>
+                <getResourceState returnType="string" arguments="resource resource"></getResourceState>
+                <refreshResources returnType="bool" arguments="[ bool remove=false ]" description="Removes invalid resources and adds new ones"></refreshResources>
+                <removeResourceDefaultSetting returnType="bool" arguments="resource resource, string key"></removeResourceDefaultSetting>
+                <removeResourceFile returnType="bool" arguments="resource resource, string path"></removeResourceFile>
+                <restartResource returnType="bool" arguments="resource resource"></restartResource>
+                <setResourceDefaultSetting returnType="bool" arguments="resource resource, string key, string value"></setResourceDefaultSetting>
+                <startResource returnType="bool" arguments="resource resource, [ bool persistent=false, bool startIncluded=true, bool serverConfigs=true, bool maps=true, bool serverScripts=true, bool html=true, bool clientConfigs=true, bool clientScripts=true, bool files=true ]"></startResource>
+                <stopResource returnType="bool" arguments="resource resource"></stopResource>
+                <setResourceInfo returnType="bool" arguments="resource resource, string key, string value"></setResourceInfo>
+                <getPlayerSerial returnType="string" arguments="player player"></getPlayerSerial>
+                <getPlayerCommunityID returnType="string" arguments="player player"></getPlayerCommunityID>
+                <addCommandHandler returnType="bool" arguments="string name, function handler, [ bool restricted=false, bool caseSensitive=true ]"></addCommandHandler>
+                <executeCommandHandler returnType="bool" arguments="string name, player responsible, [ string arguments ]"></executeCommandHandler>
+                <fromJSON returnType="[ ... ]" arguments="string json" description="Returns all variables inside the JSON string"></fromJSON>
+                <getFPSLimit returnType="int" arguments=""></getFPSLimit>
+                <getMaxPlayers returnType="int" arguments=""></getMaxPlayers>
+                <getServerHttpPort returnType="int" arguments=""></getServerHttpPort>
+                <getServerName returnType="string" arguments=""></getServerName>
+                <getServerPassword returnType="string" arguments=""></getServerPassword>
+                <getServerPort returnType="int" arguments=""></getServerPort>
+                <isGlitchEnabled returnType="bool" arguments="string id"></isGlitchEnabled>
+                <outputChatBox returnType="bool" arguments="string text, [ element visibleTo=root, int r=255, int g=255, int b=255, bool colorCoded=false ]"></outputChatBox>
+                <outputConsole returnType="string text, [ element visibleTo=root ]" arguments=""></outputConsole>
+                <outputServerLog returnType="bool" arguments="string text"></outputServerLog>
+                <setFPSLimit returnType="bool" arguments="int count"></setFPSLimit>
+                <setGlitchEnabled returnType="bool" arguments="string name, bool active"></setGlitchEnabled>
+                <setServerPassword returnType="bool" arguments="string password"></setServerPassword>
+                <showChat returnType="bool" arguments="player player, bool visible"></showChat>
+                <shutdown returnType="bool" arguments="string reason" description="Saves all settings and terminates the server"></shutdown>
+                <toJSON returnType="string" arguments="..." description="Converts arguments into a JSON string"></toJSON>
+                <get returnType="var" arguments="string key" description="Retrives a value from registry"></get>
+                <set returnType="bool" arguments="string key, string value" description="Saves a value into registry"></set>
+                <executeSQLCreateTable returnType="bool" arguments="string name, string definition"></executeSQLCreateTable>
+                <executeSQLDelete returnType="bool" arguments="string name, string conditions"></executeSQLDelete>
+                <executeSQLDropTable returnType="bool" arguments="string name"></executeSQLDropTable>
+                <executeSQLInsert returnType="bool" arguments="string name, string values, [ string columns ]"></executeSQLInsert>
+                <executeSQLQuery returnType="dictionary" arguments="string query, [ ... ]"></executeSQLQuery>
+                <executeSQLSelect returnType="table" arguments="string name, string fields, [ string conditions, int maxRows ]"></executeSQLSelect>
+                <executeSQLUpdate returnType="bool" arguments="string name, string query, [ string conditions ]"></executeSQLUpdate>
+                <createTeam returnType="team" arguments="string name, int r, int g, int b"></createTeam>
+                <setPlayerTeam returnType="bool" arguments="player player, team team" description="Joins player into team"></setPlayerTeam>
+                <setTeamColor returnType="bool" arguments="team team, int r, int g, int b"></setTeamColor>
+                <setTeamFriendlyFire returnType="bool" arguments="team team, bool active"></setTeamFriendlyFire>
+                <setTeamName returnType="bool" arguments="team team, string name"></setTeamName>
+                <textCreateDisplay returnType="textdisplay" arguments=""></textCreateDisplay>
+                <textCreateTextItem returnType="textitem" arguments='string text, float x, float y, int priority, int r, int g, int b, [ int a=255, float scale=1.0, string alignX=&quot;left&quot;, string alignY=&quot;top&quot;, int shadowAlpha=0 ]'></textCreateTextItem>
+                <textDestroyDisplay returnType="bool" arguments="textdisplay display"></textDestroyDisplay>
+                <textDestroyTextItem returnType="void" arguments="textitem item"></textDestroyTextItem>
+                <textDisplayAddObserver returnType="void" arguments="textdisplay display, player player"></textDisplayAddObserver>
+                <textDisplayAddText returnType="void" arguments="textdisplay display, textitem item"></textDisplayAddText>
+                <textDisplayRemoveObserver returnType="bool" arguments="textdisplay display, player player"></textDisplayRemoveObserver>
+                <textDisplayRemoveText returnType="void" arguments="textdisplay display, textitem item"></textDisplayRemoveText>
+                <textItemGetColor returnType="int int int int" arguments="textitem item"></textItemGetColor>
+                <textItemGetPosition returnType="float float" arguments="textitem item"></textItemGetPosition>
+                <textItemGetPriority returnType="int" arguments="textitem item"></textItemGetPriority>
+                <textItemGetScale returnType="float" arguments="textitem item"></textItemGetScale>
+                <textItemGetText returnType="string" arguments="textitem item"></textItemGetText>
+                <textItemSetColor returnType="bool" arguments="textitem item, int r, int g, int b, int a"></textItemSetColor>
+                <textItemSetPosition returnType="bool" arguments="textitem item, float x, float y"></textItemSetPosition>
+                <textItemSetPriority returnType="void" arguments="textitem item, int priority"></textItemSetPriority>
+                <textItemSetScale returnType="bool" arguments="textitem item, float scale"></textItemSetScale>
+                <textItemSetText returnType="void" arguments="textitem item, string text"></textItemSetText>
+                <textDisplayGetObservers returnType="table" arguments="textdisplay display"></textDisplayGetObservers>
+                <textDisplayIsObserver returnType="bool" arguments="textdisplay display, player player"></textDisplayIsObserver>
+                <getPerformanceStats returnType="dictionary" arguments="[ player player=nil ]"></getPerformanceStats>
+                <getNetworkStats returnType="dictionary" arguments="[ player player=nil ]"></getNetworkStats>
+                <getServerConfigSetting returnType="string" arguments="string key" description="Returns a configuration setting saved in the mtaserver.conf"></getServerConfigSetting>
+                <setServerConfigSetting returnType="bool" arguments="string key, string value" description="Updates mtaserver.conf by key"></setServerConfigSetting>
+                <getVehiclesOfType returnType="table" arguments="int model" description="Returns a table of all vehicles matching model"></getVehiclesOfType>
+                <resetVehicleExplosionTime returnType="bool" arguments="vehicle vehicle"></resetVehicleExplosionTime>
+                <resetVehicleIdleTime returnType="bool" arguments="vehicle vehicle"></resetVehicleIdleTime>
+                <respawnVehicle returnType="bool" arguments="vehicle vehicle"></respawnVehicle>
+                <setVehicleIdleRespawnDelay returnType="bool" arguments="vehicle vehicle, int duration"></setVehicleIdleRespawnDelay>
+                <setVehicleRespawnDelay returnType="bool" arguments="vehicle vehicle, int duration"></setVehicleRespawnDelay>
+                <setVehicleRespawnPosition returnType="bool" arguments="vehicle vehicle, float x, float y, float z, [ float rotX=0, float rotY=0, float rotZ=0 ]"></setVehicleRespawnPosition>
+                <setVehicleHandling returnType="bool" arguments="vehicle vehicle, string key, string value"></setVehicleHandling>
+                <spawnVehicle returnType="bool" arguments="vehicle vehicle, float x, float y, float z, [ float rotX, float rotY, float rotZ ]"></spawnVehicle>
+                <toggleVehicleRespawn returnType="bool" arguments="vehicle vehicle, bool active"></toggleVehicleRespawn>
+                <giveWeapon returnType="bool" arguments="ped ped, int weapon, [ int ammo=30, bool setAsCurrent=false ]"></giveWeapon>
+                <giveWeaponAmmo returnType="bool" arguments="ped ped, int weapon, int ammo"></giveWeaponAmmo>
+                <setWeaponAmmo returnType="bool" arguments="ped ped, int weapon, int ammo, [ int inClip=0 ]"></setWeaponAmmo>
+                <takeAllWeapons returnType="bool" arguments="ped ped"></takeAllWeapons>
+                <takeWeapon returnType="bool" arguments="ped ped, int weapon"></takeWeapon>
+                <takeWeaponAmmo returnType="void" arguments="ped ped, int weapon, int ammo"></takeWeaponAmmo>
+            </functions>
+        </server>
+        <shared>
+            <functions>
+                <addPedClothes returnType="bool" arguments="element ped, string texture, string model, int type" description="Changes ped&apos;s clothes if CJ skin"></addPedClothes>
+                <createPed returnType="ped" arguments="int model, float x, float y, float z, [ float row=0.0 ]"></createPed>
+                <doesPedHaveJetPack returnType="bool" arguments=""></doesPedHaveJetPack>
+                <getPedClothes returnType="string string" arguments="element ped, int type" description="Returns the ped&apos;s clothes texture and model at type"></getPedClothes>
+                <getBodyPartName returnType="string" arguments="int id" description="Returns the body part name of id"></getBodyPartName>
+                <getClothesByTypeIndex returnType="string string" arguments="int type, int index"></getClothesByTypeIndex>
+                <getClothesTypeName returnType="string" arguments="int type"></getClothesTypeName>
+                <getTypeIndexFromClothes returnType="int int" arguments="string texture, string model"></getTypeIndexFromClothes>
+                <createColCircle returnType="colshape" arguments="float x, float y, float radius"></createColCircle>
+                <createColCuboid returnType="colshape" arguments="float x, float y, float z, float width, float depth, float height"></createColCuboid>
+                <createColRectangle returnType="colshape" arguments="float x, float y, float width, float height"></createColRectangle>
+                <createColSphere returnType="colshape" arguments="float x, float y, float z, float radius"></createColSphere>
+                <createColTube returnType="colshape" arguments="float x, float y, float z, float radius, float height"></createColTube>
+                <createColPolygon returnType="colshape" arguments="float x, float y, float z, float, x2, float y2, float z2, float x3, float y3, float z3, ..."></createColPolygon>
+                <createElement returnType="element" arguments="string type, [ string id ]" description="Creates an dummy element"></createElement>
+                <destroyElement returnType="bool" arguments="element element"></destroyElement>
+                <getAttachedElements returnType="table" arguments="element element" description="Returns a table with all elements attached to element"></getAttachedElements>
+                <getElementAttachedOffsets returnType="float float float float float float" arguments="element element" description="Returns the position and rotation offset of an attached element"></getElementAttachedOffsets>
+                <getElementsCollisionEnabled returnType="bool" arguments="element element" description="Returns whether the element is physically interacting with the world"></getElementsCollisionEnabled>
+                <getElementAttachedTo returnType="element" arguments="element element"></getElementAttachedTo>
+                <getElementByID returnType="element" arguments="string id" description="Returns the first element in the maproot by id"></getElementByID>
+                <getElementChild returnType="element" arguments="element parent, int index" description="Returns a child by index (0 = first)"></getElementChild>
+                <getElementChildren returnType="table" arguments="element parent"></getElementChildren>
+                <getElementChildrenCount returnType="int" arguments="element parent"></getElementChildrenCount>
+                <getElementData returnType="var" arguments="element element, string key, [ bool inherit=false ]" description="Returns an element&apos;s stored script data"></getElementData>
+                <getElementDimension returnType="int" arguments="element element"></getElementDimension>
+                <getElementHealth returnType="float" arguments="element element"></getElementHealth>
+                <getElementID returnType="string" arguments="element element"></getElementID>
+                <getElementInterior returnType="int" arguments="element element"></getElementInterior>
+                <getElementParent returnType="element" arguments="element element"></getElementParent>
+                <getElementPosition returnType="float float float" arguments="element element"></getElementPosition>
+                <getElementsWithinColShape returnType="table" arguments="element colshape, [ string type ]"></getElementsWithinColShape>
+                <getElementType returnType="string" arguments="element element"></getElementType>
+                <getElementVelocity returnType="float float float" arguments="element element"></getElementVelocity>
+                <getRootElement returnType="root" arguments="" description="Returns the element which all elements are children of.\nDEPRECATED: Use global &apos;root&apos; instead!"></getRootElement>
+                <isElement returnType="bool" arguments="var value"></isElement>
+                <isElementAttached returnType="bool" arguments="element element" description="Returns whether element is attached to another element or not"></isElementAttached>
+                <isElementWithinColShape returnType="bool" arguments="element element, element colshape"></isElementWithinColShape>
+                <setElementAlpha returnType="bool" arguments="element element, int alpha"></setElementAlpha>
+                <setElementCollisionsEnabled returnType="bool" arguments="element element, bool enabled" description="Turns the element&apos;s physical interactions on or off"></setElementCollisionsEnabled>
+                <setElementData returnType="bool" arguments="element element, string key, var value, [ bool synch=true ]"></setElementData>
+                <setElementDimension returnType="bool" arguments="element element, int dimension"></setElementDimension>
+                <setElementDoubleSided returnType="bool" arguments="element element, bool enable" description="Specifies whether the engine shall cull inside surfaces or not"></setElementDoubleSided>
+                <setElementHealth returnType="bool" arguments="element element, float health"></setElementHealth>
+                <setElementID returnType="bool" arguments="element element, string id"></setElementID>
+                <setElementInterior returnType="bool" arguments="element element, int interior, [ float x, float y, float z ]" description="Sets the element&apos;s interior and optionally teleport it"></setElementInterior>
+                <setElementParent returnType="bool" arguments="element element, element parent"></setElementParent>
+                <setElementPosition returnType="bool" arguments="element element, float x, float y, float z, [ bool warp=true ]"></setElementPosition>
+                <setElementVelocity returnType="bool" arguments="element element, float velX, float velY, float velZ"></setElementVelocity>
+                <attachElements returnType="bool" arguments="element element, element attachTo, [ float offX=0, float offY=0, float offZ=0, float offRotX=0, float offRotY=0, float offRotZ=0 ]" description="Attaches element onto another element"></attachElements>
+                <detachElements returnType="bool" arguments="element element" description="Detaches the element from the attached to element"></detachElements>
+                <getElementColShape returnType="colshape" arguments="element element"></getElementColShape>
+                <getElementModel returnType="int" arguments="element element"></getElementModel>
+                <getElementRotation returnType="float float float" arguments='element element, [ string rotOrder=&quot;default&quot; ]' description="Returns the element&apos;s rotation and optionally rearranges to rotOrder"></getElementRotation>
+                <isElementInWater returnType="bool" arguments="element element"></isElementInWater>
+                <setElementModel returnType="bool" arguments="element element, int model"></setElementModel>
+                <setElementRotation returnType="bool" arguments="element element, float rotX, float rotY, float rotZ, [ string rotOrder ]"></setElementRotation>
+                <isElementDoubleSided returnType="bool" arguments="element element" description="Returns whether the engine culls out inner surfaces"></isElementDoubleSided>
+                <addEvent returnType="void" arguments="string name, [ bool allowRemote ]"></addEvent>
+                <addEventHandler returnType="bool" arguments="string eventName, element parentFrom, function handler, [ bool childCall=true ]"></addEventHandler>
+                <cancelEvent returnType="bool" arguments='[ bool cancel=true, string reason=&quot;&quot; ]' description="Notifies the engine to cancel the event&apos;s effects"></cancelEvent>
+                <removeEventHandler returnType="bool" arguments="string eventName, element parentFrom, function handler"></removeEventHandler>
+                <triggerEvent returnType="bool" arguments="string eventName, element source, [ ... ]" description="Calls an event from source"></triggerEvent>
+                <wasEventCancelled returnType="bool" arguments="" description="Checks whether event was cancelled"></wasEventCancelled>
+                <fileClose returnType="bool" arguments="file file"></fileClose>
+                <fileCreate returnType="file" arguments="string path"></fileCreate>
+                <fileDelete returnType="bool" arguments="string path"></fileDelete>
+                <fileOpen returnType="file" arguments="string path"></fileOpen>
+                <fileFlush returnType="bool" arguments="file file" description="Writes file buffers to disk"></fileFlush>
+                <fileExists returnType="bool" arguments="string path"></fileExists>
+                <fileGetPos returnType="int" arguments="file file" description="Returns the file&apos;s seek"></fileGetPos>
+                <fileGetSize returnType="int" arguments="file file"></fileGetSize>
+                <fileIsEOF returnType="bool" arguments="file file" description="Returns whether the file seek reached end of file"></fileIsEOF>
+                <fileRead returnType="string" arguments="file file, int count"></fileRead>
+                <fileRename returnType="bool" arguments="string path, string dest"></fileRename>
+                <fileSetPos returnType="bool" arguments="file file, int seek" description="Sets the file&apos;s seek"></fileSetPos>
+                <fileWrite returnType="int" arguments="file file, string writeString, [ ... ]" description="Writes one or more string to a file and returns the written count"></fileWrite>
+                <getMarkerColor returnType="int int int int" arguments="element marker"></getMarkerColor>
+                <getMarkerCount returnType="int" arguments="" description="Returns the count of elements of type &apos;marker&apos;"></getMarkerCount>
+                <getMarkerIcon returnType="string" arguments="element marker" description="Returns the virtual icon displayed inside of marker"></getMarkerIcon>
+                <getMarkerSize returnType="float" arguments="element marker"></getMarkerSize>
+                <getMarkerTarget returnType="float float float" arguments="element marker" description="Returns the position marker points to"></getMarkerTarget>
+                <setMarkerColor returnType="bool" arguments="element marker, int r, int g, int b, int a"></setMarkerColor>
+                <setMarkerIcon returnType="bool" arguments="element marker, string type"></setMarkerIcon>
+                <setMarkerSize returnType="bool" arguments="element marker, float size"></setMarkerSize>
+                <setMarkerTarget returnType="bool" arguments="element marker, float x, float y, float z" description="Specifies the point marker shall point to"></setMarkerTarget>
+                <setMarkerType returnType="bool" arguments="element marker, string type"></setMarkerType>
+                <createObject returnType="object" arguments="int model, float x, float y, float z, [ float rotX=0, float rotY=0, float rotZ=0 ]"></createObject>
+                <moveObject returnType="bool" arguments='element object, int timeMS, float x, float y, float z, [ float rotX=current, float rotY=current, float rotZ=current, string easingType=&quot;Linear&quot;, float easingPeriod, float easingAmplitude, float easingOvershoot ]'></moveObject>
+                <getObjectRotation returnType="float float float" arguments="element object"></getObjectRotation>
+                <setObjectRotation returnType="bool" arguments="element object, float x, float y, float z"></setObjectRotation>
+                <setObjectScale returnType="bool" arguments="element object, float scale" description="Sets the object&apos;s visual scale"></setObjectScale>
+                <stopObject returnType="bool" arguments="element object"></stopObject>
+                <isObjectStatic returnType="bool" arguments="element object" description="Checks whether the object is physically interacting with the world"></isObjectStatic>
+                <setObjectStatic returnType="bool" arguments="Switches the object&apos;s physical interaction on or off"></setObjectStatic>
+                <outputDebugString returnType="bool" arguments="string text, [ int level=3, int r=255, int g=255, int b=255 ]" description="Outputs text into the debug view"></outputDebugString>
+                <createPed returnType="ped" arguments="int model, float x, float y, float z, [ float rot=0 ]"></createPed>
+                <doesPedHaveJetPack returnType="bool" arguments="element ped"></doesPedHaveJetPack>
+                <getPedAmmoInClip returnType="int" arguments="element ped, [ int slot=current ]"></getPedAmmoInClip>
+                <getPedArmor returnType="int" arguments="element ped"></getPedArmor>
+                <getPedContactElement returnType="element" arguments="element ped" description="Returns the element ped is standing on"></getPedContactElement>
+                <getPedOccupiedVehicle returnType="vehicle" arguments="element ped"></getPedOccupiedVehicle>
+                <getPedRotation returnType="float" arguments="element ped" description="Returns the ped&apos;s Z rotation"></getPedRotation>
+                <getPedStat returnType="float" arguments="element ped, int stat"></getPedStat>
+                <getPedTarget returnType="element" arguments="element ped"></getPedTarget>
+                <getPedTotalAmmo returnType="int" arguments="element ped, [ int slot=current ]"></getPedTotalAmmo>
+                <getPedWeapon returnType="int" arguments="element ped, [ int slot=current ]"></getPedWeapon>
+                <getPedWeaponMuzzlePosition returnType="float float float" arguments="element ped"></getPedWeaponMuzzlePosition>
+                <getPedWeaponSlot returnType="int" arguments="element ped"></getPedWeaponSlot>
+                <isPedChoking returnType="bool" arguments="element ped"></isPedChoking>
+                <isPedDoingGangDriveby returnType="bool" arguments="element ped"></isPedDoingGangDriveby>
+                <isPedDucked returnType="bool" arguments="element ped"></isPedDucked>
+                <isPedFrozen returnType="bool" arguments="element ped"></isPedFrozen>
+                <isPedHeadless returnType="bool" arguments="element ped"></isPedHeadless>
+                <isPedInVehicle returnType="bool" arguments="element ped"></isPedInVehicle>
+                <isPedOnFire returnType="bool" arguments="element ped"></isPedOnFire>
+                <isPedOnGround returnType="bool" arguments="element ped"></isPedOnGround>
+                <setPedAnimation returnType="bool" arguments="element ped, [ string context=nil, string type=nil, int time=-1, bool loop=true, bool updatePosition=true, bool interruptable=true, bool freezeLastFrame=true ]" description="Performs animation type of context on ped.\nNot passing any arguments will stop ped&apos;s animation."></setPedAnimation>
+                <setPedAnimationProgress returnType="bool" arguments="element ped, string currentAnim, float progress" description="Sets the ped&apos;s animation to progress and disabled animation processing of the engine"></setPedAnimationProgress>
+                <setPedDoingGangDriveby returnType="bool" arguments="element ped, bool active"></setPedDoingGangDriveby>
+                <setPedFrozen returnType="bool" arguments="element ped, bool frozen"></setPedFrozen>
+                <setPedHeadless returnType="bool" arguments="element ped, bool headless"></setPedHeadless>
+                <setPedOnFire returnType="bool" arguments="element ped, bool active"></setPedOnFire>
+                <setPedRotation returnType="bool" arguments="element ped, float rot" description="Sets the ped&apos;s Z rotation"></setPedRotation>
+                <setPedWeaponSlot returnType="bool" arguments="element ped, int slot"></setPedWeaponSlot>
+                <getValidPedModels returnType="table" arguments="" description="Returns a table of all available ped models"></getValidPedModels>
+                <createPickup returnType="pickup" arguments="float x, float y, float z, int type, int amount, [ int respawnTime=30000 ]"></createPickup>
+                <createPickup returnType="pickup" arguments="float x, float y, float z, int type, int weapon, [ int respawnTime=30000, int ammo=30 ]"></createPickup>
+                <createPickup returnType="pickup" arguments="float x, float y, float z, int type, int model, [ int respawnTime=30000 ]"></createPickup>
+                <getPickupAmmo returnType="int" arguments="element pickup"></getPickupAmmo>
+                <getPickupAmount returnType="int" arguments="element pickup"></getPickupAmount>
+                <getPickupType returnType="int" arguments="element pickup"></getPickupType>
+                <getPickupWeapon returnType="int" arguments="element pickup"></getPickupWeapon>
+                <setPickupType returnType="bool" arguments="element pickup, int type, int amount"></setPickupType>
+                <setPickupType returnType="bool" arguments="element pickup, int type, int weapon, [ int ammo=30 ]"></setPickupType>
+                <setPickupType returnType="bool" arguments="element pickup, int type, int model"></setPickupType>
+                <getPlayerFromName returnType="player" arguments="string name"></getPlayerFromName>
+                <getPlayerName returnType="string" arguments="element player"></getPlayerName>
+                <getPlayerNametagColor returnType="int int int" arguments="element player"></getPlayerNametagColor>
+                <getPlayerNametagText returnType="string" arguments="element player"></getPlayerNametagText>
+                <getPlayerPing returnType="int" arguments="element player"></getPlayerPing>
+                <getPlayerTeam returnType="team" arguments="element player"></getPlayerTeam>
+                <isPlayerDead returnType="bool" arguments="element player"></isPlayerDead>
+                <setPlayerNametagColor returnType="bool" arguments="element player, int r, int g, int b"></setPlayerNametagColor>
+                <setPlayerNametagColor returnType="bool" arguments="element player, false" description="Resets the nametag color to team default"></setPlayerNametagColor>
+                <setPlayerNametagShowing returnType="bool" arguments="element player, bool visible"></setPlayerNametagShowing>
+                <setPlayerNametagText returnType="bool" arguments="element player, string text"></setPlayerNametagText>
+                <getRadarAreaColor returnType="int int int int" arguments="element radararea"></getRadarAreaColor>
+                <getRadarAreaSize returnType="float float" arguments="element radararea"></getRadarAreaSize>
+                <isInsideRadarArea returnType="bool" arguments="element radararea, float x, float y"></isInsideRadarArea>
+                <isRadarAreaFlashing returnType="bool" arguments="element radararea"></isRadarAreaFlashing>
+                <setRadarAreaColor returnType="bool" arguments="element radararea, int r, int g, int b, int a"></setRadarAreaColor>
+                <setRadarAreaFlashing returnType="bool" arguments="element radararea, bool active"></setRadarAreaFlashing>
+                <setRadarAreaSize returnType="bool" arguments="element radararea, float width, float height"></setRadarAreaSize>
+                <call returnType="[ ... ]" arguments="resource resource, string functionName, [ ... ]" description="Executes another resource&apos;s function and returns it&apos;s values"></call>
+                <getResourceConfig returnType="xmlnode" arguments="string path" description="Returns a xmlnode of a configuration file"></getResourceConfig>
+                <getResourceDynamicRootElement returnType="element" arguments="resource resource"></getResourceDynamicRootElement>
+                <getResourceExportedFunctions returnType="table" arguments="resource resource"></getResourceExportedFunctions>
+                <getResourceFromName returnType="resource" arguments="string name"></getResourceFromName>
+                <getResourceName returnType="string" arguments="resource resource"></getResourceName>
+                <getResourceRootElement returnType="element" arguments="[ resource resource=getThisResource() ]"></getResourceRootElement>
+                <getThisResource returnType="resource" arguments=""></getThisResource>
+                <countPlayersInTeam returnType="int" arguments="team team" description="Returns the number of players in team"></countPlayersInTeam>
+                <getTeamColor returnType="int int int" arguments="team team"></getTeamColor>
+                <getTeamFriendlyFire returnType="bool" arguments="team team"></getTeamFriendlyFire>
+                <getTeamFromName returnType="team" arguments="string name"></getTeamFromName>
+                <getTeamName returnType="string" arguments="team team"></getTeamName>
+                <getPlayersInTeam returnType="table" arguments="team team"></getPlayersInTeam>
+                <getDistanceBetweenPoints2D returnType="float" arguments="float x, float y, float x2, float y2"></getDistanceBetweenPoints2D>
+                <getDistanceBetweenPoints3D returnType="float" arguments="float x, float y, float z, float x2, float y2, float z2"></getDistanceBetweenPoints3D>
+                <getEasingValue returnType="float" arguments="float progress, string type, [ float period, float amplitude, float overshoot ]" description="Returns a result of a interpolation"></getEasingValue>
+                <interpolateBetween returnType="float float float" arguments="float x, float y, float z, float x2, float y2, float z2, float progress, string type, [ float period, float amplitude, float overshoot ]" description="Returns a interpolated vector"></interpolateBetween>
+                <getColorFromString returnType="int int int int" arguments="string color"></getColorFromString>
+                <getRealTime returnType="dictionary" arguments="[ int seconds=current ]" description="Returns the system time"></getRealTime>
+                <getTickCount returnType="int" arguments="" description="Returns the runtime of the operating system environment"></getTickCount>
+                <getTimerDetails returnType="int int int" arguments="timer timer" description="Returns the time left till next execution, the number of times it still has to execute and the total amount of execution."></getTimerDetails>
+                <getTimers returnType="table" arguments="[ int timeLeft ]"></getTimers>
+                <gettok returnType="string" arguments="string text, int token, string seperator"></gettok>
+                <killTimer returnType="bool" arguments="timer timer"></killTimer>
+                <resetTimer returnType="bool" arguments="timer timer" description="Resets the timer&apos;s execution status"></resetTimer>
+                <setTimer returnType="timer" arguments="function handler, int interval, int count, [ ... ]" description="Executes a handler after time milliseconds"></setTimer>
+                <split returnType="table" arguments="string text, int seperatingChar" description="Splits a string into a table of substrings"></split>
+                <getVersion returnType="dictionary" arguments="" description="Returns the MTA version alongside with system details"></getVersion>
+                <isTimer returnType="bool" arguments="var var"></isTimer>
+                <md5 returnType="string" arguments="string string" description="Converts string into it&apos;s md5 hash representation"></md5>
+                <utfChar returnType="void" arguments=""></utfChar>
+                <utfCode returnType="void" arguments=""></utfCode>
+                <utfLen returnType="void" arguments=""></utfLen>
+                <utfSeek returnType="void" arguments=""></utfSeek>
+                <utfSub returnType="void" arguments=""></utfSub>
+                <addVehicleUpgrade returnType="bool" arguments="element vehicle, int upgrade"></addVehicleUpgrade>
+                <attachTrailerToVehicle returnType="bool" arguments="element vehicle, element trailer"></attachTrailerToVehicle>
+                <blowVehicle returnType="bool" arguments="element vehicle"></blowVehicle>
+                <createVehicle returnType="vehicle" arguments="int model, float x, float y, float z, [ float rotX=0, float rotY=0, float rotZ=0, string numberPlate ]"></createVehicle>
+                <detachTrailerFromVehicle returnType="bool" arguments="element vehicle"></detachTrailerFromVehicle>
+                <fixVehicle returnType="bool" arguments="element vehicle" description="Repair a vehicle"></fixVehicle>
+                <getVehicleColor returnType="int int int int int int int int int int int int" arguments="element vehicle, bool rgb" description="Returns either the 4 color identifiers or the RGB colors of vehicle"></getVehicleColor>
+                <getVehicleCompatibleUpgrades returnType="table" arguments="element vehicle, [ int slot ]"></getVehicleCompatibleUpgrades>
+                <getVehicleController returnType="ped" arguments="element vehicle" description="Returns the ped or player in charge of vehicle"></getVehicleController>
+                <getVehicleDoorState returnType="int" arguments="element vehicle, int door"></getVehicleDoorState>
+                <getVehicleEngineState returnType="bool" arguments="element vehicle" description="Returns whether vehicle&apos;s engine is on or off"></getVehicleEngineState>
+                <getVehicleLandingGearDown returnType="bool" arguments="element vehicle"></getVehicleLandingGearDown>
+                <getVehicleLightState returnType="int" arguments="element vehicle, int index"></getVehicleLightState>
+                <getVehicleMaxPassengers returnType="int" arguments="element vehicle"></getVehicleMaxPassengers>
+                <getVehicleMaxPassengers returnType="int" arguments="int model"></getVehicleMaxPassengers>
+                <getVehicleName returnType="string" arguments="element vehicle"></getVehicleName>
+                <getVehicleOccupant returnType="ped" arguments="element vehicle"></getVehicleOccupant>
+                <getVehicleOccupants returnType="table" arguments="element vehicle"></getVehicleOccupants>
+                <getVehicleOverrideLights returnType="int" arguments="element vehicle"></getVehicleOverrideLights>
+                <getVehiclePaintjob returnType="int" arguments="element vehicle"></getVehiclePaintjob>
+                <getVehiclePanelState returnType="int" arguments="element vehicle, int index"></getVehiclePanelState>
+                <getVehiclePlateText returnType="bool" arguments="element vehicle"></getVehiclePlateText>
+                <getVehicleRotation returnType="float float float" arguments="element vehicle"></getVehicleRotation>
+                <getVehicleSirensOn returnType="bool" arguments="element vehicle"></getVehicleSirensOn>
+                <getVehicleTowedByVehicle returnType="vehicle" arguments="element vehicle" description="Returns vehicle&apos;s trailer if towed"></getVehicleTowedByVehicle>
+                <getVehicleTowingVehicle returnType="vehicle" arguments="element vehicle" description="Returns the vehicle towing vehicle"></getVehicleTowingVehicle>
+                <getVehicleTurnVelocity returnType="float float float" arguments="element vehicle"></getVehicleTurnVelocity>
+                <getVehicleTurretPosition returnType="float float" arguments="element vehicle"></getVehicleTurretPosition>
+                <getVehicleUpgradeOnSlot returnType="int" arguments="element vehicle, int slot"></getVehicleUpgradeOnSlot>
+                <getVehicleUpgrades returnType="table" arguments="element vehicle"></getVehicleUpgrades>
+                <getVehicleUpgradeSlotName returnType="string" arguments="int slot" description="Returns the name of the upgrade slot"></getVehicleUpgradeSlotName>
+                <getVehicleUpgradeSlotName returnType="string" arguments="int upgrade" description="Returns the name of the slot for upgrade"></getVehicleUpgradeSlotName>
+                <getVehicleWheelStates returnType="int int int int" arguments="element vehicle"></getVehicleWheelStates>
+                <getVehicleDoorOpenRatio returnType="float" arguments="element vehicle, int door"></getVehicleDoorOpenRatio>
+                <isVehicleDamageProof returnType="bool" arguments="element vehicle"></isVehicleDamageProof>
+                <isVehicleFrozen returnType="bool" arguments="element vehicle"></isVehicleFrozen>
+                <isVehicleFuelTankExplodable returnType="bool" arguments="element vehicle"></isVehicleFuelTankExplodable>
+                <isVehicleLocked returnType="bool" arguments="element vehicle"></isVehicleLocked>
+                <isVehicleOnGround returnType="bool" arguments="element vehicle"></isVehicleOnGround>
+                <removeVehicleUpgrade returnType="bool" arguments="element vehicle, int id"></removeVehicleUpgrade>
+                <setVehicleColor returnType="bool" arguments="element vehicle, int r, int g, int b, [ int r2, int g2, int b2, int r3, int g3, int b3, int r4, int g4, int b4 ]"></setVehicleColor>
+                <setVehicleDamageProof returnType="bool" arguments="element vehicle, bool indestrutible"></setVehicleDamageProof>
+                <setVehicleDirtLevel returnType="bool" arguments="element vehicle, int level"></setVehicleDirtLevel>
+                <setVehicleDoorState returnType="bool" arguments="element vehicle, int index, int state"></setVehicleDoorState>
+                <setVehicleDoorsUndamageable returnType="bool" arguments="element vehicle, bool indestructible" description="Sets vehicle&apos;s doors indestructible if locked"></setVehicleDoorsUndamageable>
+                <setVehicleEngineState returnType="bool" arguments="element vehicle, bool active" description="Switches vehicle&apos;s engine on or off"></setVehicleEngineState>
+                <setVehicleFrozen returnType="bool" arguments="element vehicle, bool frozen"></setVehicleFrozen>
+                <setVehicleFuelTankExplodable returnType="bool" arguments="element vehicle, bool explodable"></setVehicleFuelTankExplodable>
+                <getVehicleHandling returnType="dictionary" arguments="vehicle vehicle" description="Returns a dictionary with the whole handling of vehicle"></getVehicleHandling>
+                <getOriginalHandling returnType="dictionary" arguments="int model" description="Returns a table with the model&apos;s handling"></getOriginalHandling>
+                <setVehicleLandingGearDown returnType="bool" arguments="element vehicle, bool down"></setVehicleLandingGearDown>
+                <setVehicleLightState returnType="bool" arguments="element vehicle, int index, int state"></setVehicleLightState>
+                <setVehicleLocked returnType="bool" arguments="element vehicle, bool locked"></setVehicleLocked>
+                <setVehicleOverrideLights returnType="bool" arguments="element vehicle, int value"></setVehicleOverrideLights>
+                <setVehiclePaintjob returnType="bool" arguments="element vehicle, int type"></setVehiclePaintjob>
+                <setVehiclePanelState returnType="bool" arguments="element vehicle, int id, int state"></setVehiclePanelState>
+                <setVehicleSirensOn returnType="bool" arguments="element vehicle, bool active"></setVehicleSirensOn>
+                <setVehicleTurretPosition returnType="bool" arguments="element vehicle, float x, float y"></setVehicleTurretPosition>
+                <setVehicleDoorOpenRatio returnType="bool" arguments="element vehicle, int door, float ratio, [ int timeToReach=0 ]"></setVehicleDoorOpenRatio>
+                <setVehicleTurnVelocity returnType="bool" arguments="element vehicle, float x, float y, float z"></setVehicleTurnVelocity>
+                <setVehicleWheelStates returnType="bool" arguments="element vehicle, int frontLeft, [ int rearLeft=-1, int frontRight=-1, int rearRight=-1 ]"></setVehicleWheelStates>
+                <getTrainDirection returnType="bool" arguments="element vehicle" description="Returns whether the train is going clockwise or counterclockwise"></getTrainDirection>
+                <getTrainSpeed returnType="float" arguments="element vehicle" description="Returns the train&apos;s total speed"></getTrainSpeed>
+                <getVehicleHeadLightColor returnType="int int int" arguments="element vehicle"></getVehicleHeadLightColor>
+                <getVehicleModelFromName returnType="int" arguments="string name"></getVehicleModelFromName>
+                <getVehicleNameFromModel returnType="string" arguments="int model"></getVehicleNameFromModel>
+                <getVehicleType returnType="string" arguments="element vehicle"></getVehicleType>
+                <getVehicleType returnType="string" arguments="int model"></getVehicleType>
+                <isTrainDerailable returnType="bool" arguments="element vehicle"></isTrainDerailable>
+                <isTrainDerailed returnType="bool" arguments="element vehicle"></isTrainDerailed>
+                <isVehicleBlown returnType="bool" arguments="element vehicle"></isVehicleBlown>
+                <isVehicleTaxiLightOn returnType="bool" arguments="element vehicle"></isVehicleTaxiLightOn>
+                <setTrainDerailable returnType="bool" arguments="element vehicle, bool derailable"></setTrainDerailable>
+                <setTrainDerailed returnType="bool" arguments="element vehicle, bool derailed"></setTrainDerailed>
+                <setTrainDirection returnType="bool" arguments="element vehicle, bool clockwise"></setTrainDirection>
+                <setTrainSpeed returnType="bool" arguments="element vehicle, float speed"></setTrainSpeed>
+                <setVehicleHeadLightColor returnType="bool" arguments="element vehicle, int r, int g, int b"></setVehicleHeadLightColor>
+                <setVehicleTaxiLightOn returnType="bool" arguments="element vehicle, bool active"></setVehicleTaxiLightOn>
+                <createWater returnType="water" arguments="float x, float y, float z, float x2, float y2, float z2, float x3, float y3, float z3, [ float x4, float y4, float z4 ]" description="Creates a triangle or quad"></createWater>
+                <getWaterColor returnType="int int int int" arguments=""></getWaterColor>
+                <getWaterVertexPosition returnType="float float float" arguments="water water, int index"></getWaterVertexPosition>
+                <getWaveHeight returnType="float" arguments=""></getWaveHeight>
+                <resetWaterColor returnType="bool" arguments="" description="Resets the water color to engine default"></resetWaterColor>
+                <setWaterVertexPosition returnType="bool" arguments="water water, int index, float x, float y, float z"></setWaterVertexPosition>
+                <setWaveHeight returnType="bool" arguments="float height"></setWaveHeight>
+                <getWeaponIDFromName returnType="int" arguments="string name"></getWeaponIDFromName>
+                <getSlotFromWeapon returnType="int" arguments="int weapon" description="Returns the weapon slot weapon is usually set to"></getSlotFromWeapon>
+                <getWeaponNameFromID returnType="string" arguments="int id"></getWeaponNameFromID>
+                <areTrafficLightsLocked returnType="bool" arguments=""></areTrafficLightsLocked>
+                <getCloudsEnabled returnType="bool" arguments=""></getCloudsEnabled>
+                <getGameSpeed returnType="float" arguments=""></getGameSpeed>
+                <getGravity returnType="float" arguments=""></getGravity>
+                <getHeatHaze returnType="int int int int int int int int int" arguments=""></getHeatHaze>
+                <getTime returnType="int int" arguments="" description="Returns the game hours and minutes"></getTime>
+                <getTrafficLightState returnType="int" arguments=""></getTrafficLightState>
+                <getWeather returnType="int int" arguments=""></getWeather>
+                <getWindVelocity returnType="float float float" arguments=""></getWindVelocity>
+                <getZoneName returnType="string" arguments="float x, float y, float z, [ bool onlyCities=false ]" description="Returns the GTA zone name at position"></getZoneName>
+                <resetHeatHaze returnType="bool" arguments=""></resetHeatHaze>
+                <resetSkyGradient returnType="bool" arguments=""></resetSkyGradient>
+                <resetWindVelocity returnType="bool" arguments=""></resetWindVelocity>
+                <setCloudsEnabled returnType="bool" arguments="bool enabled"></setCloudsEnabled>
+                <setGameSpeed returnType="bool" arguments="float speed"></setGameSpeed>
+                <setGravity returnType="bool" arguments="float factor"></setGravity>
+                <setHeatHaze returnType="bool" arguments="int intensity, [ int randomShift=0, int speedMin=12, int speedMax=18, int scanWidth=75, int scanHeight=80, int renderWidth=80, int renderHeight=85, bool insideBuildings=false ]"></setHeatHaze>
+                <setSkyGradient returnType="bool" arguments="int foreRed, int foreGreen, int foreBlue, int backRed, int backGreen, int backBlue" description="Set the sky&apos;s color"></setSkyGradient>
+                <setTime returnType="bool" arguments="int hours, int minutes" description="Set the engine time"></setTime>
+                <setTrafficLightState returnType="bool" arguments="int state"></setTrafficLightState>
+                <setTrafficLightState returnType="bool" arguments="string state"></setTrafficLightState>
+                <setTrafficLightState returnType="bool" arguments="string colorNS, string colorEW"></setTrafficLightState>
+                <setTrafficLightsLocked returnType="bool" arguments="bool locked"></setTrafficLightsLocked>
+                <setWeather returnType="bool" arguments="int id" description="Forces the weather to id"></setWeather>
+                <setWeatherBlended returnType="bool" arguments="int id" description="Changes the weather smoothly by engine transition"></setWeatherBlended>
+                <setWindVelocity returnType="bool" arguments="float x, float y, float z"></setWindVelocity>
+                <getMinuteDuration returnType="int" arguments="" description="Returns the time in seconds it takes for a minute to pass"></getMinuteDuration>
+                <isGarageOpen returnType="bool" arguments="int id"></isGarageOpen>
+                <setCloudsEnabled returnType="bool" arguments="bool enabled"></setCloudsEnabled>
+                <setGarageOpen returnType="bool" arguments="int id, bool open"></setGarageOpen>
+                <setJetpackMaxHeight returnType="bool" arguments="float height"></setJetpackMaxHeight>
+                <setMinuteDuration returnType="bool" arguments="int ms" description="Sets the time it takes for a minute to pass"></setMinuteDuration>
+                <setBlurLevel returnType="bool" arguments="int level"></setBlurLevel>
+                <xmlCopyFile returnType="xmlnode" arguments="xmlnode node, string dest"></xmlCopyFile>
+                <xmlCreateFile returnType="xmlnode" arguments="string path, string nodeName" description="Create a configuration file"></xmlCreateFile>
+                <xmlLoadFile returnType="xmlnode" arguments="string path" description="Loads a configuration file"></xmlLoadFile>
+                <xmlDestroyNode returnType="bool" arguments="xmlnode node"></xmlDestroyNode>
+                <xmlNodeGetAttribute returnType="string" arguments="xmlnode node, string key" description="Retrives attribute from node"></xmlNodeGetAttribute>
+                <xmlNodeGetValue returnType="string" arguments="xmlnode node" description="Returns the total content of a xml node"></xmlNodeGetValue>
+                <xmlNodeSetAttribute returnType="bool" arguments="xmlnode node, string key, var value" description="Stores value under key in node as string representation"></xmlNodeSetAttribute>
+                <xmlNodeSetValue returnType="bool" arguments="xmlnode node, string content"></xmlNodeSetValue>
+                <xmlSaveFile returnType="bool" arguments="xmlnode node" description="Saves node to disk"></xmlSaveFile>
+                <xmlUnloadFile returnType="bool" arguments="xmlnode node"></xmlUnloadFile>
+                <xmlCreateChild returnType="xmlnode" arguments="xmlnode parent, string name" description="Creates a new child under node"></xmlCreateChild>
+                <xmlFindChild returnType="xmlnode" arguments="xmlnode node, string name, int index" description="Arranges the nodes it found under name and returns the (index+1)th it found"></xmlFindChild>
+                <xmlNodeGetAttributes returnType="dictionary" arguments="xmlnode node" description="Returns a dictionary with all attributes of node"></xmlNodeGetAttributes>
+                <xmlNodeGetChildren returnType="table" arguments="xmlnode node" description="Returns a table containing all children of node"></xmlNodeGetChildren>
+                <xmlNodeGetChildren returnType="xmlnode" arguments="xmlnode node, int index" description="Returns a index child (0=first)"></xmlNodeGetChildren>
+                <xmlNodeGetName returnType="string" arguments="xmlnode node"></xmlNodeGetName>
+                <xmlNodeGetParent returnType="xmlnode" arguments="xmlnode child"></xmlNodeGetParent>
+                <xmlNodeSetName returnType="bool" arguments="xmlnode node, string name" description="Specifies the node&apos;s tag"></xmlNodeSetName>
+                <setAmbientSoundEnabled returnType="bool" arguments="string type, bool enabled" description="Manages the engine&apos;s ambient sound execution"></setAmbientSoundEnabled>
+                <isAmbientSoundEnabled returnType="bool" arguments="string type"></isAmbientSoundEnabled>
+                <resetAmbientSounds returnType="bool" arguments=""></resetAmbientSounds>
+                <setInteriorSoundsEnabled returnType="bool" arguments="bool enabled"></setInteriorSoundsEnabled>
+                <areInteriorSoundsEnabled returnType="bool" arguments=""></areInteriorSoundsEnabled>
+                <setRainLevel returnType="bool" arguments="int level"></setRainLevel>
+                <getRainLevel returnType="int" arguments=""></getRainLevel>
+                <resetRainLevel returnType="bool" arguments=""></resetRainLevel>
+                <setSunSize returnType="bool" arguments="int size"></setSunSize>
+                <getSunSize returnType="int" arguments=""></getSunSize>
+                <resetSunSize returnType="bool" arguments=""></resetSunSize>
+                <setSunColor returnType="bool" arguments="int r, int g, int b, int r2, int g2, int b2"></setSunColor>
+                <getSunColor returnType="int int int int int int" arguments=""></getSunColor>
+                <resetSunColor returnType="bool" arguments=""></resetSunColor>
+                <setFarClipDistance returnType="bool" arguments="float distance"></setFarClipDistance>
+                <getFarClipDistance returnType="float" arguments=""></getFarClipDistance>
+                <resetFarClipDistance returnType="bool" arguments=""></resetFarClipDistance>
+                <setFogDistance returnType="bool" arguments="float distance"></setFogDistance>
+                <getFogDistance returnType="float" arguments=""></getFogDistance>
+                <resetFogDistance returnType="bool" arguments=""></resetFogDistance>
+            </functions>
+        </shared>
+    </dict>
+</config>

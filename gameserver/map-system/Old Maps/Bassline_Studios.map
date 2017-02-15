@@ -1,0 +1,6 @@
+<map edf:definitions="editor_main">
+    <object id="object (xref_garagedoor) (1)" dimension="731" interior="5" model="2885" posX="1251.6705322266" posY="-789.12426757813" posZ="1089.7186279297" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (xref_garagedoor) (2)" dimension="731" interior="5" model="2885" posX="1245.3466796875" posY="-814.55047607422" posZ="1089.7186279297" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Gen_doorEXT19) (1)" dimension="731" interior="5" model="1557" posX="1225.0355224609" posY="-814.1513671875" posZ="1083.0109863281" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Gen_doorEXT19) (2)" dimension="731" interior="5" model="1557" posX="1228.0628662109" posY="-814.15594482422" posZ="1083.0078125" rotX="0" rotY="0" rotZ="180" />
+</map>

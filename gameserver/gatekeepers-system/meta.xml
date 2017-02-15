@@ -1,0 +1,24 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Gatekeepers System"/>
+	
+	<script src="s_peds.lua" type="server" />
+	
+	<script src="s_vm.lua" type="server" />
+	<script src="c_vm.lua" type="client" />
+	
+	<script src="c_ped_rightclick.lua" type="client" />
+	<!--<script src="s_stevie.lua" type="server" />
+	<script src="c_stevie.lua" type="client" />
+
+	<script src="s_hunter.lua" type="server" />
+	<script src="c_hunter.lua" type="client" />
+
+	<script src="s_rook.lua" type="server" />
+	<script src="c_rook.lua" type="client" />
+
+	<script src="s_ty.lua" type="server" />
+	<script src="c_ty.lua" type="client" />
+	
+	<script src="s_gio.lua" type="server" />
+	<script src="c_gio.lua" type="client" />-->
+</meta>

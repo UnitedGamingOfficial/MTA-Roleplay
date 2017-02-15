@@ -1,0 +1,7 @@
+<meta>
+	<info />
+	<script src="s_versions.lua" type="server" />
+	
+	<export function="getPlayerVersion" type="server"/>
+	<export function="setPlayerVersion" type="server"/>
+</meta>

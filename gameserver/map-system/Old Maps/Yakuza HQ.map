@@ -1,0 +1,8 @@
+<map edf:definitions="editor_main">
+    <object id="object (DYN_GARAGE_DOOR) (1)" dimension="587" interior="2" model="1508" posX="2522.6015625" posY="-1287.5627441406" posZ="1055.2989501953" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (man_sdr_tables) (1)" dimension="587" interior="2" model="1827" posX="2530.6560058594" posY="-1304.4599609375" posZ="1053.640625" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (propcollecttable) (2)" dimension="587" interior="2" model="1670" posX="2530.6000976563" posY="-1304.3000488281" posZ="1054.0999755859" rotX="0" rotY="0" rotZ="358.01501464844" />
+    <object id="object (CJ_BEER_TAPS_1) (1)" dimension="587" interior="2" model="1541" posX="2538.9270019531" posY="-1285.1870117188" posZ="1055.2315673828" rotX="0" rotY="0" rotZ="90.405395507813" />
+    <object id="object (propvodkabotl1) (1)" dimension="587" interior="2" model="1668" posX="2538.3615722656" posY="-1285.4605712891" posZ="1055.1999511719" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (propvodkabotl1) (2)" dimension="587" interior="2" model="1668" posX="2538.3581542969" posY="-1285.6370849609" posZ="1055.1999511719" rotX="0" rotY="0" rotZ="0" />
+</map>

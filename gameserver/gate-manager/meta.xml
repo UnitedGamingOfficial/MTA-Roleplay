@@ -1,0 +1,10 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Gate Manager by Maxime"/>
+	<script src="s_gate_action.lua" type="server"/>
+	<script src="s_gates.lua" type="server"/>
+	<script src="c_gates.lua" type="client"/>
+	<script src="c_gate_action.lua" type="client"/>
+	<script src="c_gate_manager.lua" type="client"/> 
+	<script src="s_gate_manager.lua" type="server"/>
+	<file src="UGLogo.png"/>
+</meta>

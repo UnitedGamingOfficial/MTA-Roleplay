@@ -1,0 +1,8 @@
+<meta>
+    <info author="UG MTA Scripting Team" type="script" description="Marijuana Plant System"/>	
+	<script src="s_weedplant_system.lua" type="server"/>
+	<script src="c_weedplant_system.lua" type="client"/>
+	<file src="marijuanaplant.dff" />
+	<file src="marijuanaplant.txd" />
+	<file src="marijuanaplant.col" />
+</meta>

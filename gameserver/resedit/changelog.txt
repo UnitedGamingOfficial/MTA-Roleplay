@@ -1,0 +1,94 @@
+VERSION 0.8.4
+	Milestone release due to GREEN development
+	
+- Restructured script scheme to improve performance
+- Fixed occasional editor garbage
+- Improved token caching
+- Added dxElements GUI system
+- Added menubar with common features
+- Added tabpanel
+- Added dropDown
+- Removed redundant button positioning ("Preferences")
+- Improved interaction between CEGUI and dxElements
+- Virtualized the editor instance
+- Fixed dictionary entries
+
+------------------------------------------------------------
+
+VERSION 0.8.3
+	Critical hotfix release
+	
+- Fixed resource file addition
+- Removed support for MTA 1.0.5
+
+------------------------------------------------------------
+
+VERSION 0.8.2
+	Meant to optimize and bugfix all routines and to add features.
+	
+- Ongoing routine optimization
+- Fixed archived resource management
+- Added a way to disable automatic indentation
+- Improved resource file management
+- Fixed meta.xml exploit
+- Added framework for access management (access.xml)
+
+:MTA 1.1 ONLY
+- Added special key functionality (insert, delete, etc.)
+- Added tabbing support
+- Added automatic indentation
+- Added server control panel GUI, tell me what you want to see in it (F2)
+- Fixed messageBox and hint text alignment
+- Fixed font select, now the combo box works
+
+And much more...
+
+------------------------------------------------------------
+
+VERSION 0.8.1
+	Meant to optimize and fulfill on the previous BETA release.
+	Sets the focus on MTA 1.1
+	
+- General routine optimization
+- Improved the viewport to not leave the cursor out of sight
+- Fixed .xml editor node creation/deletion
+- Added function hinting
+- Added lexical options (dict)
+- Added functionlist
+- Improved renderer performance
+- Added copy (ctrl + c)
+- Parsing is now set to F3 key
+
+:MTA 1.1 ONLY
+- Finished general editor features
+- Added undo and redo
+- Optimized the renderer even more to utilize render surfaces
+- Added optimized cursor movement using arrow keys
+- Added repeater feature for keys
+
+And much more...
+
+------------------------------------------------------------
+
+VERSION 0.8b
+	Meant to set another milestone. Does not provide new features but
+	improves the look'n'feel. Will add features in the 0.8.x series.
+	Considered BETA, use with caution.
+
+- Advanced functional programming
+ -> Reduced arbitrary .lua opcode count
+- Viewport no longer crashes while selection scroll down
+- Updated download GUI
+- Added upload GUI
+- Renderer is now capable of multi-line colors
+- Added colored comments
+- Improved .lua parser
+- Added MTU setting
+
+:MTA 1.1 ONLY
+- Added clientside repository setting
+ -> /deathmatch/resources/resedit/repository/
+- Improved .xml parsing
+- Removed resource file restrictions
+ -> No longer needed to start a resource to view it's files
+- WARNING: Incomplete script editor, please use 1.0.5

@@ -1,0 +1,12 @@
+<map edf:definitions="editor_main">
+    <object id="object (bustopm) (1)" dimension="0" interior="0" model="1257" posX="1904.6553955078" posY="2315.3286132813" posZ="11.099504470825" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (bustopm) (2)" dimension="0" interior="0" model="1257" posX="1904.73046875" posY="2324.0158691406" posZ="11.099504470825" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (bustopm) (3)" dimension="0" interior="0" model="1257" posX="1904.6053466797" posY="2306.2326660156" posZ="11.099504470825" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (cnts_lines) (1)" dimension="0" interior="0" model="11548" posX="1887.7711181641" posY="2318.9758300781" posZ="9.8203125" rotX="0" rotY="0" rotZ="60" />
+    <object id="object (fenceshit3) (1)" dimension="0" interior="0" model="983" posX="1907.0601806641" posY="2326.52734375" posZ="10.503867149353" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (fenceshit3) (2)" dimension="0" interior="0" model="983" posX="1907.0379638672" posY="2317.8720703125" posZ="10.503867149353" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (fenceshit3) (3)" dimension="0" interior="0" model="983" posX="1907.0833740234" posY="2309.1979980469" posZ="10.503867149353" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cntrlrsac1) (1)" dimension="0" interior="0" model="1597" posX="1902.3669433594" posY="2325.8818359375" posZ="12.477694511414" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cntrlrsac1) (2)" dimension="0" interior="0" model="1597" posX="1902.3110351563" posY="2315.1298828125" posZ="12.477694511414" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cntrlrsac1) (3)" dimension="0" interior="0" model="1597" posX="1902.3734130859" posY="2304.3454589844" posZ="12.477694511414" rotX="0" rotY="0" rotZ="0" />
+</map>

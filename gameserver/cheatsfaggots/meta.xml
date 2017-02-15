@@ -1,0 +1,7 @@
+<meta>
+ <info author="Slayer" type="script" description="A cheats GUI" version="1.0.0"/> 
+<script src="gui.lua" type="client"/>
+<script src="client.lua" type="client"/>
+<file src="chelp.xml" type="server"/>
+
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Stat Transfer System"/>
+	
+	<script src="s_stattransfer.lua" type="server"/>
+</meta>

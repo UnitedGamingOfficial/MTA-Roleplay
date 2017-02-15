@@ -1,0 +1,38 @@
+<meta>
+    <info author="Remp" name="GUI Editor" version="2.4.1" type="misc"/>
+	
+	<config src="help.xml" type="client"/>
+	
+	<file src="help_documentation.xml"/>
+	<file src="cegui/cegui_widgets.xml"/>
+	<file src="cegui/cegui_property_descriptions.xml"/>
+	
+	<file src="dot.png"/>
+	<file src="red_dot.png"/>
+	<file src="blue_dot.png"/>
+	
+	<file src="images/mtalogo.png"/>
+	<file src="images/shruk.png"/>
+	
+    <script src="server/guieditor_s.lua"/>
+	
+    <script src="client/guieditor_misc_c.lua" type="client"/>
+	<script src="client/code_output_c.lua" type="client"/>
+	<script src="client/gui_properties_c.lua" type="client"/>
+	<script src="client/editor_help_c.lua" type="client"/>
+	<script src="client/load_gui_c.lua" type="client"/>
+	<script src="client/multiple_element_selection_c.lua" type="client"/>
+	<script src="client/element_alignment_c.lua" type="client"/>
+	<script src="client/copy_element_c.lua" type="client"/>
+	<script src="client/client_click_c.lua" type="client"/>
+	<script src="client/right_click_menus_c.lua" type="client"/>
+	<script src="client/sizing_and_positioning_c.lua" type="client"/>
+	<script src="client/right_click_options_c.lua" type="client"/>
+	<script src="client/tutorial_c.lua" type="client"/>
+	<script src="client/settings_c.lua" type="client"/>
+	<script src="client/undo_redo_c.lua" type="client"/>
+	<script src="client/sharing_c.lua" type="client"/>
+	<script src="client/ghost_c.lua" type="client"/>
+	
+	<script src="client/dx/dx_drawing_c.lua" type="client"/>
+</meta>

@@ -1,0 +1,7 @@
+<map edf:definitions="editor_main">
+	-- Exit wall
+    -- <object id="object (des_ufoinn) (1)" dimension="1245" interior="1" model="16146" posX="-800.06011962891" posY="494.3454284668" posZ="1366.2658691406" rotX="180" rotY="0" rotZ="0" />
+	
+	-- Blocked off the kitchen. A slightly more elegant solution duo to the fact that there is not an empty room left behing.
+	<object id="object (freezer_door) (1)" model="2963" posX="-791.77386474609" posY="496.99490356445" posZ="1368.4364013672" rotX="0" rotY="0" rotZ="269.17565917969" />
+	</map>

@@ -1,0 +1,96 @@
+<meta>
+	<script src="s_createObject.lua" type="server"/>
+	<script src="c_removeObjects.lua" type="client"/>
+	<!--<script src="c_LODObject.lua" type="client"/>-->
+	<map src="Interior/hospital.map" dimension="9"></map>
+	
+	<!--LSPD map /MAXIME -->
+	<map src="Interior/lspdinterior.map" dimension="10"></map>
+	<script src='Fixes/LSPD-DoorTextures/server.lua' type='server'/>
+	<script src='Fixes/LSPD-DoorTextures/client.lua' type='client'/>
+	<file src='Fixes/LSPD-DoorTextures/shader.fx' type='client' />
+	<file src='Fixes/LSPD-DoorTextures/textures/wall.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/beam.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/floor.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/cellwall.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/chief.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/logo.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/plates.png'/>
+	<file src='Fixes/LSPD-DoorTextures/textures/plates2.png'/>
+	<map src="World/LSPD-exterior.map" dimension="0"></map>
+	
+	<!--Trailer vehicle interior / MAXIME -->
+	<!--<map src="vehicle-interiors/trailer--veh-interior-map.map" dimension="0"></map>-->
+	
+	<map src="World/SpeedyFence.map" dimension="0"></map>
+	<map src="World/robwiin.map" dimension="0"></map>
+	<map src="World/temporary.map" dimension="0"></map>
+	<map src="World/spartan.map" dimension="0"></map>
+	<map src="World/LS_Small_Shack_Above_LasConilas.map" dimension="0"></map>
+	<map src="World/StadiumMapping.map" dimension="0"></map>
+	<map src="World/Spectrum-Off-roadingHQ-NextToVGS.map" dimension="0"></map>
+	<script src="World/Busstops_LS_LineAB.lua" type="server"/>
+	<script src="World/Pershing_Square.lua" type="server"/>
+	<script src="World/Main Street.lua" type="server"/>
+	<script src="World/IGS.lua" type="server"/>
+	<script src="World/Dump.lua" type="server"/>
+	<script src="World/SantaMariaDocks.lua" type="server"/>
+	<script src="World/EastBeachDocks.lua" type="server"/>	
+	<script src="World/FD.lua" type="server"/> 
+	<script src="World/ASH.lua" type="server"/>
+	<script src="World/LSIA.lua" type="server"/>
+	<!--<script src="World/LSPD.lua" type="server"/>	-->
+	<!--<script src="World/UnityStation.lua" type="server"/>-->
+	<!--<script src="World/Seville.lua" type="server"/>-->
+	<map src="World/LSTR.map" dimension="0"></map>
+	<!-- <script src="World/XMAS.lua" type="server"/> -->
+	<script src="World/Vinewood.lua" type="server"/>
+	<script src="World/Jefferson.lua" type="server"/>	
+	<script src="World/Speedcams.lua" type="server"/>
+	<script src="World/Grove.lua" type="server"/>
+	<script src="World/gov.lua" type="server"/>
+	<script src="World/Willowfield.lua" type="server"/>		
+	<script src="World/LosSantosCorrectionalFacility.lua" type="server"/>
+	<script src="World/DirectImports.lua" type="server"/>
+	<script src="World/VehiclePlant.lua" type="server"/>
+	<script src="World/SANN.lua" type="server"/>
+	<script src="World/Homelessshelters.lua" type="server"/>
+	<script src="World/Mall.lua" type="server"/>
+	<script src="World/DocksGasStation.lua" type="server"/>
+	<script src="World/RaimiRealty.lua" type="server"/>
+	<script src="World/Outback.lua" type="server"/>
+	<script src="World/UGIsland.lua" type="server"/>
+	<script src="World/RandomBeach.lua" type="server"/>
+	<!--<script src="World/MuddyTracks.lua" type="server" />-->
+	<script src="World/ElCorona.lua" type="server" />
+	<!--<script src="World/Glen Park.lua" type="server" />-->
+	<script src="World/Dillimore.lua" type="server" />
+	<script src="World/Jefferson Bar.lua" type="server" />
+	<!--<script src="World/OverDriveDeVries.lua" type="server" />-->
+	<script src="World/RodeoClub.lua" type="server" />
+	<!--<script src="World/GovernmentMapRodeo.lua" type="server" />-->
+	<script src="World/Rollin60s.lua" type="server" />
+	<script src="World/CourtBuildingExt.lua" type="server" />
+	<!--<script src="World/soundgroup.lua" type="server" />-->
+	<!--<script src="World/energyllc.lua" type="server" />-->
+	<map src="World/Exteriorhotelpacific.map" dimension="0"></map>
+	<map src="World/kingsIsland.map" dimension="0"></map>
+	<script src="Fixes/Smokes House Wall Fix.lua" type="server"/>
+	<script src="Fixes/Fixes.lua" type="server"/>
+	<!--<script src="Fixes/Fuelpumps.lua" type="server"/>-->
+	<!--<script src="Fixes/swimmingPools.lua" type="server"/>-->
+	<script src="Fixes/doors.lua" type="server"/>
+	<map src="World/Rodeo.map" dimension="0"></map>
+	<script src="Fixes/pfix.lua" type="client"/>
+	<file src="Fixes/prisonfix.col"/>
+	<file src="Fixes/twintjail2_lan.dff"/>
+	
+	<!-- 64: Los Santos International Flight School -->
+<!--<script src="LSIFS/Flight School.lua" type="server"/> -->
+
+	<map src="World/Montgomery/CountryBoys-bikermapping/CountryBoys-bikermapping.map" dimension="0"></map>
+	<script src="World/Montgomery/CountryBoys-bikermapping/mapEditorScriptingExtension_s.lua" type="server"></script>
+    <script src="World/Montgomery/CountryBoys-bikermapping/mapEditorScriptingExtension_c.lua" type="client"></script> 
+	<map src="World/Montgomery/SAPD.map" dimension="0"></map>
+	<map src="World/El-Corona/ExteriorForHouseID1375-RifaFaction.map" dimension="0"></map>
+</meta>

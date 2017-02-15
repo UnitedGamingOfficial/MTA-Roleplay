@@ -1,0 +1,11 @@
+<map edf:definitions="editor_main">
+<object id="object (gaz25_law) (1)" interior="0" alpha="255" doublesided="false" model="6159" scale="1" dimension="0" posX="1053.80005" posY="-909.70001" posZ="49.3" rotX="0" rotY="0" rotZ="278"></object>
+<object id="object (shamheliprt04) (1)" interior="0" alpha="255" doublesided="false" model="6976" scale="1" dimension="0" posX="1045.69995" posY="-920.5" posZ="41.7" rotX="0" rotY="0" rotZ="98.5"></object>
+<object id="object (vgElkup) (1)" interior="0" alpha="255" doublesided="false" model="8947" scale="1" dimension="0" posX="1036.19995" posY="-897.09998" posZ="44.3" rotX="0" rotY="0" rotZ="8"></object>
+<object id="object (elecfence_BAR) (1)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1057.90002" posY="-877.70001" posZ="42.3" rotX="0" rotY="0" rotZ="98"></object>
+<object id="object (elecfence_BAR) (2)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1030.80005" posY="-910.29999" posZ="41.3" rotX="0" rotY="0" rotZ="278.248"></object>
+<object id="object (elecfence_BAR) (3)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1025.59998" posY="-874.20001" posZ="41.3" rotX="0" rotY="0" rotZ="278.245"></object>
+<object id="object (elecfence_BAR) (4)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1032.5" posY="-922.20001" posZ="41.3" rotX="0" rotY="0" rotZ="278.245"></object>
+<object id="object (elecfence_BAR) (5)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1032.90002" posY="-925.20001" posZ="41.3" rotX="0" rotY="0" rotZ="278.245"></object>
+<object id="object (elecfence_BAR) (6)" interior="0" alpha="255" doublesided="false" model="987" scale="1" dimension="0" posX="1039.90002" posY="-936.09998" posZ="41.3" rotX="0" rotY="0" rotZ="8.245"></object>
+</map>

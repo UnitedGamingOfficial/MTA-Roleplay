@@ -1,0 +1,6 @@
+<meta>
+    <info author="UnitedGaming MTA Scripting Team" type="script" description="Report System"/>
+
+	<script src="s_reports.lua"/>
+    <script src="c_reports.lua" type="client" />
+</meta>

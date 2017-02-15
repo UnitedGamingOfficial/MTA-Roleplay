@@ -1,0 +1,4 @@
+<map edf:definitions="editor_main">
+    <object id="object (tag_front) (1)" dimension="0" interior="0" model="1524" posX="2471.1540527344" posY="-1645.9956054688" posZ="13.765276908875" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (bustopm) (1)" dimension="0" interior="0" model="1257" posX="2074.7006835938" posY="2031.0599365234" posZ="11.099504470825" rotX="0" rotY="0" rotZ="90" />
+</map>

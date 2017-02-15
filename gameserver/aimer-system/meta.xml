@@ -1,0 +1,4 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Aimer System"/>
+	<script src="c_aimer.lua" type="client"/>
+</meta>

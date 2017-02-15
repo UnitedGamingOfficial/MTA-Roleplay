@@ -1,0 +1,55 @@
+<map edf:definitions="editor_main">
+    <object id="object (cellsa) (1)" dimension="1" interior="3" model="14856" posX="198.43629455566" posY="185.49638366699" posZ="1003.8824462891" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cellsa) (2)" dimension="1" interior="3" model="14856" posX="189.20709228516" posY="151.86604309082" posZ="1003.8824462891" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (lxr_motelvent) (1)" dimension="1" interior="3" model="2986" posX="197.53063964844" posY="161.50395202637" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (2)" dimension="1" interior="3" model="2986" posX="197.53063964844" posY="162.52655029297" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (3)" dimension="1" interior="3" model="2986" posX="193.1009979248" posY="162.52655029297" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (4)" dimension="1" interior="3" model="2986" posX="193.29942321777" posY="161.3856048584" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (5)" dimension="1" interior="3" model="2986" posX="189.07043457031" posY="161.3856048584" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (6)" dimension="1" interior="3" model="2986" posX="189.02082824707" posY="162.4916229248" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (7)" dimension="1" interior="3" model="2986" posX="191.20350646973" posY="174.00494384766" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (8)" dimension="1" interior="3" model="2986" posX="191.10429382324" posY="175.14588928223" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (9)" dimension="1" interior="3" model="2986" posX="195.36486816406" posY="175.39392089844" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (10)" dimension="1" interior="3" model="2986" posX="195.36486816406" posY="174.12106323242" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (11)" dimension="1" interior="3" model="2986" posX="199.72576904297" posY="174.12106323242" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motelvent) (12)" dimension="1" interior="3" model="2986" posX="199.57695007324" posY="175.21017456055" posZ="1002.7903442383" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ab_sfAmmuMain) (1)" dimension="1" interior="3" model="18065" posX="279.99447631836" posY="204.66778564453" posZ="1008.435546875" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ab_sfAmmuUnits) (1)" dimension="1" interior="3" model="18064" posX="284.35791015625" posY="204.61450195313" posZ="1008.1845703125" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cmdgrgdoor_lvs) (1)" dimension="1" interior="3" model="9093" posX="287.59716796875" posY="205.11408996582" posZ="1007.9716796875" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (int3int_boxing30) (1)" dimension="1" interior="3" model="14782" posX="286.91973876953" posY="205.08755493164" posZ="1007.2172241211" rotX="0" rotY="0" rotZ="270.26989746094" />
+    <object id="object (munation_xtras03) (1)" dimension="1" interior="3" model="18052" posX="288.1572265625" posY="205.45344543457" posZ="1008.5640258789" rotX="0" rotY="0" rotZ="179.45971679688" />
+    <object id="object (munation_xtras04) (1)" dimension="1" interior="3" model="18053" posX="285.55627441406" posY="203.24049377441" posZ="1007.2471923828" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (kmb_petroldoor) (1)" dimension="1" interior="3" model="2911" posX="291.24203491211" posY="192.87300109863" posZ="1006.171875" rotX="0" rotY="0" rotZ="0" />
+	
+	-- Interview Room Doors
+	<object id="object (ab_casdorLok) (1)" dimension="1" interior="3" model="3089" posX="258.73101806641" posY="197.515625" posZ="1008.5008544922" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ab_casdorLok) (2)" dimension="1" interior="3" model="3089" posX="250.50276184082" posY="197.53091430664" posZ="1008.5008544922" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Gen_doorEXT12) (1)" dimension="1" interior="3" model="1533" posX="225.16004943848" posY="185.08978271484" posZ="1002.0354614258" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ab_casdorLok) (5)" dimension="1" interior="3" model="3089" posX="266.17083740234" posY="197.53338623047" posZ="1008.5008544922" rotX="0" rotY="0" rotZ="0" />
+    
+	-- Interview Room One
+	<object id="object (ab_casdorLok) (3)" dimension="10" interior="3" model="3089" posX="259.68969726563" posY="210.01272583008" posZ="1008.5008544922" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FOLDCHAIR) (5)" dimension="10" interior="3" model="1810" posX="258.37283325195" posY="206.67826843262" posZ="1007.1873168945" rotX="0" rotY="0" rotZ="13.894989013672" />
+    <object id="object (CJ_FOLDCHAIR) (6)" dimension="10" interior="3" model="1810" posX="258.93405151367" posY="204.12229919434" posZ="1007.186340332" rotX="0" rotY="0" rotZ="184.60498046875" />
+    <object id="object (CJ_FOLDCHAIR) (7)" dimension="10" interior="3" model="1810" posX="259.51950073242" posY="206.73991394043" posZ="1007.1865844727" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FOLDCHAIR) (8)" dimension="10" interior="3" model="1810" posX="258.06912231445" posY="204.23460388184" posZ="1007.2118530273" rotX="0" rotY="0" rotZ="175.39495849609" />
+    <object id="object (CJ_FF_WORKTOP) (2)" dimension="10" interior="3" model="2418" posX="258.26119995117" posY="205.24784851074" posZ="1007.2174072266" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (shop_sec_cam) (2)" dimension="10" interior="3" model="1886" posX="254.79554748535" posY="201.39669799805" posZ="1010.9404907227" rotX="0" rotY="0" rotZ="138.95001220703" />
+    <object id="object (CEwrehse07) (2)" dimension="10" interior="3" model="13078" posX="279.32089233398" posY="218.51524353027" posZ="1007.8436279297" rotX="180" rotY="0" rotZ="270" />  	
+	<object id="object (paperchase02) (1)" dimension="10" interior="3" model="14595" posX="271.03240966797" posY="214.90447998047" posZ="1011.1636962891" rotX="0" rotY="0" rotZ="0" />
+
+	-- Interview Room Two
+	<object id="object (ab_casdorLok) (4)" dimension="11" interior="3" model="3089" posX="245.93327331543" posY="209.99052429199" posZ="1008.5008544922" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FOLDCHAIR) (1)" dimension="11" interior="3" model="1810" posX="246.72229003906" posY="205.9970703125" posZ="1007.1865844727" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FOLDCHAIR) (2)" dimension="11" interior="3" model="1810" posX="246.97317504883" posY="203.79722595215" posZ="1007.1605224609" rotX="0" rotY="0" rotZ="194.53002929688" />
+    <object id="object (CJ_FOLDCHAIR) (3)" dimension="11" interior="3" model="1810" posX="247.7541809082" posY="205.90856933594" posZ="1007.186340332" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (CJ_FOLDCHAIR) (4)" dimension="11" interior="3" model="1810" posX="246.4210357666" posY="204.06578063965" posZ="1007.1865844727" rotX="0" rotY="0" rotZ="150.86004638672" />
+    <object id="object (CJ_FF_WORKTOP) (1)" dimension="11" interior="3" model="2418" posX="246.52014160156" posY="204.85334777832" posZ="1007.2174072266" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (shop_sec_cam) (1)" dimension="11" interior="3" model="1886" posX="250.05070495605" posY="201.15327453613" posZ="1010.9662475586" rotX="7.9399719238281" rotY="0" rotZ="220.33508300781" />
+	<object id="object (CEwrehse07) (1)" dimension="11" interior="3" model="13078" posX="227.1756439209" posY="218.98593139648" posZ="1007.8436279297" rotX="180" rotY="0" rotZ="89.999938964844" />
+	<object id="object (paperchase02) (1)" dimension="11" interior="3" model="14595" posX="271.03240966797" posY="214.90447998047" posZ="1011.1636962891" rotX="0" rotY="0" rotZ="0" />
+
+	-- Evidence room
+	<object id="object (ab_casdorLok) (6)" dimension="693" interior="1" model="3089" posX="2175.6840820313" posY="1594.2514648438" posZ="1000.3055419922" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (door_savhangr2) (1)" dimension="693" interior="1" model="16775" posX="2214.7724609375" posY="1583.2967529297" posZ="1002.9763183594" rotX="0" rotY="0" rotZ="90" />
+</map>

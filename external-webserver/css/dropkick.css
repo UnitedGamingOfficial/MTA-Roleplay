@@ -1,0 +1,252 @@
+/* === PAGE CSS === */
+@font-face {
+  font-family: "FontAwesome";
+  src: 	url('../fonts/fontawesome/fontawesome-webfont.eot');
+  src: 	url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('eot'),
+  		url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+  		url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),
+  		url('../fonts/fontawesome/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*body {
+	background-color: #252b30;
+	padding: 50px;
+	font: 100%/1.2em 'Helvetica', Arial, sans-serif; /*set base font bits and pieces here*/
+}*/
+
+/*BEAR*/
+#dk_container_mama_bear {
+	font-size: 20px;
+	margin: 0 0 0 2em;
+}
+
+#dk_container_papa_bear {
+	font-size: 40px;
+	margin: 0 0 0 2em;
+}
+
+
+
+
+/* === DROPKICK CSS === */
+/* One container to bind them... */
+.dk_container {
+	background-image: linear-gradient(bottom, #313439 100%, #2B2E32 0%);
+	background-image: -o-linear-gradient(bottom, #313439 100%, #2B2E32 0%);
+	background-image: -moz-linear-gradient(bottom, #313439 100%, #2B2E32 0%);
+	background-image: -webkit-linear-gradient(bottom, #313439 100%, #2B2E32 0%);
+	background-image: -ms-linear-gradient(bottom, #313439 100%, #2B2E32 0%);
+	background-color: #313439;
+	
+	font-size: 0.75em;					/*changed to ems*/
+	margin-bottom: 1.5em;				/*changed to ems*/
+	border-radius: .3333em;				/*changed to ems*/
+
+	-webkit-box-shadow: 0 0 4px #1c2023;
+	box-shadow: 0 0 .3333em #1c2023;
+	
+	white-space: nowrap;				/*added this so that everything stays neatly on one line*/
+}
+
+.dk_container:focus {
+	outline: 0;
+}
+
+.dk_container a {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/* Opens the dropdown and holds the menu label */
+.dk_toggle {							/*changed to ems*/
+	border: .1em solid #414346;
+	color: #a2a8ad;
+	padding: 0 4em 0 1em;				/*changed to ems - and removed top/bottom padding*/
+	text-shadow: #26292c 0px .05em 0;	/*changed to ems*/
+	border-radius: .3333em;				/*changed to ems*/
+	
+	line-height: 2.5em;					/*added this  instead of the padding top/bottom. we can now calculate it exactly */
+
+	-webkit-transition: border-color .5s;
+	-moz-transition: border-color .5s;
+	-o-transition: border-color .5s;
+	-ms-transition: border-color .5s;
+	transition: border-color .5s;
+	
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dk_toggle:after {
+	font-family: "FontAwesome";
+	color: #c0c4c7;
+	font-size: 1em;						/*changed to ems*/
+	line-height: 2.5em;					/*exactly the same as the parent - so everything aligns vertically*/
+	content: "\f0dc";
+	text-shadow: 0 0 .05em #222427;		/*changed to ems*/
+	float: right;
+	margin-right: -3em;					/*changed to ems*/
+	/*margin-top: 4px;					won't need this, we've specified the lineheight for vertical aligning*/
+}
+
+/* Applied whenever the dropdown is open */
+.dk_open {
+z-index: 10;
+}
+
+.dk_open .dk_toggle {
+	/*background-image: url('images/arrow_2.png');*/
+	background-image: linear-gradient(bottom, #323538 0%, #3A3D40 100%);
+	background-image: -o-linear-gradient(bottom, #323538 0%, #3A3D40 100%);
+	background-image: -moz-linear-gradient(bottom, #323538 0%, #3A3D40 100%);
+	background-image: -webkit-linear-gradient(bottom, #323538 0%, #3A3D40 100%);
+	background-image: -ms-linear-gradient(bottom, #323538 0%, #3A3D40 100%);
+	 /*REMOVES ARROW IMAGE*/
+	border-color: #4e5153;
+	color: #fff;
+
+	-webkit-box-shadow: 0 .05em .1em #202224;
+	box-shadow: 0 .05em .1em #202224;
+	border-radius: .3333em;				/*changed to ems*/
+	z-index: 30;
+}
+
+.dk_open .dk_toggle:after {
+	/*I've removed a load of styles here, as they're all inherited from .dk_toggle:after */
+	color: #ededee;	
+	text-shadow: 0 0 .05em #272a2c;		/*changed to ems*/
+}
+
+/* The outer container of the options */
+.dk_options {
+	-webkit-box-shadow: 0 .05em .3em #191d20;	/*changed to ems*/
+	box-shadow: 0 .05em .3em #191d20;			/*changed to ems*/
+	border-radius: 0 0 .4em .4em;				/*changed to ems*/
+}
+
+.dk_options a {
+	padding: 0 1em;
+	line-height: 2.5em;					/*added this instead of the padding top/bottom. we can now calculate it exactly */
+	
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dk_options li {
+	background-color: #2e3135;
+}
+
+.dk_options li:first-child {
+	display: none;
+}
+
+.dk_options #divider {
+	width: 90%;							/*flexible value - leave as it is!*/
+	height: .1em;						/*rounded to a neat ems value*/		
+	margin: auto;
+	background-color: #3a3c3f;
+}
+
+.dk_options li:last-child #divider {
+	display: none;
+}
+
+.dk_options a:hover,.dk_option_current a {
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 .05em 0 #282b2e;		/*change to ems*/
+}
+
+/* Inner container for options, this is what makes the scrollbar possible. */
+.dk_options_inner {
+	border: .05em solid #2e3135;		/*change to ems*/
+	border-bottom-width: .1em;			/*chamge to ems*/
+	border-bottom-color: #2e3135;
+	color: #a2a8ad;
+	/*max-height: 250px;				I've gotten rid of this */
+	text-shadow: #282b2e 0 .05em 0;		/*change to ems*/
+	border-radius: 0 0 .4em .4em;		/*change to ems*/
+}
+
+/* Set a max-height on the options inner */
+.dk_options_inner,.dk_touch .dk_options {
+	/*max-height: 250px;				not sure why?*/
+}
+
+/******  End Theme ******/
+/***** Critical to the continued enjoyment of working dropdowns ******/
+.dk_container {
+	display: none;
+	float: left;
+	position: relative;
+}
+
+.dk_container a {
+	/*width: auto!important;		I don't like using !important, but this needs to override a fixed pixel width which is added inline by the dropkick script - or comment out line 116 in the js*/
+	outline: 0;
+}
+
+.dk_toggle {
+	display: -moz-inline-stack;
+	display: inline-block;
+	*display: inline;
+	position: relative;
+	zoom: 1;
+}
+
+.dk_open {
+	position: relative;
+}
+
+.dk_open .dk_options {
+	display: block;
+}
+
+.dk_open .dk_label {
+	color: inherit;
+}
+
+.dk_options {
+	display: none;
+	margin-top: -.05em;			/*change to ems*/
+	position: absolute;
+	right: 0;
+	width: 100%;
+}
+
+.dk_options a,.dk_options a:link,.dk_options a:visited {
+	display: block;
+}
+
+.dk_options_inner {
+	overflow: auto;
+	position: relative;
+}
+
+.dk_touch .dk_options {
+	overflow: hidden;
+}
+
+.dk_touch .dk_options_inner {
+	max-height: none;
+	overflow: visible;
+}
+
+.dk_fouc select {
+	position: relative;
+	top: -99999em;
+	visibility: hidden;
+}
+
+/***** End Critical to the continued enjoyment of working dropdowns ******/

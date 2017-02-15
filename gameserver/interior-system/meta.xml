@@ -1,0 +1,34 @@
+<meta>
+	<info author="UG MTA Scripting Team" type="script" description="Interior System"/>
+	
+	<script src="s_interior_admin.lua" type="server" />
+	<script src="s_interior_system.lua" type="server" />
+	<export function="addSafeAtPosition" type="server"/>
+	<export function="publicSellProperty" type="server"/>
+	<export function="cleanupProperty" type="server"/>
+	<export function="findProperty" type="server"/>
+	<export function="findParent" type="server"/>
+	<export function="lockUnlockHouseEvent" type="server"/>
+	<export function="reloadInterior" type="server"/>
+	<export function="realReloadInterior" type="server"/>
+	
+	<script src="c_interior_system.lua" type="client" />
+	<script src="s_interior_shout.lua" type="server" />
+	<script src="c_pickups.lua" type="client" />
+	<script src="g_shared.lua" type="client" />
+	<script src="g_shared.lua" type="server" />
+
+	<export function="findProperty" type="client"/>
+	<export function="findParent" type="client"/>
+	<export function="canEnterInterior" type="client"/>
+	
+	<file src="knocking.mp3" />
+	<file src="doorUnlockSound.mp3" />
+	<file src="doorLockSound.mp3" />
+	<file src="doorGoThru.mp3" />
+
+	<file src="intNameFont.ttf"/>
+	<file src="BizNote.ttf"/>
+	<file src="icon.png"/>
+	
+</meta>

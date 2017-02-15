@@ -1,0 +1,13 @@
+<map edf:definitions="editor_main">
+	<object id="object (Gen_doorSHOP3) (1)" dimension="0" interior="0" model="1522" posX="2623.6274414063" posY="1205.8172607422" posZ="9.8203125" rotX="0" rotY="0" rotZ="89.999938964844" />
+    <object id="object (Gen_doorSHOP3) (2)" dimension="0" interior="0" model="1522" posX="2623.6247558594" posY="1207.2839355469" posZ="9.8203125" rotX="0" rotY="0" rotZ="89.999938964844" />
+	
+	<object id="object (lxr_motel_doorsim) (1)" dimension="523" interior="15" model="2987" posX="2243.0236816406" posY="-1159.7537841797" posZ="1030.0028076172" rotX="0" rotY="0" rotZ="89.999938964844" />
+    <object id="object (lxr_motel_doorsim) (2)" dimension="523" interior="15" model="2987" posX="2239.4118652344" posY="-1159.7399902344" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (lxr_motel_doorsim) (3)" dimension="523" interior="15" model="2987" posX="2239.4055175781" posY="-1170.7235107422" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (lxr_motel_doorsim) (4)" dimension="523" interior="15" model="2987" posX="2225.5810546875" posY="-1186.8601074219" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="180" />
+    <object id="object (lxr_motel_doorsim) (5)" dimension="523" interior="15" model="2987" posX="2209.5700683594" posY="-1190.4899902344" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lxr_motel_doorsim) (6)" dimension="523" interior="15" model="2987" posX="2194.9975585938" posY="-1173.0205078125" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="89.999938964844" />
+    <object id="object (lxr_motel_doorsim) (7)" dimension="523" interior="15" model="2987" posX="2195.0227050781" posY="-1157.7547607422" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="89.999938964844" />
+    <object id="object (lxr_motel_doorsim) (8)" dimension="523" interior="15" model="2987" posX="2191.322265625" posY="-1157.0067138672" posZ="1030.0025634766" rotX="0" rotY="0" rotZ="270" />
+</map>

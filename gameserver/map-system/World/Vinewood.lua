@@ -1,0 +1,2 @@
+local ramp = createObject(1696,1269.8000488281,-916.40002441406,41.099998474121,354.61999511719,0.00000000,10)
+setElementCollisionsEnabled (ramp, true)

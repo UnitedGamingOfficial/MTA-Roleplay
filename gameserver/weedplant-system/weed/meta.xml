@@ -1,0 +1,6 @@
+<meta>
+	<script src="weed.lua" type="client" />
+    <file src="weed.dff" />
+	<file src="weed.txd" />
+	<file src="plant.col" />
+</meta>

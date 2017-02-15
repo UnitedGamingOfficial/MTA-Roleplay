@@ -1,0 +1,13 @@
+<help>
+To start editing type /guied or press shift + g, do it again to stop
+
+To edit a GUI element right click on it
+The parent of the element you are creating will be the element you right clicked on
+For example: right clicking a window and selecting "Create Button" will create a button within the window
+	
+To print the code onto the screen use /guiprint or select the "Print code" option, to hide the window click the close button or type /guihide
+To output the code into a file use /guioutput or select the "Output code" option (outputs to GUIEditor_output.txt in the GUIEditor resource directory)
+Each output will be appended to the end of the file so no previous outputs will be lost
+
+For further information see the in-game help ("Help" in the right click menu) or the in-game tutorial ("Tutorial" in the right click menu)
+</help>

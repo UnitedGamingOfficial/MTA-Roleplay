@@ -1,0 +1,7 @@
+<meta>
+	<info author="Maxime - UG MTA Scripting Team" type="script" description="Interiors Management"/>
+	<script src="s_interior_manager.lua" type="server" />
+	<script src="c_interior_manager.lua" type="client" />
+	<script src="s_interior_logs.lua" type="server" /> 
+	<export function="addInteriorLogs" type="server"/>
+</meta>

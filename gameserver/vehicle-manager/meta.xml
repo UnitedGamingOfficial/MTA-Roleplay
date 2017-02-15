@@ -1,0 +1,8 @@
+<meta>
+	<info author="Maxime - UG MTA Scripting Team" type="script" description="Vehicle Management"/>
+	<script src="s_vehicle_manager.lua" type="server" />
+	<script src="s_vehicle_commands.lua" type="server" /> 
+	<script src="c_vehicle_manager.lua" type="client" />
+	<export function="addVehicleLogs" type="server"/>
+	<script src="s_vehicle_logs.lua" type="server" /> 
+</meta>

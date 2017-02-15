@@ -1,0 +1,8 @@
+<map edf:definitions="editor_main">
+    <object id="object (lhouse_barrier3) (1)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2802.2002" posY="-1477.23999" posZ="18.8" rotX="2" rotY="352" rotZ="32.9"></object>
+    <object id="object (lhouse_barrier3) (2)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2805.19995" posY="-1475.09998" posZ="19.3" rotX="2" rotY="351.196" rotZ="54.899"></object>
+    <object id="object (lhouse_barrier3) (3)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2807.25122" posY="-1472" posZ="19.9" rotX="2" rotY="352.945" rotZ="78.893"></object>
+    <object id="object (lhouse_barrier3) (4)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2809.3999" posY="-1468.30005" posZ="20.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier3) (5)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2813.24023" posY="-1468.30005" posZ="20.1" rotX="0" rotY="0" rotZ="0"></object>
+    <object id="object (lhouse_barrier3) (6)" interior="0" alpha="255" doublesided="false" model="997" scale="1" dimension="0" posX="2817.1001" posY="-1468.30005" posZ="20.1" rotX="0" rotY="0" rotZ="0"></object>
+</map>

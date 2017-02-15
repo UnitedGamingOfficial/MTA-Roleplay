@@ -1,0 +1,4 @@
+<meta>
+    <info author="UG MTA Scripting Team" type="script" description="Drug/Weapon Factories"/>	
+	<script src="s_factory.lua" type="server"/>
+</meta>

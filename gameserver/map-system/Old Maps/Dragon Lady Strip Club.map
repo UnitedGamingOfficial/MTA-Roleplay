@@ -1,0 +1,11 @@
+<map edf:definitions="editor_main">
+	-- Dragon Lady Back Room
+    <object id="object (SWANK_COUCH_1) (1)" dimension="685" interior="2" model="1753" posX="1200.9172363281" posY="16.860397338867" posZ="999.921875" rotX="0" rotY="0" rotZ="87.339477539063" />
+    <object id="object (lodbyhswall10_lvs) (1)" dimension="685" interior="2" model="8997" posX="1209.0477294922" posY="20.889156341553" posZ="1002.9296264648" rotX="0" rotY="0" rotZ="270.67565917969" />
+    <object id="object (lodbyhswall10_lvs) (2)" dimension="685" interior="2" model="8997" posX="1199.7890625" posY="11.30835723877" posZ="1001.4389648438" rotX="0" rotY="0" rotZ="358.01501464844" />
+    <object id="object (lodbyhswall10_lvs) (3)" dimension="685" interior="2" model="8997" posX="1208.5373535156" posY="21.198764801025" posZ="1000.5540771484" rotX="0" rotY="0" rotZ="179.36633300781" />
+    <object id="object (lodbyhswall10_lvs) (4)" dimension="685" interior="2" model="8997" posX="1208.5373535156" posY="21.198764801025" posZ="1000.5540771484" rotX="0" rotY="0" rotZ="179.36633300781" />
+	
+	--Dragon Lady WC Door
+	<object id="object (Gen_doorEXT15) (2)" dimension="686" interior="10" model="1536" posX="364.1397" posY="-63.7950" posZ="1000.5078125" rotX="0" rotY="0" rotZ="180" />
+</map>

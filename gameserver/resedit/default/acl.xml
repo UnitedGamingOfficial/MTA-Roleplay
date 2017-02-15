@@ -1,0 +1,6 @@
+<acl>
+    <acl name="Default">
+        <right name="resedit.editor" />
+        <right name="resedit.script_lock" />
+    </acl>
+</acl>
