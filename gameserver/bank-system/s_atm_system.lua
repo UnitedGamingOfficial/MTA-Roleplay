@@ -47,7 +47,7 @@ addCommandHandler("addatm", createATM, false, false)
 function createFastATM(thePlayer, commandName)
 	if (exports.global:isPlayerLeadAdmin(thePlayer) or exports.global:isPlayerScripter(thePlayer)) then
 		if isElementWithinColShape(thePlayer, noSpawnZone) then
-			outputChatBox("Fuck you Choov", thePlayer, 0, 255, 255)
+			outputChatBox("You cannot spawn an ATM here.", thePlayer, 0, 255, 255)
 		else
 			local dimension = getElementDimension(thePlayer)
 			local interior = getElementInterior(thePlayer)
